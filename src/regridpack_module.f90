@@ -431,16 +431,16 @@
 !  subroutine rgrd1 interpolates the values p(i) on the grid x(i)
 !  for i=1,...,nx onto q(ii) on the grid xx(ii),ii=1,...,mx.
 !
-!### Notes
+!### requirements
 !
 !  x must be a strictly increasing grid and xx must be an increasing
 !  grid (see ier = 4).  in addition the interval
 !
-!   [xx(1),xx(mx)]
+!    [xx(1),xx(mx)]
 !
 !  must lie within the interval
 !
-!   [x(1),x(nx)].
+!    [x(1),x(nx)].
 !
 !  extrapolation is not allowed (see ier=3).  if these intervals
 !  are identical and the x and xx grids are UNIFORM then subroutine
@@ -490,7 +490,7 @@
     integer,intent(out) :: ier                     !! an integer error flag set as follows:
                                                    !!
                                                    !! * ier = 0 if no errors in input arguments are detected
-                                                   !! * ier = 1 if  mx < 1
+                                                   !! * ier = 1 if mx < 1
                                                    !! * ier = 2 if nx < 2 when intpol=1 or nx < 4 when intpol=3
                                                    !! * ier = 3 if xx(1) < x(1) or x(nx) < xx(mx)
                                                    !!    to avoid this flag when end points are intended to be the
@@ -974,10 +974,11 @@
                                  !! * ier = 4 if one of the grids x,y is not strictly monotonically
                                  !!   increasing or if one of the grids xx,yy is not
                                  !!   montonically increasing.  more precisely if:
-                                 !!   x(i+1) <= x(i) for some i such that 1 <= i < nx (or)
-                                 !!   y(j+1) <= y(j) for some j such that 1 <= j < ny (or)
-                                 !!   xx(ii+1) < xx(ii) for some ii such that 1 <= ii < mx (or)
-                                 !!   yy(jj+1) < yy(jj) for some jj such that 1 <= jj < my
+                                 !!
+                                 !!    * x(i+1) <= x(i) for some i such that 1 <= i < nx (or)
+                                 !!    * y(j+1) <= y(j) for some j such that 1 <= j < ny (or)
+                                 !!    * xx(ii+1) < xx(ii) for some ii such that 1 <= ii < mx (or)
+                                 !!    * yy(jj+1) < yy(jj) for some jj such that 1 <= jj < my
                                  !! * ier = 5 if lw or liw is to small (insufficient work space)
                                  !! * ier = 6 if intpol(1) or intpol(2) is not equal to 1 or 3
     integer,intent(in)  :: intpol(2)    !! an integer vector of dimension 2 which sets linear or cubic
@@ -1397,12 +1398,11 @@
     integer,intent(in)  :: lw   !! the integer length of the work space w.
                                 !!
                                 !! * let lwx = 1 if mx-1 divides nx-1; otherwise
-                                !! * let lwx = mx if intpol(1) = 1 or
-                                !! * let lwx = 4*mx if intpol(1) = 3
-                                !!
+                                !!   let lwx = mx if intpol(1) = 1 or
+                                !!   let lwx = 4*mx if intpol(1) = 3
                                 !! * let lwy = 0 if my-1 divides ny-1; otherwise
-                                !! * let lwy = 2*mx+my if intpol(2) = 1 or
-                                !! * let lwy = 4*(mx+my)  if intpol(2) = 3
+                                !!   let lwy = 2*mx+my if intpol(2) = 1 or
+                                !!   let lwy = 4*(mx+my)  if intpol(2) = 3
                                 !!
                                 !! then lw must be greater than or equal to lwx+lwy
     integer,intent(in)  :: liw  !! the integer length of the integer work space iw.
@@ -1865,18 +1865,16 @@
                                     !!    grids have the same y boundaries then yy(1)=y(1) and yy(my)=y(ny)
                                     !!    should be set before calling rgrd3)
                                     !! * ier = 4 if one of the grids x,y,z is not strictly monotonically
-                                    !!                 increasing or if one of the grids xx,yy,zz is not
-                                    !!                 montonically increasing.  more precisely if:
+                                    !!   increasing or if one of the grids xx,yy,zz is not
+                                    !!   montonically increasing.  more precisely if:
                                     !!
-                                    !!                 x(i+1) <= x(i) for some i such that 1 <= i < nx (or)
-                                    !!                 y(j+1) <= y(j) for some j such that 1 <= j < ny (or)
-                                    !!                 z(k+1) <= z(k) for some k such that 1 <= k < nz (or)
-                                    !!                 xx(ii+1) < xx(ii) for some ii such that 1 <= ii < mx (or)
-                                    !!                 yy(jj+1) < yy(jj) for some jj such that 1 <= jj < my (or)
-                                    !!                 zz(kk+1) < zz(k)  for some kk such that 1 <= kk < mz
-                                    !!
+                                    !!    * x(i+1) <= x(i) for some i such that 1 <= i < nx (or)
+                                    !!    * y(j+1) <= y(j) for some j such that 1 <= j < ny (or)
+                                    !!    * z(k+1) <= z(k) for some k such that 1 <= k < nz (or)
+                                    !!    * xx(ii+1) < xx(ii) for some ii such that 1 <= ii < mx (or)
+                                    !!    * yy(jj+1) < yy(jj) for some jj such that 1 <= jj < my (or)
+                                    !!    * zz(kk+1) < zz(k)  for some kk such that 1 <= kk < mz
                                     !! * ier = 5 if lw or liw is too small (insufficient work space)
-                                    !!
                                     !! * ier = 6 if any of intpol(1),intpol(2),intpol(3) is not equal to 1 or 3
     real(wp),intent(in)     :: x(nx)  !! a real(wp) nx vector of strictly increasing values which defines the x
                                       !! portion of the orthogonal grid on which p is given
@@ -2944,7 +2942,7 @@
 !  and each of the xx,yy,zz,tt grids must be montonically increasing
 !  (see ier = 4).  in addition the (X,Y,Z,T) region of the q grid
 !
-!   [xx(1),xx(mx)] X [yy(1),yy(my)] X [zz(1),zz(mz)] X [tt(1),tt(my)]
+!    [xx(1),xx(mx)] X [yy(1),yy(my)] X [zz(1),zz(mz)] X [tt(1),tt(my)]
 !
 !  must lie within the (X,Y,Z,T) region of the p grid
 !
@@ -2993,31 +2991,31 @@
                                     !! * ier = 0 if no errors in input arguments are detected
                                     !! * ier = 1 if  min(mx,my,mz,mt) < 1
                                     !! * ier = 2 if nx < 2 when intpol(1)=1 or nx < 4 when intpol(1)=3 (or)
-                                    !!                     ny < 2 when intpol(2)=1 or ny < 4 when intpol(2)=3 (or)
-                                    !!                     nz < 2 when intpol(3)=1 or nz < 4 when intpol(3)=3 (or)
-                                    !!                     nt < 2 when intpol(4)=1 or nt < 4 when intpol(4)=3
+                                    !!    * ny < 2 when intpol(2)=1 or ny < 4 when intpol(2)=3 (or)
+                                    !!    * nz < 2 when intpol(3)=1 or nz < 4 when intpol(3)=3 (or)
+                                    !!    * nt < 2 when intpol(4)=1 or nt < 4 when intpol(4)=3
                                     !! * ier = 3 if xx(1) < x(1) or x(nx) < xx(mx) (or)
-                                    !!                     yy(1) < y(1) or y(ny) < yy(my) (or)
-                                    !!                     zz(1) < z(1) or z(nz) < zz(mz) (or)
-                                    !!                     tt(1) < t(1) or t(nt) < tt(mt)
+                                    !!    * yy(1) < y(1) or y(ny) < yy(my) (or)
+                                    !!    * zz(1) < z(1) or z(nz) < zz(mz) (or)
+                                    !!    * tt(1) < t(1) or t(nt) < tt(mt)
+                                    !!   to avoid this flag when end points are intended to be the
+                                    !!   same but may differ slightly due to roundoff error, they
+                                    !!   should be set exactly in the calling routine (e.g., if both
+                                    !!   grids have the same y boundaries then yy(1)=y(1) and yy(my)=y(ny)
+                                    !!   should be set before calling rgrd4)
                                     !!
-                                    !!      to avoid this flag when end points are intended to be the
-                                    !!      same but may differ slightly due to roundoff error, they
-                                    !!      should be set exactly in the calling routine (e.g., if both
-                                    !!      grids have the same y boundaries then yy(1)=y(1) and yy(my)=y(ny)
-                                    !!      should be set before calling rgrd4)
                                     !! * ier = 4 if one of the grids x,y,z,t is not strictly monotonically
-                                    !!                 increasing or if one of the grids xx,yy,zz,tt is not
-                                    !!                 montonically increasing.  more precisely if:
+                                    !!   increasing or if one of the grids xx,yy,zz,tt is not
+                                    !!   montonically increasing.  more precisely if:
                                     !!
-                                    !!                  x(i+1) <= x(i) for some i such that 1 <= i < nx (or)
-                                    !!                  y(j+1) <= y(j) for some j such that 1 <= j < ny (or)
-                                    !!                  z(k+1) <= z(k) for some k such that 1 <= k < nz (or)
-                                    !!                  t(l+1) <= t(l) for some l such that 1 <= l < nt (or)
-                                    !!                  xx(ii+1) < xx(ii) for some ii such that 1 <= ii < mx (or)
-                                    !!                  yy(jj+1) < yy(jj) for some jj such that 1 <= jj < my (or)
-                                    !!                  zz(kk+1) < zz(k)  for some kk such that 1 <= kk < mz (or)
-                                    !!                  tt(ll+1) < tt(l)  for some ll such that 1 <= ll < mt
+                                    !!    * x(i+1) <= x(i) for some i such that 1 <= i < nx (or)
+                                    !!    * y(j+1) <= y(j) for some j such that 1 <= j < ny (or)
+                                    !!    * z(k+1) <= z(k) for some k such that 1 <= k < nz (or)
+                                    !!    * t(l+1) <= t(l) for some l such that 1 <= l < nt (or)
+                                    !!    * xx(ii+1) < xx(ii) for some ii such that 1 <= ii < mx (or)
+                                    !!    * yy(jj+1) < yy(jj) for some jj such that 1 <= jj < my (or)
+                                    !!    * zz(kk+1) < zz(k)  for some kk such that 1 <= kk < mz (or)
+                                    !!    * tt(ll+1) < tt(l)  for some ll such that 1 <= ll < mt
                                     !! * ier = 5 if lw or liw is too small (insufficient work space)
                                     !! * ier = 6 if any of intpol(1),intpol(2),intpol(3),intpol(4)
                                     !!                 is not equal to 1 or 3
