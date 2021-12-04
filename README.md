@@ -13,7 +13,7 @@ The original Fortran 77 version of this code used to be available from UCAR at: 
 
 ### Compiling
 
-A [Fortran Package Manager](https://github.com/fortran-lang/fpm) manifest file is included, so that the library and tests cases can be compiled with FPM. For example:
+A [Fortran Package Manager](https://github.com/fortran-lang/fpm) manifest file is included, so that the library can be compiled with FPM. For example:
 
 ```
 fpm build --profile release
