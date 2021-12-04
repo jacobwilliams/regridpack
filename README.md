@@ -1,3 +1,8 @@
+![regridpack](media/logo.png)
+============
+
+![Build Status](https://github.com/jacobwilliams/regridpack/actions/workflows/CI.yml/badge.svg)
+
 ## Brief Description
 
 This is an updated and modernized version of REGRIDPACK, a suite of Fortran routines
@@ -33,3 +38,7 @@ The API documentation for the current ```master``` branch can be found [here](ht
 ## License
 
 The regridpack source code and related files and documentation are distributed under a permissive free software [license](https://github.com/jacobwilliams/regridpack/blob/master/LICENSE.txt) (BSD-style).
+
+### See also
+
+ * J. Williams, [Interpolation](https://degenerateconic.com/interpolation.html), Oct 18, 2019 [degenerateconic.com]
