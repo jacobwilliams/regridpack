@@ -35,3 +35,7 @@
 /doc
 /lib
 /bin
+/build
+
+# misc
+.DS_Store
