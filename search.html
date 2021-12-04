@@ -10,7 +10,9 @@
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="./favicon.png">
 
-    <title> regridpack </title>
+    <title>
+Search Results &ndash; regridpack
+</title>
 
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/pygments.css" rel="stylesheet">
@@ -107,121 +109,29 @@
 
     <div class="container">
     
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <p>Modern Fortran Edition of REGRIDPACK</p>
-        	 
-	<p> Find us on&hellip;</p>
-        <p>
-			 
-          <a class="btn btn-lg btn-primary" href="https://github.com/jacobwilliams/regridpack" role="button">GitHub</a>
-			 
-			 
-			 
-			 
-			 
-	         
-			 
-        </p>
-      </div>
-
-      <div class="row" id='text'>
-		  
-        <div class="col-md-8">
-		  
-          <h1>regridpack</h1>
-          <h2>Brief Description</h2>
-<p>This is an updated and modernized version of REGRIDPACK, a suite of Fortran routines
-for interpolating values between one-, two-, three-, and four-dimensional arrays defined
-on uniform or nonuniform orthogonal grids. This operation is commonly referred to as "regridding."
-Linear or cubic interpolation can be selected independently in each dimension.
-Extrapolation is not allowed. The subroutines in REGRIDPACK cannot be used to
-transfer values on nonorthogonal (randomly scattered) data grids.</p>
-<h2>Source</h2>
-<p>The original Fortran 77 version of this code used to be available from UCAR at: http://www.scd.ucar.edu/softlib/REGRIDPACK.html and/or ftp://ftp.ucar.edu/ftp/dsl/lib/regridpack/ but, as of 2019, both links are now dead. It's possible that this library was formerly known as TLCPACK. There were apparently also unit tests programs (trgrd1.f, trgrd2.f, trgrd3.f, trgrd4.f, trgrd1u.f, trgrd2u.f, trgrd3u.f, and trgrd4u.f) that I can't seem to locate. Does anyone have them?</p>
-<h2>License</h2>
-<p>The regridpack source code and related files and documentation are distributed under a permissive free software <a href="https://github.com/jacobwilliams/regridpack/blob/master/LICENSE.txt">license</a> (BSD-style).</p>
-        </div>
-		  
-        <div class="col-md-4">
-	  <div class="well">
-          <h2>Developer Info</h2>
-          <h4>Jacob Williams</h4>
-          
-          
-			   
-            <div class="text-center"><div class="btn-group" role="group">
-              
-              
-              
-              <a class="btn btn-lg btn-primary" href="https://github.com/jacobwilliams"><i class="fa fa-github fa-lg"></i></a>
-              
-              
-				  
-              
-              
-              
-              
-            </div></div>
-            
-       </div>
-       </div>
-       
-      </div>
-      
-      
-      
-      
-      
-      
-		
-        
       <div class="row">
-        
-        <div class="col-xs-6 col-sm-4">
-              <h3>Source Files</h3>
-              <ul>
-                    <li><a href='./sourcefile/regridpack_module.f90.html'>regridpack_module.f90</a></li>
-                  </ul>
-          </div>
-        
-          
-		  <div class="col-xs-6 col-sm-4">
-              <h3>Modules</h3>
-              <ul>
-                    <li><a href='./module/regridpack_module.html'>regridpack_module</a></li>
-                  </ul>
-          </div>
-          
-          
-		  <div class="col-xs-6 col-sm-4">
-              <h3>Procedures</h3>
-              <ul>
-                    <li><a href='./proc/cubnmx.html'>cubnmx</a></li>
-                  
-                    <li><a href='./proc/cubnmxu.html'>cubnmxu</a></li>
-                  
-                    <li><a href='./proc/cubt1.html'>cubt1</a></li>
-                  
-                    <li><a href='./proc/cubt1u.html'>cubt1u</a></li>
-                  
-                    <li><a href='./proc/cubt2.html'>cubt2</a></li>
-                  
-                    <li><a href='./proc/cubt2u.html'>cubt2u</a></li>
-                  
-                    <li><a href='./proc/cubt3.html'>cubt3</a></li>
-                  
-                    <li><a href='./proc/cubt3u.html'>cubt3u</a></li>
-                  
-                    <li><a href='./proc/cubt4.html'>cubt4</a></li>
-                  
-                    <li><a href='./proc/cubt4u.html'>cubt4u</a></li>
-                  </ul>
-          </div>
-          
-          
+        <div class="col-lg-12">
+			 <h1>Search Results</h1>
+             <div id="tipue_search_content"><div id="tipue_search_loading"></div></div>
+        </div>
       </div>
-      
+<!--
+    <script>
+      $(document).ready(function() {
+           $('#tipue_search_input').tipuesearch({
+             'mode' : 'static',
+             'show': 10,
+             'newWindow': false,
+             'descriptiveWords': 35,
+         });
+      });
+    </script>
+-->
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch();
+});
+</script>
 
     <hr>    
     </div> <!-- /container -->
