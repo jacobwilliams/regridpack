@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="Modern Fortran Edition of REGRIDPACK">
-    
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
 
@@ -16,10 +14,7 @@
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
-    
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,50 +43,23 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="../sourcefile/regridpack_module.f90.html">Source File</a></li>
-        
-        
-        
             <li><a href="../lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="../lists/procedures.html">Procedures</a></li>
-        
-               
-               
-        
-        
+              
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../sourcefile/regridpack_module.f90.html">Source File</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-
-                             
-
-
-
-          </ul>
-        
+                                       </ul>
         <form action="../search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -100,51 +68,29 @@
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
-  
   <div class="row">
     <h1>rgrd1
       <small>Subroutine</small>
-    
     </h1>
-    
-<div class="row">
+    <div class="row">
   <div class="col-lg-12">
 <div class="well well-sm">
   <ul class="list-inline" style="margin-bottom:0px;display:inline">
-     
-     
-     
-     
-     
-    
-    
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
     title=" 2.3% of total for procedures.">56 statements</a>
      </li> 
-     
-     
-     
     <li><i class="fa fa-code"></i><a href="../src/regridpack_module.f90"> Source File</a></li>
-     
-     
   </ul>
   <ol class="breadcrumb in-well text-right">
-  
-    
      <li><a href='../sourcefile/regridpack_module.f90.html'>regridpack_module.f90</a></li>
-    
      <li><a href='../module/regridpack_module.html'>regridpack_module</a></li>
-    
-  
      <li class="active">rgrd1</li>
   </ol>
 </div>
@@ -160,32 +106,9 @@
   
   <div class="row">
     <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
-    
-<div id="sidebar">
-  
-<h3>Contents</h3>
+    <div id="sidebar">
+  <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
@@ -193,24 +116,14 @@
   </div>
 </div>
 
-
-
 </div>
 
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2>
-private subroutine rgrd1(nx, x, p, mx, xx, q, intpol, w, lw, iw, liw, ier)
+    <h2>private subroutine rgrd1(nx, x, p, mx, xx, q, intpol, w, lw, iw, liw, ier)</h2>
     
-    
-   
-</h2>
-    
-  
 
-
-    
     <p>subroutine rgrd1 interpolates the values p(i) on the grid x(i)
   for i=1,...,nx onto q(ii) on the grid xx(ii),ii=1,...,mx.</p>
 <h3>requirements</h3>
@@ -226,131 +139,61 @@ private subroutine rgrd1(nx, x, p, mx, xx, q, intpol, w, lw, iw, liw, ier)
 <p>extrapolation is not allowed (see ier=3).  if these intervals
   are identical and the x and xx grids are UNIFORM then subroutine
   rgrd1u should be used in place of rgrd1.</p>
-    
 
     <h3>Arguments</h3>
-    
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
+      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
 <tbody>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-nx"></span>integer,</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>nx</strong></td><td><p>the integer dimension of the grid
 vector x and the dimension of p.
 nx &gt; 1 if intpol = 1 or nx &gt; 3 if
 intpol = 3 is required.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-x~5"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(nx)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(nx)</td><td>::</td>
   <td><strong>x</strong></td><td><p>a real(wp) nx vector of strictly
 increasing values which defines the x
 grid on which p is given.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-p~5"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(nx)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(nx)</td><td>::</td>
   <td><strong>p</strong></td><td><p>a real(wp) nx vector of values given on the x grid</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-mx"></span>integer,</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>mx</strong></td><td><p>the integer dimension of the grid vector
 xx and the dimension of q.
 mx &gt; 0 is required.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-xx~5"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(mx)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(mx)</td><td>::</td>
   <td><strong>xx</strong></td><td><p>a real(wp) mx vector of increasing values which defines the
 grid on which q is defined.  xx(1) &lt; x(1) or xx(mx) &gt; x(nx)
 is not allowed (see ier = 3)</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-q~5"></span>real(kind=wp),</td>
-  <td>intent(out)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(out)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>q</strong>(mx)</td><td><p>a real(wp) mx vector of values on the xx grid which are
 interpolated from p on the x grid</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-intpol~5"></span>integer,</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>intpol</strong></td><td><p>an integer which sets linear or cubic
 interpolation as follows:</p>
 <ul>
@@ -358,90 +201,45 @@ interpolation as follows:</p>
 <li>intpol = 3 sets cubic interpolation</li>
 </ul>
 <p>values other than 1 or 3 in intpol are not allowed (ier = 6).</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-w"></span>real(kind=wp),</td>
-  <td>intent(inout),</td>
-  <td></td>
-  
-  <td>dimension(lw)</td><td>::</td>
+<td>intent(inout),</td>
+  <td></td>  <td>dimension(lw)</td><td>::</td>
   <td><strong>w</strong></td><td><p>a real(wp) work space of length at least
 lw which must be provided in the
 routine calling rgrd1</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-lw"></span>integer,</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>lw</strong></td><td><p>the integer length of the real(wp) work space w.  let</p>
 <ul>
 <li>lwmin = mx     if intpol(1) = 1</li>
 <li>lwmin = 4*mx   if intpol(1) = 3</li>
 </ul>
 <p>then lw must be greater than or equal to lwmin</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-iw"></span>integer,</td>
-  <td>intent(inout),</td>
-  <td></td>
-  
-  <td>dimension(*)</td><td>::</td>
+<td>intent(inout),</td>
+  <td></td>  <td>dimension(*)</td><td>::</td>
   <td><strong>iw</strong></td><td><p>an integer work space of length at least
 liw which must be provided in the
 routine calling rgrd1</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-liw"></span>integer,</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>liw</strong></td><td><p>the length of the integer work space iw.
 liw must be greater than or equal to mx.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-ier~5"></span>integer,</td>
-  <td>intent(out)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(out)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>ier</strong></td><td><p>an integer error flag set as follows:</p>
 <ul>
 <li>ier = 0 if no errors in input arguments are detected</li>
@@ -461,18 +259,11 @@ liw must be greater than or equal to mx.</p></td>
 <li>ier = 5 if lw or liw is too small (insufficient work space)</li>
 <li>ier = 6 if intpol is not equal to 1 or 3</li>
 </ul></td>
-  
 </tr>
-
 </tbody>
 </table>
 
-    
-    
-    
     <br>
-    
-    
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Calls</h3>
@@ -510,48 +301,48 @@ liw must be greater than or equal to mx.</p></td>
 <path fill="none" stroke="#000000" d="M45.06,-87.15C58.16,-96.47 76.45,-109.49 91.25,-120.02"/>
 <polygon fill="#000000" stroke="#000000" points="89.31,-122.94 99.49,-125.89 93.37,-117.24 89.31,-122.94"/>
 </g>
-<!-- proc~cubt1 -->
-<g id="proc~~rgrd1~~CallsGraph_node3" class="node">
-<title>proc~cubt1</title>
-<g id="a_proc~~rgrd1~~CallsGraph_node3"><a xlink:href=".././proc/cubt1.html" xlink:title="cubt1">
-<polygon fill="#d9534f" stroke="#d9534f" points="144.5,-108 90.5,-108 90.5,-84 144.5,-84 144.5,-108"/>
-<text text-anchor="middle" x="117.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cubt1</text>
-</a>
-</g>
-</g>
-<!-- proc~rgrd1&#45;&gt;proc~cubt1 -->
-<g id="proc~~rgrd1~~CallsGraph_edge3" class="edge">
-<title>proc~rgrd1&#45;&gt;proc~cubt1</title>
-<path fill="none" stroke="#000000" d="M54.07,-81.19C62.37,-83.16 71.7,-85.37 80.57,-87.47"/>
-<polygon fill="#000000" stroke="#000000" points="79.77,-90.88 90.31,-89.78 81.38,-84.07 79.77,-90.88"/>
-</g>
-<!-- proc~linmx -->
-<g id="proc~~rgrd1~~CallsGraph_node4" class="node">
-<title>proc~linmx</title>
-<g id="a_proc~~rgrd1~~CallsGraph_node4"><a xlink:href=".././proc/linmx.html" xlink:title="linmx">
-<polygon fill="#d9534f" stroke="#d9534f" points="144.5,-66 90.5,-66 90.5,-42 144.5,-42 144.5,-66"/>
-<text text-anchor="middle" x="117.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">linmx</text>
-</a>
-</g>
-</g>
-<!-- proc~rgrd1&#45;&gt;proc~linmx -->
-<g id="proc~~rgrd1~~CallsGraph_edge4" class="edge">
-<title>proc~rgrd1&#45;&gt;proc~linmx</title>
-<path fill="none" stroke="#000000" d="M54.07,-68.81C62.37,-66.84 71.7,-64.63 80.57,-62.53"/>
-<polygon fill="#000000" stroke="#000000" points="81.38,-65.93 90.31,-60.22 79.77,-59.12 81.38,-65.93"/>
-</g>
 <!-- proc~lint1 -->
-<g id="proc~~rgrd1~~CallsGraph_node5" class="node">
+<g id="proc~~rgrd1~~CallsGraph_node3" class="node">
 <title>proc~lint1</title>
-<g id="a_proc~~rgrd1~~CallsGraph_node5"><a xlink:href=".././proc/lint1.html" xlink:title="lint1">
-<polygon fill="#d9534f" stroke="#d9534f" points="144.5,-24 90.5,-24 90.5,0 144.5,0 144.5,-24"/>
-<text text-anchor="middle" x="117.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">lint1</text>
+<g id="a_proc~~rgrd1~~CallsGraph_node3"><a xlink:href=".././proc/lint1.html" xlink:title="lint1">
+<polygon fill="#d9534f" stroke="#d9534f" points="144.5,-108 90.5,-108 90.5,-84 144.5,-84 144.5,-108"/>
+<text text-anchor="middle" x="117.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">lint1</text>
 </a>
 </g>
 </g>
 <!-- proc~rgrd1&#45;&gt;proc~lint1 -->
 <g id="proc~~rgrd1~~CallsGraph_edge2" class="edge">
 <title>proc~rgrd1&#45;&gt;proc~lint1</title>
+<path fill="none" stroke="#000000" d="M54.07,-81.19C62.37,-83.16 71.7,-85.37 80.57,-87.47"/>
+<polygon fill="#000000" stroke="#000000" points="79.77,-90.88 90.31,-89.78 81.38,-84.07 79.77,-90.88"/>
+</g>
+<!-- proc~cubt1 -->
+<g id="proc~~rgrd1~~CallsGraph_node4" class="node">
+<title>proc~cubt1</title>
+<g id="a_proc~~rgrd1~~CallsGraph_node4"><a xlink:href=".././proc/cubt1.html" xlink:title="cubt1">
+<polygon fill="#d9534f" stroke="#d9534f" points="144.5,-66 90.5,-66 90.5,-42 144.5,-42 144.5,-66"/>
+<text text-anchor="middle" x="117.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cubt1</text>
+</a>
+</g>
+</g>
+<!-- proc~rgrd1&#45;&gt;proc~cubt1 -->
+<g id="proc~~rgrd1~~CallsGraph_edge3" class="edge">
+<title>proc~rgrd1&#45;&gt;proc~cubt1</title>
+<path fill="none" stroke="#000000" d="M54.07,-68.81C62.37,-66.84 71.7,-64.63 80.57,-62.53"/>
+<polygon fill="#000000" stroke="#000000" points="81.38,-65.93 90.31,-60.22 79.77,-59.12 81.38,-65.93"/>
+</g>
+<!-- proc~linmx -->
+<g id="proc~~rgrd1~~CallsGraph_node5" class="node">
+<title>proc~linmx</title>
+<g id="a_proc~~rgrd1~~CallsGraph_node5"><a xlink:href=".././proc/linmx.html" xlink:title="linmx">
+<polygon fill="#d9534f" stroke="#d9534f" points="144.5,-24 90.5,-24 90.5,0 144.5,0 144.5,-24"/>
+<text text-anchor="middle" x="117.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">linmx</text>
+</a>
+</g>
+</g>
+<!-- proc~rgrd1&#45;&gt;proc~linmx -->
+<g id="proc~~rgrd1~~CallsGraph_edge4" class="edge">
+<title>proc~rgrd1&#45;&gt;proc~linmx</title>
 <path fill="none" stroke="#000000" d="M45.06,-62.85C58.16,-53.53 76.45,-40.51 91.25,-29.98"/>
 <polygon fill="#000000" stroke="#000000" points="93.37,-32.76 99.49,-24.11 89.31,-27.06 93.37,-32.76"/>
 </g>
@@ -618,8 +409,6 @@ liw must be greater than or equal to mx.</p></td>
     </div></div></div></div>
       </div>
     </div>
-     
-     
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Called by</h3>
@@ -642,25 +431,10 @@ liw must be greater than or equal to mx.</p></td>
 <polygon fill="none" stroke="black" points="271,-44 217,-44 217,-20 271,-20 271,-44"/>
 <text text-anchor="middle" x="244" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50">rgrd1</text>
 </g>
-<!-- proc~rgrd1_wrapper -->
-<g id="proc~~rgrd1~~CalledByGraph_node2" class="node">
-<title>proc~rgrd1_wrapper</title>
-<g id="a_proc~~rgrd1~~CalledByGraph_node2"><a xlink:href=".././proc/rgrd1_wrapper.html" xlink:title="rgrd1_wrapper">
-<polygon fill="#d9534f" stroke="#d9534f" points="181,-24 90,-24 90,0 181,0 181,-24"/>
-<text text-anchor="middle" x="135.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rgrd1_wrapper</text>
-</a>
-</g>
-</g>
-<!-- proc~rgrd1_wrapper&#45;&gt;proc~rgrd1 -->
-<g id="proc~~rgrd1~~CalledByGraph_edge1" class="edge">
-<title>proc~rgrd1_wrapper&#45;&gt;proc~rgrd1</title>
-<path fill="none" stroke="#000000" d="M181.05,-20.37C189.63,-21.98 198.51,-23.65 206.78,-25.2"/>
-<polygon fill="#000000" stroke="#000000" points="206.39,-28.69 216.87,-27.09 207.68,-21.81 206.39,-28.69"/>
-</g>
 <!-- interface~regrid -->
-<g id="proc~~rgrd1~~CalledByGraph_node3" class="node">
+<g id="proc~~rgrd1~~CalledByGraph_node2" class="node">
 <title>interface~regrid</title>
-<g id="a_proc~~rgrd1~~CalledByGraph_node3"><a xlink:href=".././interface/regrid.html" xlink:title="regrid">
+<g id="a_proc~~rgrd1~~CalledByGraph_node2"><a xlink:href=".././interface/regrid.html" xlink:title="regrid">
 <polygon fill="#a7506f" stroke="#a7506f" points="54,-44 0,-44 0,-20 54,-20 54,-44"/>
 <text text-anchor="middle" x="27" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">regrid</text>
 </a>
@@ -672,11 +446,26 @@ liw must be greater than or equal to mx.</p></td>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M54.24,-32.52C65.28,-32.71 78.27,-32.91 90,-33 130.44,-33.33 140.56,-33.33 181,-33 189.25,-32.93 198.12,-32.82 206.49,-32.69"/>
 <polygon fill="#000000" stroke="#000000" points="206.81,-36.18 216.76,-32.52 206.7,-29.18 206.81,-36.18"/>
 </g>
+<!-- proc~rgrd1_wrapper -->
+<g id="proc~~rgrd1~~CalledByGraph_node3" class="node">
+<title>proc~rgrd1_wrapper</title>
+<g id="a_proc~~rgrd1~~CalledByGraph_node3"><a xlink:href=".././proc/rgrd1_wrapper.html" xlink:title="rgrd1_wrapper">
+<polygon fill="#d9534f" stroke="#d9534f" points="181,-24 90,-24 90,0 181,0 181,-24"/>
+<text text-anchor="middle" x="135.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rgrd1_wrapper</text>
+</a>
+</g>
+</g>
 <!-- interface~regrid&#45;&gt;proc~rgrd1_wrapper -->
 <g id="proc~~rgrd1~~CalledByGraph_edge3" class="edge">
 <title>interface~regrid&#45;&gt;proc~rgrd1_wrapper</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M54.05,-27.11C61.84,-25.65 70.68,-23.98 79.59,-22.31"/>
 <polygon fill="#000000" stroke="#000000" points="80.44,-25.71 89.62,-20.43 79.15,-18.83 80.44,-25.71"/>
+</g>
+<!-- proc~rgrd1_wrapper&#45;&gt;proc~rgrd1 -->
+<g id="proc~~rgrd1~~CalledByGraph_edge1" class="edge">
+<title>proc~rgrd1_wrapper&#45;&gt;proc~rgrd1</title>
+<path fill="none" stroke="#000000" d="M181.05,-20.37C189.63,-21.98 198.51,-23.65 206.78,-25.2"/>
+<polygon fill="#000000" stroke="#000000" points="206.39,-28.69 216.87,-27.09 207.68,-21.81 206.39,-28.69"/>
 </g>
 </g>
 </svg>
@@ -741,34 +530,11 @@ liw must be greater than or equal to mx.</p></td>
     </div></div></div></div>
       </div>
     </div>
-     
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
-      
-<h3>Contents</h3>
+      <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
@@ -776,178 +542,163 @@ liw must be greater than or equal to mx.</p></td>
   </div>
 </div>
 
-
-
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
-    
 
-    
-    
-    
     
     
 
     
     
-    
-    
-    
 
 
-    
-    
     
     <section>
     <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="highlight"><pre><span></span>    <span class="k">subroutine </span><span class="n">rgrd1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">lw</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">liw</span><span class="p">,</span><span class="n">ier</span><span class="p">)</span>
+    <div class="highlight"><pre><span></span><span class="w">    </span><span class="k">subroutine </span><span class="n">rgrd1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">lw</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">liw</span><span class="p">,</span><span class="n">ier</span><span class="p">)</span><span class="w"></span>
 
-    <span class="k">implicit none</span>
+<span class="w">    </span><span class="k">implicit none</span>
 
-<span class="k">    </span><span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">nx</span>                       <span class="c">!! the integer dimension of the grid</span>
-                                                   <span class="c">!! vector x and the dimension of p.</span>
-                                                   <span class="c">!! nx &gt; 1 if intpol = 1 or nx &gt; 3 if</span>
-                                                   <span class="c">!! intpol = 3 is required.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">nx</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">x</span>         <span class="c">!! a real(wp) nx vector of strictly</span>
-                                                   <span class="c">!! increasing values which defines the x</span>
-                                                   <span class="c">!! grid on which p is given.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">nx</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">p</span>         <span class="c">!! a real(wp) nx vector of values given on the x grid</span>
-    <span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">mx</span>                       <span class="c">!! the integer dimension of the grid vector</span>
-                                                   <span class="c">!! xx and the dimension of q.</span>
-                                                   <span class="c">!! mx &gt; 0 is required.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>  <span class="kd">::</span> <span class="n">xx</span>       <span class="c">!! a real(wp) mx vector of increasing values which defines the</span>
-                                                   <span class="c">!! grid on which q is defined.  xx(1) &lt; x(1) or xx(mx) &gt; x(nx)</span>
-                                                   <span class="c">!! is not allowed (see ier = 3)</span>
-    <span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">intpol</span>                   <span class="c">!! an integer which sets linear or cubic</span>
-                                                   <span class="c">!! interpolation as follows:</span>
-                                                   <span class="c">!!</span>
-                                                   <span class="c">!! * intpol = 1 sets linear interpolation</span>
-                                                   <span class="c">!! * intpol = 3 sets cubic interpolation</span>
-                                                   <span class="c">!!</span>
-                                                   <span class="c">!! values other than 1 or 3 in intpol are not allowed (ier = 6).</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span> <span class="kd">::</span> <span class="n">q</span><span class="p">(</span><span class="n">mx</span><span class="p">)</span>                  <span class="c">!! a real(wp) mx vector of values on the xx grid which are</span>
-                                                   <span class="c">!! interpolated from p on the x grid</span>
-    <span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">lw</span>                       <span class="c">!! the integer length of the real(wp) work space w.  let</span>
-                                                   <span class="c">!!</span>
-                                                   <span class="c">!!  * lwmin = mx     if intpol(1) = 1</span>
-                                                   <span class="c">!!  * lwmin = 4*mx   if intpol(1) = 3</span>
-                                                   <span class="c">!!</span>
-                                                   <span class="c">!! then lw must be greater than or equal to lwmin</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">lw</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span> <span class="kd">::</span> <span class="n">w</span>      <span class="c">!! a real(wp) work space of length at least</span>
-                                                   <span class="c">!! lw which must be provided in the</span>
-                                                   <span class="c">!! routine calling rgrd1</span>
-    <span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">liw</span>                      <span class="c">!! the length of the integer work space iw.</span>
-                                                   <span class="c">!! liw must be greater than or equal to mx.</span>
-    <span class="kt">integer</span><span class="p">,</span><span class="k">dimension</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span> <span class="kd">::</span> <span class="n">iw</span>       <span class="c">!! an integer work space of length at least</span>
-                                                   <span class="c">!! liw which must be provided in the</span>
-                                                   <span class="c">!! routine calling rgrd1</span>
-    <span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span> <span class="kd">::</span> <span class="n">ier</span>                     <span class="c">!! an integer error flag set as follows:</span>
-                                                   <span class="c">!!</span>
-                                                   <span class="c">!! * ier = 0 if no errors in input arguments are detected</span>
-                                                   <span class="c">!! * ier = 1 if mx &lt; 1</span>
-                                                   <span class="c">!! * ier = 2 if nx &lt; 2 when intpol=1 or nx &lt; 4 when intpol=3</span>
-                                                   <span class="c">!! * ier = 3 if xx(1) &lt; x(1) or x(nx) &lt; xx(mx)</span>
-                                                   <span class="c">!!    to avoid this flag when end points are intended to be the</span>
-                                                   <span class="c">!!    same but may differ slightly due to roundoff error, they</span>
-                                                   <span class="c">!!    should be set exactly in the calling routine (e.g., if both</span>
-                                                   <span class="c">!!    grids have the same x boundaries then xx(1)=x(1) and xx(mx)=x(nx)</span>
-                                                   <span class="c">!!    should be set before calling rgrd1)</span>
-                                                   <span class="c">!! * ier = 4 if the x grid is not strictly monotonically increasing</span>
-                                                   <span class="c">!!    or if the xx grid is not montonically increasing.  more</span>
-                                                   <span class="c">!!    precisely if:</span>
-                                                   <span class="c">!!    x(i+1) &lt;= x(i) for some i such that 1 &lt;= i &lt; nx (or)</span>
-                                                   <span class="c">!!    xx(ii+1) &lt; xx(ii) for some ii such that 1 &lt;= ii &lt; mx</span>
-                                                   <span class="c">!! * ier = 5 if lw or liw is too small (insufficient work space)</span>
-                                                   <span class="c">!! * ier = 6 if intpol is not equal to 1 or 3</span>
+<span class="k">    </span><span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">nx</span><span class="w">                       </span><span class="c">!! the integer dimension of the grid</span>
+<span class="w">                                                   </span><span class="c">!! vector x and the dimension of p.</span>
+<span class="w">                                                   </span><span class="c">!! nx &gt; 1 if intpol = 1 or nx &gt; 3 if</span>
+<span class="w">                                                   </span><span class="c">!! intpol = 3 is required.</span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">nx</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">x</span><span class="w">         </span><span class="c">!! a real(wp) nx vector of strictly</span>
+<span class="w">                                                   </span><span class="c">!! increasing values which defines the x</span>
+<span class="w">                                                   </span><span class="c">!! grid on which p is given.</span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">nx</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">p</span><span class="w">         </span><span class="c">!! a real(wp) nx vector of values given on the x grid</span>
+<span class="w">    </span><span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">mx</span><span class="w">                       </span><span class="c">!! the integer dimension of the grid vector</span>
+<span class="w">                                                   </span><span class="c">!! xx and the dimension of q.</span>
+<span class="w">                                                   </span><span class="c">!! mx &gt; 0 is required.</span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">xx</span><span class="w">       </span><span class="c">!! a real(wp) mx vector of increasing values which defines the</span>
+<span class="w">                                                   </span><span class="c">!! grid on which q is defined.  xx(1) &lt; x(1) or xx(mx) &gt; x(nx)</span>
+<span class="w">                                                   </span><span class="c">!! is not allowed (see ier = 3)</span>
+<span class="w">    </span><span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">intpol</span><span class="w">                   </span><span class="c">!! an integer which sets linear or cubic</span>
+<span class="w">                                                   </span><span class="c">!! interpolation as follows:</span>
+<span class="w">                                                   </span><span class="c">!!</span>
+<span class="w">                                                   </span><span class="c">!! * intpol = 1 sets linear interpolation</span>
+<span class="w">                                                   </span><span class="c">!! * intpol = 3 sets cubic interpolation</span>
+<span class="w">                                                   </span><span class="c">!!</span>
+<span class="w">                                                   </span><span class="c">!! values other than 1 or 3 in intpol are not allowed (ier = 6).</span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">q</span><span class="p">(</span><span class="n">mx</span><span class="p">)</span><span class="w">                  </span><span class="c">!! a real(wp) mx vector of values on the xx grid which are</span>
+<span class="w">                                                   </span><span class="c">!! interpolated from p on the x grid</span>
+<span class="w">    </span><span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">lw</span><span class="w">                       </span><span class="c">!! the integer length of the real(wp) work space w.  let</span>
+<span class="w">                                                   </span><span class="c">!!</span>
+<span class="w">                                                   </span><span class="c">!!  * lwmin = mx     if intpol(1) = 1</span>
+<span class="w">                                                   </span><span class="c">!!  * lwmin = 4*mx   if intpol(1) = 3</span>
+<span class="w">                                                   </span><span class="c">!!</span>
+<span class="w">                                                   </span><span class="c">!! then lw must be greater than or equal to lwmin</span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">lw</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">w</span><span class="w">      </span><span class="c">!! a real(wp) work space of length at least</span>
+<span class="w">                                                   </span><span class="c">!! lw which must be provided in the</span>
+<span class="w">                                                   </span><span class="c">!! routine calling rgrd1</span>
+<span class="w">    </span><span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">liw</span><span class="w">                      </span><span class="c">!! the length of the integer work space iw.</span>
+<span class="w">                                                   </span><span class="c">!! liw must be greater than or equal to mx.</span>
+<span class="w">    </span><span class="kt">integer</span><span class="p">,</span><span class="k">dimension</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">iw</span><span class="w">       </span><span class="c">!! an integer work space of length at least</span>
+<span class="w">                                                   </span><span class="c">!! liw which must be provided in the</span>
+<span class="w">                                                   </span><span class="c">!! routine calling rgrd1</span>
+<span class="w">    </span><span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">ier</span><span class="w">                     </span><span class="c">!! an integer error flag set as follows:</span>
+<span class="w">                                                   </span><span class="c">!!</span>
+<span class="w">                                                   </span><span class="c">!! * ier = 0 if no errors in input arguments are detected</span>
+<span class="w">                                                   </span><span class="c">!! * ier = 1 if mx &lt; 1</span>
+<span class="w">                                                   </span><span class="c">!! * ier = 2 if nx &lt; 2 when intpol=1 or nx &lt; 4 when intpol=3</span>
+<span class="w">                                                   </span><span class="c">!! * ier = 3 if xx(1) &lt; x(1) or x(nx) &lt; xx(mx)</span>
+<span class="w">                                                   </span><span class="c">!!    to avoid this flag when end points are intended to be the</span>
+<span class="w">                                                   </span><span class="c">!!    same but may differ slightly due to roundoff error, they</span>
+<span class="w">                                                   </span><span class="c">!!    should be set exactly in the calling routine (e.g., if both</span>
+<span class="w">                                                   </span><span class="c">!!    grids have the same x boundaries then xx(1)=x(1) and xx(mx)=x(nx)</span>
+<span class="w">                                                   </span><span class="c">!!    should be set before calling rgrd1)</span>
+<span class="w">                                                   </span><span class="c">!! * ier = 4 if the x grid is not strictly monotonically increasing</span>
+<span class="w">                                                   </span><span class="c">!!    or if the xx grid is not montonically increasing.  more</span>
+<span class="w">                                                   </span><span class="c">!!    precisely if:</span>
+<span class="w">                                                   </span><span class="c">!!    x(i+1) &lt;= x(i) for some i such that 1 &lt;= i &lt; nx (or)</span>
+<span class="w">                                                   </span><span class="c">!!    xx(ii+1) &lt; xx(ii) for some ii such that 1 &lt;= ii &lt; mx</span>
+<span class="w">                                                   </span><span class="c">!! * ier = 5 if lw or liw is too small (insufficient work space)</span>
+<span class="w">                                                   </span><span class="c">!! * ier = 6 if intpol is not equal to 1 or 3</span>
 
-    <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i</span><span class="p">,</span><span class="n">ii</span><span class="p">,</span><span class="n">i1</span><span class="p">,</span><span class="n">i2</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="n">i4</span>
+<span class="w">    </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="n">ii</span><span class="p">,</span><span class="n">i1</span><span class="p">,</span><span class="n">i2</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="n">i4</span><span class="w"></span>
 
-    <span class="c">! check arguments for errors</span>
+<span class="w">    </span><span class="c">! check arguments for errors</span>
 
-    <span class="c">! check xx grid resolution</span>
-    <span class="n">ier</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">mx</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span>
+<span class="w">    </span><span class="c">! check xx grid resolution</span>
+<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mx</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"></span>
 
-    <span class="c">! check intpol</span>
-    <span class="n">ier</span> <span class="o">=</span> <span class="mi">6</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">intpol</span><span class="o">/=</span><span class="mi">1</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="n">intpol</span><span class="o">/=</span><span class="mi">3</span><span class="p">)</span> <span class="k">return</span>
+<span class="w">    </span><span class="c">! check intpol</span>
+<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="o">/=</span><span class="mi">1</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">intpol</span><span class="o">/=</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"></span>
 
-    <span class="c">! check x grid resolution</span>
-    <span class="n">ier</span> <span class="o">=</span> <span class="mi">2</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">intpol</span><span class="o">==</span><span class="mi">1</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="n">nx</span><span class="o">&lt;</span><span class="mi">2</span><span class="p">)</span> <span class="k">return</span>
-<span class="k">    if</span> <span class="p">(</span><span class="n">intpol</span><span class="o">==</span><span class="mi">3</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="n">nx</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">)</span> <span class="k">return</span>
+<span class="w">    </span><span class="c">! check x grid resolution</span>
+<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="o">==</span><span class="mi">1</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">nx</span><span class="o">&lt;</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
+<span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="o">==</span><span class="mi">3</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">nx</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"></span>
 
-    <span class="c">! check xx grid contained in x grid</span>
-    <span class="n">ier</span> <span class="o">=</span> <span class="mi">3</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">xx</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&lt;</span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">xx</span><span class="p">(</span><span class="n">mx</span><span class="p">)</span><span class="o">&gt;</span><span class="n">x</span><span class="p">(</span><span class="n">nx</span><span class="p">))</span> <span class="k">return</span>
+<span class="w">    </span><span class="c">! check xx grid contained in x grid</span>
+<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">xx</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&lt;</span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">xx</span><span class="p">(</span><span class="n">mx</span><span class="p">)</span><span class="o">&gt;</span><span class="n">x</span><span class="p">(</span><span class="n">nx</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"></span>
 
-    <span class="c">! check montonicity of grids</span>
-    <span class="k">do </span><span class="n">i</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">nx</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;=</span><span class="n">x</span><span class="p">(</span><span class="n">i</span><span class="p">))</span> <span class="k">then</span>
-<span class="k">            </span><span class="n">ier</span> <span class="o">=</span> <span class="mi">4</span>
-            <span class="k">return</span>
+<span class="w">    </span><span class="c">! check montonicity of grids</span>
+<span class="w">    </span><span class="k">do </span><span class="n">i</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">nx</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;=</span><span class="n">x</span><span class="p">(</span><span class="n">i</span><span class="p">))</span><span class="w"> </span><span class="k">then</span>
+<span class="k">            </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span>
 <span class="k">        end if</span>
 <span class="k">    end do</span>
-<span class="k">    do </span><span class="n">ii</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">mx</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">xx</span><span class="p">(</span><span class="n">ii</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span><span class="n">xx</span><span class="p">(</span><span class="n">ii</span><span class="p">))</span> <span class="k">then</span>
-<span class="k">            </span><span class="n">ier</span> <span class="o">=</span> <span class="mi">4</span>
-            <span class="k">return</span>
+<span class="k">    do </span><span class="n">ii</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">mx</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">xx</span><span class="p">(</span><span class="n">ii</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span><span class="n">xx</span><span class="p">(</span><span class="n">ii</span><span class="p">))</span><span class="w"> </span><span class="k">then</span>
+<span class="k">            </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span>
 <span class="k">        end if</span>
-<span class="k">    end do</span>
+<span class="k">    end do</span><span class="w"></span>
 
-    <span class="c">! check minimum work space lengths</span>
-    <span class="n">ier</span> <span class="o">=</span> <span class="mi">5</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">intpol</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span> <span class="k">then</span>
-<span class="k">        if</span> <span class="p">(</span><span class="n">lw</span> <span class="o">&lt;</span> <span class="n">mx</span><span class="p">)</span> <span class="k">return</span>
+<span class="w">    </span><span class="c">! check minimum work space lengths</span>
+<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
+<span class="k">        if</span><span class="w"> </span><span class="p">(</span><span class="n">lw</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">mx</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
 <span class="k">    else</span>
-<span class="k">        if</span> <span class="p">(</span><span class="n">lw</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="o">*</span><span class="n">mx</span><span class="p">)</span> <span class="k">return</span>
+<span class="k">        if</span><span class="w"> </span><span class="p">(</span><span class="n">lw</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="o">*</span><span class="n">mx</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
 <span class="k">    end if</span>
-<span class="k">    if</span> <span class="p">(</span><span class="n">liw</span> <span class="o">&lt;</span> <span class="n">mx</span><span class="p">)</span> <span class="k">return</span>
+<span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">liw</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">mx</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"></span>
 
-    <span class="c">! arguments o.k.</span>
+<span class="w">    </span><span class="c">! arguments o.k.</span>
 
-    <span class="n">ier</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="n">intpol</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span> <span class="k">then</span>
-        <span class="c">! linear interpolation in x</span>
-        <span class="k">call </span><span class="n">linmx</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">)</span>
-        <span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">)</span>
-    <span class="k">else</span>
-        <span class="c">! cubic interpolation in x</span>
-        <span class="n">i1</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="n">i2</span> <span class="o">=</span> <span class="n">i1</span><span class="o">+</span><span class="n">mx</span>
-        <span class="n">i3</span> <span class="o">=</span> <span class="n">i2</span><span class="o">+</span><span class="n">mx</span>
-        <span class="n">i4</span> <span class="o">=</span> <span class="n">i3</span><span class="o">+</span><span class="n">mx</span>
-        <span class="k">call </span><span class="n">cubnmx</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i1</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i4</span><span class="p">))</span>
-        <span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i1</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i4</span><span class="p">))</span>
-    <span class="k">end if</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
+<span class="w">        </span><span class="c">! linear interpolation in x</span>
+<span class="w">        </span><span class="k">call </span><span class="n">linmx</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span><span class="w"></span>
+<span class="w">        </span><span class="c">! cubic interpolation in x</span>
+<span class="w">        </span><span class="n">i1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="w">        </span><span class="n">i2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i1</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
+<span class="w">        </span><span class="n">i3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i2</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
+<span class="w">        </span><span class="n">i4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i3</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
+<span class="w">        </span><span class="k">call </span><span class="n">cubnmx</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i1</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i4</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i1</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i4</span><span class="p">))</span><span class="w"></span>
+<span class="w">    </span><span class="k">end if</span>
 
-<span class="k">    end subroutine </span><span class="n">rgrd1</span>
+<span class="k">    end subroutine </span><span class="n">rgrd1</span><span class="w"></span>
 </pre></div>
 
     </section>
     <br>
     
-    
     </div>
   </div>
-
 
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>regridpack was developed by Jacob Williams<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>regridpack was developed by Jacob Williams<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-            
-            
           </p>
         </div>
       </div>
@@ -975,14 +726,11 @@ liw must be greater than or equal to mx.</p></td>
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="../tipuesearch/tipuesearch_content.js"></script>
     <script src="../tipuesearch/tipuesearch_set.js"></script>
     <script src="../tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>

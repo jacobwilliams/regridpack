@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="Modern Fortran Edition of REGRIDPACK">
-    
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
 
@@ -16,10 +14,7 @@
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
-    
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,50 +43,23 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="../sourcefile/regridpack_module.f90.html">Source File</a></li>
-        
-        
-        
             <li><a href="../lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="../lists/procedures.html">Procedures</a></li>
-        
-               
-               
-        
-        
+              
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../sourcefile/regridpack_module.f90.html">Source File</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-
-                             
-
-
-
-          </ul>
-        
+                                       </ul>
         <form action="../search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -100,51 +68,29 @@
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
-  
   <div class="row">
     <h1>cubt2
       <small>Subroutine</small>
-    
     </h1>
-    
-<div class="row">
+    <div class="row">
   <div class="col-lg-12">
 <div class="well well-sm">
   <ul class="list-inline" style="margin-bottom:0px;display:inline">
-     
-     
-     
-     
-     
-    
-    
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
     title=" 3.5% of total for procedures.">85 statements</a>
      </li> 
-     
-     
-     
     <li><i class="fa fa-code"></i><a href="../src/regridpack_module.f90"> Source File</a></li>
-     
-     
   </ul>
   <ol class="breadcrumb in-well text-right">
-  
-    
      <li><a href='../sourcefile/regridpack_module.f90.html'>regridpack_module.f90</a></li>
-    
      <li><a href='../module/regridpack_module.html'>regridpack_module</a></li>
-    
-  
      <li class="active">cubt2</li>
   </ol>
 </div>
@@ -160,32 +106,9 @@
   
   <div class="row">
     <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
-    
-<div id="sidebar">
-  
-<h3>Contents</h3>
+    <div id="sidebar">
+  <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
@@ -193,361 +116,149 @@
   </div>
 </div>
 
-
-
 </div>
 
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2>
-private subroutine cubt2(nx, ny, p, mx, my, q, intpol, jy, dym, dy, dyp, dypp, pjm, pj, pjp, pjpp, ix, dxm, dx, dxp, dxpp)
+    <h2>private subroutine cubt2(nx, ny, p, mx, my, q, intpol, jy, dym, dy, dyp, dypp, pjm, pj, pjp, pjpp, ix, dxm, dx, dxp, dxpp)</h2>
     
-    
-   
-</h2>
-    
-  
 
-
-    
 
     <h3>Arguments</h3>
-    
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
+      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
 <tbody>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-nx~13"></span>integer</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>nx</strong></td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-ny~3"></span>integer</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>ny</strong></td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-p~13"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>p</strong>(nx,ny)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-mx~13"></span>integer</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>mx</strong></td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-my~3"></span>integer</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>my</strong></td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-q~13"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>q</strong>(mx,my)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-intpol~9"></span>integer</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>intpol</strong>(2)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-jy~2"></span>integer</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>jy</strong>(my)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-dym"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>dym</strong>(my)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-dy~2"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>dy</strong>(my)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-dyp"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>dyp</strong>(my)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-dypp"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>dypp</strong>(my)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-pjm"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>pjm</strong>(mx)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-pj~2"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>pj</strong>(mx)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-pjp~2"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>pjp</strong>(mx)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-pjpp"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>pjpp</strong>(mx)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-ix~10"></span>integer</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>ix</strong>(mx)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-dxm~6"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>dxm</strong>(mx)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-dx~10"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>dx</strong>(mx)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-dxp~6"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>dxp</strong>(mx)</td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-dxpp~6"></span>real(kind=wp)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>dxpp</strong>(mx)</td><td></td>
-  
 </tr>
-
 </tbody>
 </table>
 
-    
-    
-    
     <br>
-    
-    
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Calls</h3>
@@ -663,8 +374,6 @@ private subroutine cubt2(nx, ny, p, mx, my, q, intpol, jy, dym, dy, dyp, dypp, p
     </div></div></div></div>
       </div>
     </div>
-     
-     
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Called by</h3>
@@ -676,169 +385,136 @@ private subroutine cubt2(nx, ny, p, mx, my, q, intpol, jy, dym, dy, dyp, dypp, p
 <!-- Generated by graphviz version 2.43.0 (0)
  -->
 <!-- Title: proc~~cubt2~~CalledByGraph Pages: 1 -->
-<svg id="proccubt2CalledByGraph" width="549pt" height="211pt"
- viewBox="0.00 0.00 549.00 211.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="proc~~cubt2~~CalledByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 207.04)">
+<svg id="proccubt2CalledByGraph" width="549pt" height="219pt"
+ viewBox="0.00 0.00 549.00 218.54" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~cubt2~~CalledByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 214.54)">
 <title>proc~~cubt2~~CalledByGraph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-207.04 545,-207.04 545,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-214.54 545,-214.54 545,4 -4,4"/>
 <!-- proc~cubt2 -->
 <g id="proc~~cubt2~~CalledByGraph_node1" class="node">
 <title>proc~cubt2</title>
-<polygon fill="none" stroke="black" points="541,-145 487,-145 487,-121 541,-121 541,-145"/>
-<text text-anchor="middle" x="514" y="-130.6" font-family="Helvetica,sans-Serif" font-size="10.50">cubt2</text>
-</g>
-<!-- proc~rgrd2 -->
-<g id="proc~~cubt2~~CalledByGraph_node2" class="node">
-<title>proc~rgrd2</title>
-<g id="a_proc~~cubt2~~CalledByGraph_node2"><a xlink:href=".././proc/rgrd2.html" xlink:title="rgrd2">
-<polygon fill="#d9534f" stroke="#d9534f" points="271,-185 217,-185 217,-161 271,-161 271,-185"/>
-<text text-anchor="middle" x="244" y="-170.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rgrd2</text>
-</a>
-</g>
-</g>
-<!-- proc~rgrd2&#45;&gt;proc~cubt2 -->
-<g id="proc~~cubt2~~CalledByGraph_edge2" class="edge">
-<title>proc~rgrd2&#45;&gt;proc~cubt2</title>
-<path fill="none" stroke="#000000" d="M271.31,-172.54C310.76,-171.41 387.41,-167.51 451,-154 459.63,-152.17 468.73,-149.52 477.21,-146.71"/>
-<polygon fill="#000000" stroke="#000000" points="478.52,-149.96 486.83,-143.38 476.24,-143.34 478.52,-149.96"/>
-</g>
-<!-- proc~lint3 -->
-<g id="proc~~cubt2~~CalledByGraph_node3" class="node">
-<title>proc~lint3</title>
-<g id="a_proc~~cubt2~~CalledByGraph_node3"><a xlink:href=".././proc/lint3.html" xlink:title="lint3">
-<polygon fill="#d9534f" stroke="#d9534f" points="451,-103 397,-103 397,-79 451,-79 451,-103"/>
-<text text-anchor="middle" x="424" y="-88.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">lint3</text>
-</a>
-</g>
-</g>
-<!-- proc~lint3&#45;&gt;proc~cubt2 -->
-<g id="proc~~cubt2~~CalledByGraph_edge3" class="edge">
-<title>proc~lint3&#45;&gt;proc~cubt2</title>
-<path fill="none" stroke="#000000" d="M450.45,-103.15C459.21,-107.33 469.17,-112.08 478.52,-116.54"/>
-<polygon fill="#000000" stroke="#000000" points="477.07,-119.73 487.6,-120.88 480.09,-113.41 477.07,-119.73"/>
+<polygon fill="none" stroke="black" points="541,-103 487,-103 487,-79 541,-79 541,-103"/>
+<text text-anchor="middle" x="514" y="-88.6" font-family="Helvetica,sans-Serif" font-size="10.50">cubt2</text>
 </g>
 <!-- proc~cubt3 -->
-<g id="proc~~cubt2~~CalledByGraph_node4" class="node">
+<g id="proc~~cubt2~~CalledByGraph_node2" class="node">
 <title>proc~cubt3</title>
-<g id="a_proc~~cubt2~~CalledByGraph_node4"><a xlink:href=".././proc/cubt3.html" xlink:title="cubt3">
-<polygon fill="#d9534f" stroke="#d9534f" points="451,-145 397,-145 397,-121 451,-121 451,-145"/>
-<text text-anchor="middle" x="424" y="-130.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cubt3</text>
+<g id="a_proc~~cubt2~~CalledByGraph_node2"><a xlink:href=".././proc/cubt3.html" xlink:title="cubt3">
+<polygon fill="#d9534f" stroke="#d9534f" points="451,-103 397,-103 397,-79 451,-79 451,-103"/>
+<text text-anchor="middle" x="424" y="-88.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cubt3</text>
 </a>
 </g>
 </g>
 <!-- proc~cubt3&#45;&gt;proc~cubt2 -->
 <g id="proc~~cubt2~~CalledByGraph_edge1" class="edge">
 <title>proc~cubt3&#45;&gt;proc~cubt2</title>
-<path fill="none" stroke="#000000" d="M451.4,-133C459.39,-133 468.31,-133 476.82,-133"/>
-<polygon fill="#000000" stroke="#000000" points="476.92,-136.5 486.92,-133 476.92,-129.5 476.92,-136.5"/>
+<path fill="none" stroke="#000000" d="M451.4,-91C459.39,-91 468.31,-91 476.82,-91"/>
+<polygon fill="#000000" stroke="#000000" points="476.92,-94.5 486.92,-91 476.92,-87.5 476.92,-94.5"/>
 </g>
-<!-- proc~rgrd3 -->
-<g id="proc~~cubt2~~CalledByGraph_node5" class="node">
-<title>proc~rgrd3</title>
-<g id="a_proc~~cubt2~~CalledByGraph_node5"><a xlink:href=".././proc/rgrd3.html" xlink:title="rgrd3">
-<polygon fill="#d9534f" stroke="#d9534f" points="361,-61 307,-61 307,-37 361,-37 361,-61"/>
-<text text-anchor="middle" x="334" y="-46.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rgrd3</text>
+<!-- proc~lint3 -->
+<g id="proc~~cubt2~~CalledByGraph_node3" class="node">
+<title>proc~lint3</title>
+<g id="a_proc~~cubt2~~CalledByGraph_node3"><a xlink:href=".././proc/lint3.html" xlink:title="lint3">
+<polygon fill="#d9534f" stroke="#d9534f" points="451,-145 397,-145 397,-121 451,-121 451,-145"/>
+<text text-anchor="middle" x="424" y="-130.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">lint3</text>
 </a>
 </g>
 </g>
-<!-- proc~rgrd3&#45;&gt;proc~lint3 -->
-<g id="proc~~cubt2~~CalledByGraph_edge6" class="edge">
-<title>proc~rgrd3&#45;&gt;proc~lint3</title>
-<path fill="none" stroke="#000000" d="M360.45,-61.15C369.21,-65.33 379.17,-70.08 388.52,-74.54"/>
-<polygon fill="#000000" stroke="#000000" points="387.07,-77.73 397.6,-78.88 390.09,-71.41 387.07,-77.73"/>
+<!-- proc~lint3&#45;&gt;proc~cubt2 -->
+<g id="proc~~cubt2~~CalledByGraph_edge2" class="edge">
+<title>proc~lint3&#45;&gt;proc~cubt2</title>
+<path fill="none" stroke="#000000" d="M450.45,-120.85C459.21,-116.67 469.17,-111.92 478.52,-107.46"/>
+<polygon fill="#000000" stroke="#000000" points="480.09,-110.59 487.6,-103.12 477.07,-104.27 480.09,-110.59"/>
 </g>
-<!-- proc~rgrd3&#45;&gt;proc~cubt3 -->
-<g id="proc~~cubt2~~CalledByGraph_edge9" class="edge">
-<title>proc~rgrd3&#45;&gt;proc~cubt3</title>
-<path fill="none" stroke="#000000" d="M351.07,-61.21C354.45,-63.99 357.92,-67.01 361,-70 378.64,-87.13 379.36,-94.87 397,-112 397.67,-112.65 398.37,-113.31 399.07,-113.96"/>
-<polygon fill="#000000" stroke="#000000" points="397.09,-116.87 406.93,-120.79 401.67,-111.59 397.09,-116.87"/>
-</g>
-<!-- proc~lint4 -->
-<g id="proc~~cubt2~~CalledByGraph_node6" class="node">
-<title>proc~lint4</title>
-<g id="a_proc~~cubt2~~CalledByGraph_node6"><a xlink:href=".././proc/lint4.html" xlink:title="lint4">
-<polygon fill="#d9534f" stroke="#d9534f" points="361,-145 307,-145 307,-121 361,-121 361,-145"/>
-<text text-anchor="middle" x="334" y="-130.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">lint4</text>
+<!-- proc~rgrd2 -->
+<g id="proc~~cubt2~~CalledByGraph_node4" class="node">
+<title>proc~rgrd2</title>
+<g id="a_proc~~cubt2~~CalledByGraph_node4"><a xlink:href=".././proc/rgrd2.html" xlink:title="rgrd2">
+<polygon fill="#d9534f" stroke="#d9534f" points="271,-63 217,-63 217,-39 271,-39 271,-63"/>
+<text text-anchor="middle" x="244" y="-48.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rgrd2</text>
 </a>
 </g>
 </g>
-<!-- proc~lint4&#45;&gt;proc~lint3 -->
-<g id="proc~~cubt2~~CalledByGraph_edge7" class="edge">
-<title>proc~lint4&#45;&gt;proc~lint3</title>
-<path fill="none" stroke="#000000" d="M360.45,-120.85C369.21,-116.67 379.17,-111.92 388.52,-107.46"/>
-<polygon fill="#000000" stroke="#000000" points="390.09,-110.59 397.6,-103.12 387.07,-104.27 390.09,-110.59"/>
-</g>
-<!-- proc~lint4&#45;&gt;proc~cubt3 -->
-<g id="proc~~cubt2~~CalledByGraph_edge10" class="edge">
-<title>proc~lint4&#45;&gt;proc~cubt3</title>
-<path fill="none" stroke="#000000" d="M361.4,-133C369.39,-133 378.31,-133 386.82,-133"/>
-<polygon fill="#000000" stroke="#000000" points="386.92,-136.5 396.92,-133 386.92,-129.5 386.92,-136.5"/>
+<!-- proc~rgrd2&#45;&gt;proc~cubt2 -->
+<g id="proc~~cubt2~~CalledByGraph_edge3" class="edge">
+<title>proc~rgrd2&#45;&gt;proc~cubt2</title>
+<path fill="none" stroke="#000000" d="M271.31,-51.46C310.76,-52.59 387.41,-56.49 451,-70 459.63,-71.83 468.73,-74.48 477.21,-77.29"/>
+<polygon fill="#000000" stroke="#000000" points="476.24,-80.66 486.83,-80.62 478.52,-74.04 476.24,-80.66"/>
 </g>
 <!-- interface~regrid -->
-<g id="proc~~cubt2~~CalledByGraph_node7" class="node">
+<g id="proc~~cubt2~~CalledByGraph_node5" class="node">
 <title>interface~regrid</title>
-<g id="a_proc~~cubt2~~CalledByGraph_node7"><a xlink:href=".././interface/regrid.html" xlink:title="regrid">
+<g id="a_proc~~cubt2~~CalledByGraph_node5"><a xlink:href=".././interface/regrid.html" xlink:title="regrid">
 <polygon fill="#a7506f" stroke="#a7506f" points="54,-124 0,-124 0,-100 54,-100 54,-124"/>
 <text text-anchor="middle" x="27" y="-109.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">regrid</text>
 </a>
 </g>
 </g>
 <!-- interface~regrid&#45;&gt;proc~rgrd2 -->
-<g id="proc~~cubt2~~CalledByGraph_edge5" class="edge">
+<g id="proc~~cubt2~~CalledByGraph_edge11" class="edge">
 <title>interface~regrid&#45;&gt;proc~rgrd2</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M33.02,-124.19C41.54,-143.04 60.78,-178.57 90,-193 127.11,-211.33 175.16,-200.25 207.43,-188.58"/>
-<polygon fill="#000000" stroke="#000000" points="208.8,-191.8 216.9,-184.97 206.31,-185.26 208.8,-191.8"/>
-</g>
-<!-- interface~regrid&#45;&gt;proc~rgrd3 -->
-<g id="proc~~cubt2~~CalledByGraph_edge13" class="edge">
-<title>interface~regrid&#45;&gt;proc~rgrd3</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M42.17,-99.64C54.07,-90.04 71.98,-77.32 90,-71 160.2,-46.38 248.44,-45.19 296.93,-46.86"/>
-<polygon fill="#000000" stroke="#000000" points="296.81,-50.36 306.94,-47.27 297.09,-43.37 296.81,-50.36"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M42.24,-99.83C54.18,-90.34 72.11,-77.68 90,-71 128.22,-56.74 175.11,-52.37 206.83,-51.17"/>
+<polygon fill="#000000" stroke="#000000" points="207.08,-54.66 216.97,-50.87 206.87,-47.66 207.08,-54.66"/>
 </g>
 <!-- proc~rgrd2_wrapper -->
-<g id="proc~~cubt2~~CalledByGraph_node8" class="node">
+<g id="proc~~cubt2~~CalledByGraph_node7" class="node">
 <title>proc~rgrd2_wrapper</title>
-<g id="a_proc~~cubt2~~CalledByGraph_node8"><a xlink:href=".././proc/rgrd2_wrapper.html" xlink:title="rgrd2_wrapper">
-<polygon fill="#d9534f" stroke="#d9534f" points="181,-184 90,-184 90,-160 181,-160 181,-184"/>
-<text text-anchor="middle" x="135.5" y="-169.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rgrd2_wrapper</text>
+<g id="a_proc~~cubt2~~CalledByGraph_node7"><a xlink:href=".././proc/rgrd2_wrapper.html" xlink:title="rgrd2_wrapper">
+<polygon fill="#d9534f" stroke="#d9534f" points="181,-24 90,-24 90,0 181,0 181,-24"/>
+<text text-anchor="middle" x="135.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rgrd2_wrapper</text>
 </a>
 </g>
 </g>
 <!-- interface~regrid&#45;&gt;proc~rgrd2_wrapper -->
-<g id="proc~~cubt2~~CalledByGraph_edge15" class="edge">
+<g id="proc~~cubt2~~CalledByGraph_edge13" class="edge">
 <title>interface~regrid&#45;&gt;proc~rgrd2_wrapper</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M49.55,-124.14C65.14,-132.93 86.43,-144.92 103.8,-154.7"/>
-<polygon fill="#000000" stroke="#000000" points="102.55,-158.02 112.98,-159.88 105.99,-151.92 102.55,-158.02"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M36.15,-99.88C47.08,-84.24 67.72,-56.81 90,-38 93.56,-35 97.51,-32.14 101.54,-29.5"/>
+<polygon fill="#000000" stroke="#000000" points="103.7,-32.28 110.4,-24.07 100.04,-26.31 103.7,-32.28"/>
+</g>
+<!-- proc~rgrd3 -->
+<g id="proc~~cubt2~~CalledByGraph_node9" class="node">
+<title>proc~rgrd3</title>
+<g id="a_proc~~cubt2~~CalledByGraph_node9"><a xlink:href=".././proc/rgrd3.html" xlink:title="rgrd3">
+<polygon fill="#d9534f" stroke="#d9534f" points="361,-187 307,-187 307,-163 361,-163 361,-187"/>
+<text text-anchor="middle" x="334" y="-172.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rgrd3</text>
+</a>
+</g>
+</g>
+<!-- interface~regrid&#45;&gt;proc~rgrd3 -->
+<g id="proc~~cubt2~~CalledByGraph_edge16" class="edge">
+<title>interface~regrid&#45;&gt;proc~rgrd3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M33.02,-124.19C41.54,-143.04 60.78,-178.57 90,-193 157.24,-226.21 247.89,-204.79 297.28,-188.48"/>
+<polygon fill="#000000" stroke="#000000" points="298.55,-191.74 306.88,-185.2 296.28,-185.12 298.55,-191.74"/>
 </g>
 <!-- proc~rgrd4 -->
 <g id="proc~~cubt2~~CalledByGraph_node10" class="node">
 <title>proc~rgrd4</title>
 <g id="a_proc~~cubt2~~CalledByGraph_node10"><a xlink:href=".././proc/rgrd4.html" xlink:title="rgrd4">
-<polygon fill="#d9534f" stroke="#d9534f" points="271,-123 217,-123 217,-99 271,-99 271,-123"/>
-<text text-anchor="middle" x="244" y="-108.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rgrd4</text>
+<polygon fill="#d9534f" stroke="#d9534f" points="271,-125 217,-125 217,-101 271,-101 271,-125"/>
+<text text-anchor="middle" x="244" y="-110.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rgrd4</text>
 </a>
 </g>
 </g>
 <!-- interface~regrid&#45;&gt;proc~rgrd4 -->
 <g id="proc~~cubt2~~CalledByGraph_edge18" class="edge">
 <title>interface~regrid&#45;&gt;proc~rgrd4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M54.26,-112.53C84.74,-113.07 136.51,-113.72 181,-113 189.25,-112.87 198.12,-112.63 206.5,-112.37"/>
-<polygon fill="#000000" stroke="#000000" points="206.88,-115.86 216.76,-112.03 206.65,-108.87 206.88,-115.86"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M54.24,-112.52C65.28,-112.71 78.27,-112.91 90,-113 129.8,-113.32 175.42,-113.27 206.42,-113.17"/>
+<polygon fill="#000000" stroke="#000000" points="206.75,-116.66 216.74,-113.13 206.73,-109.66 206.75,-116.66"/>
 </g>
 <!-- proc~rgrd3_wrapper -->
 <g id="proc~~cubt2~~CalledByGraph_node11" class="node">
 <title>proc~rgrd3_wrapper</title>
 <g id="a_proc~~cubt2~~CalledByGraph_node11"><a xlink:href=".././proc/rgrd3_wrapper.html" xlink:title="rgrd3_wrapper">
-<polygon fill="#d9534f" stroke="#d9534f" points="181,-24 90,-24 90,0 181,0 181,-24"/>
-<text text-anchor="middle" x="135.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rgrd3_wrapper</text>
+<polygon fill="#d9534f" stroke="#d9534f" points="181,-184 90,-184 90,-160 181,-160 181,-184"/>
+<text text-anchor="middle" x="135.5" y="-169.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rgrd3_wrapper</text>
 </a>
 </g>
 </g>
 <!-- interface~regrid&#45;&gt;proc~rgrd3_wrapper -->
 <g id="proc~~cubt2~~CalledByGraph_edge19" class="edge">
 <title>interface~regrid&#45;&gt;proc~rgrd3_wrapper</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M36.15,-99.88C47.08,-84.24 67.72,-56.81 90,-38 93.56,-35 97.51,-32.14 101.54,-29.5"/>
-<polygon fill="#000000" stroke="#000000" points="103.7,-32.28 110.4,-24.07 100.04,-26.31 103.7,-32.28"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M49.55,-124.14C65.14,-132.93 86.43,-144.92 103.8,-154.7"/>
+<polygon fill="#000000" stroke="#000000" points="102.55,-158.02 112.98,-159.88 105.99,-151.92 102.55,-158.02"/>
 </g>
 <!-- proc~rgrd4_wrapper -->
 <g id="proc~~cubt2~~CalledByGraph_node12" class="node">
@@ -855,56 +531,89 @@ private subroutine cubt2(nx, ny, p, mx, my, q, intpol, jy, dym, dy, dyp, dypp, p
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M54.05,-107.11C61.84,-105.65 70.68,-103.98 79.59,-102.31"/>
 <polygon fill="#000000" stroke="#000000" points="80.44,-105.71 89.62,-100.43 79.15,-98.83 80.44,-105.71"/>
 </g>
-<!-- proc~rgrd2_wrapper&#45;&gt;proc~rgrd2 -->
-<g id="proc~~cubt2~~CalledByGraph_edge4" class="edge">
-<title>proc~rgrd2_wrapper&#45;&gt;proc~rgrd2</title>
-<path fill="none" stroke="#000000" d="M181.05,-172.42C189.63,-172.5 198.51,-172.58 206.78,-172.66"/>
-<polygon fill="#000000" stroke="#000000" points="206.83,-176.16 216.87,-172.75 206.9,-169.16 206.83,-176.16"/>
-</g>
-<!-- proc~cubt4 -->
-<g id="proc~~cubt2~~CalledByGraph_node9" class="node">
-<title>proc~cubt4</title>
-<g id="a_proc~~cubt2~~CalledByGraph_node9"><a xlink:href=".././proc/cubt4.html" xlink:title="cubt4">
+<!-- proc~lint4 -->
+<g id="proc~~cubt2~~CalledByGraph_node6" class="node">
+<title>proc~lint4</title>
+<g id="a_proc~~cubt2~~CalledByGraph_node6"><a xlink:href=".././proc/lint4.html" xlink:title="lint4">
 <polygon fill="#d9534f" stroke="#d9534f" points="361,-103 307,-103 307,-79 361,-79 361,-103"/>
-<text text-anchor="middle" x="334" y="-88.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cubt4</text>
+<text text-anchor="middle" x="334" y="-88.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">lint4</text>
 </a>
 </g>
 </g>
-<!-- proc~cubt4&#45;&gt;proc~lint3 -->
-<g id="proc~~cubt2~~CalledByGraph_edge8" class="edge">
-<title>proc~cubt4&#45;&gt;proc~lint3</title>
+<!-- proc~lint4&#45;&gt;proc~cubt3 -->
+<g id="proc~~cubt2~~CalledByGraph_edge4" class="edge">
+<title>proc~lint4&#45;&gt;proc~cubt3</title>
 <path fill="none" stroke="#000000" d="M361.4,-91C369.39,-91 378.31,-91 386.82,-91"/>
 <polygon fill="#000000" stroke="#000000" points="386.92,-94.5 396.92,-91 386.92,-87.5 386.92,-94.5"/>
 </g>
-<!-- proc~cubt4&#45;&gt;proc~cubt3 -->
-<g id="proc~~cubt2~~CalledByGraph_edge11" class="edge">
-<title>proc~cubt4&#45;&gt;proc~cubt3</title>
+<!-- proc~lint4&#45;&gt;proc~lint3 -->
+<g id="proc~~cubt2~~CalledByGraph_edge7" class="edge">
+<title>proc~lint4&#45;&gt;proc~lint3</title>
 <path fill="none" stroke="#000000" d="M360.45,-103.15C369.21,-107.33 379.17,-112.08 388.52,-116.54"/>
 <polygon fill="#000000" stroke="#000000" points="387.07,-119.73 397.6,-120.88 390.09,-113.41 387.07,-119.73"/>
 </g>
+<!-- proc~rgrd2_wrapper&#45;&gt;proc~rgrd2 -->
+<g id="proc~~cubt2~~CalledByGraph_edge10" class="edge">
+<title>proc~rgrd2_wrapper&#45;&gt;proc~rgrd2</title>
+<path fill="none" stroke="#000000" d="M169.32,-24.02C181.38,-28.43 195.08,-33.45 207.37,-37.95"/>
+<polygon fill="#000000" stroke="#000000" points="206.28,-41.28 216.87,-41.43 208.68,-34.71 206.28,-41.28"/>
+</g>
+<!-- proc~cubt4 -->
+<g id="proc~~cubt2~~CalledByGraph_node8" class="node">
+<title>proc~cubt4</title>
+<g id="a_proc~~cubt2~~CalledByGraph_node8"><a xlink:href=".././proc/cubt4.html" xlink:title="cubt4">
+<polygon fill="#d9534f" stroke="#d9534f" points="361,-145 307,-145 307,-121 361,-121 361,-145"/>
+<text text-anchor="middle" x="334" y="-130.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cubt4</text>
+</a>
+</g>
+</g>
+<!-- proc~cubt4&#45;&gt;proc~cubt3 -->
+<g id="proc~~cubt2~~CalledByGraph_edge6" class="edge">
+<title>proc~cubt4&#45;&gt;proc~cubt3</title>
+<path fill="none" stroke="#000000" d="M360.45,-120.85C369.21,-116.67 379.17,-111.92 388.52,-107.46"/>
+<polygon fill="#000000" stroke="#000000" points="390.09,-110.59 397.6,-103.12 387.07,-104.27 390.09,-110.59"/>
+</g>
+<!-- proc~cubt4&#45;&gt;proc~lint3 -->
+<g id="proc~~cubt2~~CalledByGraph_edge9" class="edge">
+<title>proc~cubt4&#45;&gt;proc~lint3</title>
+<path fill="none" stroke="#000000" d="M361.4,-133C369.39,-133 378.31,-133 386.82,-133"/>
+<polygon fill="#000000" stroke="#000000" points="386.92,-136.5 396.92,-133 386.92,-129.5 386.92,-136.5"/>
+</g>
+<!-- proc~rgrd3&#45;&gt;proc~cubt3 -->
+<g id="proc~~cubt2~~CalledByGraph_edge5" class="edge">
+<title>proc~rgrd3&#45;&gt;proc~cubt3</title>
+<path fill="none" stroke="#000000" d="M351.07,-162.79C354.45,-160.01 357.92,-156.99 361,-154 378.64,-136.87 379.36,-129.13 397,-112 397.67,-111.35 398.37,-110.69 399.07,-110.04"/>
+<polygon fill="#000000" stroke="#000000" points="401.67,-112.41 406.93,-103.21 397.09,-107.13 401.67,-112.41"/>
+</g>
+<!-- proc~rgrd3&#45;&gt;proc~lint3 -->
+<g id="proc~~cubt2~~CalledByGraph_edge8" class="edge">
+<title>proc~rgrd3&#45;&gt;proc~lint3</title>
+<path fill="none" stroke="#000000" d="M360.45,-162.85C369.21,-158.67 379.17,-153.92 388.52,-149.46"/>
+<polygon fill="#000000" stroke="#000000" points="390.09,-152.59 397.6,-145.12 387.07,-146.27 390.09,-152.59"/>
+</g>
 <!-- proc~rgrd4&#45;&gt;proc~lint4 -->
-<g id="proc~~cubt2~~CalledByGraph_edge14" class="edge">
+<g id="proc~~cubt2~~CalledByGraph_edge12" class="edge">
 <title>proc~rgrd4&#45;&gt;proc~lint4</title>
-<path fill="none" stroke="#000000" d="M271.4,-117.6C279.48,-119.62 288.51,-121.88 297.1,-124.03"/>
-<polygon fill="#000000" stroke="#000000" points="296.37,-127.45 306.92,-126.48 298.07,-120.66 296.37,-127.45"/>
+<path fill="none" stroke="#000000" d="M271.4,-106.4C279.48,-104.38 288.51,-102.12 297.1,-99.97"/>
+<polygon fill="#000000" stroke="#000000" points="298.07,-103.34 306.92,-97.52 296.37,-96.55 298.07,-103.34"/>
 </g>
 <!-- proc~rgrd4&#45;&gt;proc~cubt4 -->
-<g id="proc~~cubt2~~CalledByGraph_edge16" class="edge">
+<g id="proc~~cubt2~~CalledByGraph_edge14" class="edge">
 <title>proc~rgrd4&#45;&gt;proc~cubt4</title>
-<path fill="none" stroke="#000000" d="M271.4,-105C279.48,-103.16 288.51,-101.11 297.1,-99.16"/>
-<polygon fill="#000000" stroke="#000000" points="297.94,-102.56 306.92,-96.93 296.39,-95.73 297.94,-102.56"/>
+<path fill="none" stroke="#000000" d="M271.4,-119C279.48,-120.84 288.51,-122.89 297.1,-124.84"/>
+<polygon fill="#000000" stroke="#000000" points="296.39,-128.27 306.92,-127.07 297.94,-121.44 296.39,-128.27"/>
 </g>
 <!-- proc~rgrd3_wrapper&#45;&gt;proc~rgrd3 -->
-<g id="proc~~cubt2~~CalledByGraph_edge12" class="edge">
+<g id="proc~~cubt2~~CalledByGraph_edge15" class="edge">
 <title>proc~rgrd3_wrapper&#45;&gt;proc~rgrd3</title>
-<path fill="none" stroke="#000000" d="M181.09,-20.4C216.14,-26.99 264.32,-36.07 296.96,-42.21"/>
-<polygon fill="#000000" stroke="#000000" points="296.49,-45.69 306.97,-44.1 297.79,-38.81 296.49,-45.69"/>
+<path fill="none" stroke="#000000" d="M181.09,-172.68C216.14,-173.22 264.32,-173.95 296.96,-174.45"/>
+<polygon fill="#000000" stroke="#000000" points="296.92,-177.95 306.97,-174.6 297.02,-170.95 296.92,-177.95"/>
 </g>
 <!-- proc~rgrd4_wrapper&#45;&gt;proc~rgrd4 -->
 <g id="proc~~cubt2~~CalledByGraph_edge17" class="edge">
 <title>proc~rgrd4_wrapper&#45;&gt;proc~rgrd4</title>
-<path fill="none" stroke="#000000" d="M181.05,-99.95C189.63,-101.48 198.51,-103.06 206.78,-104.54"/>
-<polygon fill="#000000" stroke="#000000" points="206.41,-108.03 216.87,-106.34 207.64,-101.14 206.41,-108.03"/>
+<path fill="none" stroke="#000000" d="M181.05,-100.78C189.63,-102.48 198.51,-104.23 206.78,-105.86"/>
+<polygon fill="#000000" stroke="#000000" points="206.38,-109.35 216.87,-107.85 207.73,-102.48 206.38,-109.35"/>
 </g>
 </g>
 </svg>
@@ -969,34 +678,11 @@ private subroutine cubt2(nx, ny, p, mx, my, q, intpol, jy, dym, dy, dyp, dypp, p
     </div></div></div></div>
       </div>
     </div>
-     
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
-      
-<h3>Contents</h3>
+      <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
@@ -1004,182 +690,167 @@ private subroutine cubt2(nx, ny, p, mx, my, q, intpol, jy, dym, dy, dyp, dypp, p
   </div>
 </div>
 
-
-
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
-    
 
-    
-    
-    
     
     
 
     
     
-    
-    
-    
 
 
-    
-    
     
     <section>
     <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="highlight"><pre><span></span>    <span class="k">subroutine </span><span class="n">cubt2</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,</span><span class="n">jy</span><span class="p">,</span><span class="n">dym</span><span class="p">,</span><span class="n">dy</span><span class="p">,</span><span class="n">dyp</span><span class="p">,</span><span class="n">dypp</span><span class="p">,</span><span class="n">pjm</span><span class="p">,</span><span class="n">pj</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span>
+    <div class="highlight"><pre><span></span><span class="w">    </span><span class="k">subroutine </span><span class="n">cubt2</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,</span><span class="n">jy</span><span class="p">,</span><span class="n">dym</span><span class="p">,</span><span class="n">dy</span><span class="p">,</span><span class="n">dyp</span><span class="p">,</span><span class="n">dypp</span><span class="p">,</span><span class="n">pjm</span><span class="p">,</span><span class="n">pj</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span><span class="w"></span>
 
-    <span class="k">implicit none</span>
+<span class="w">    </span><span class="k">implicit none</span>
 
-<span class="k">    </span><span class="kt">integer</span>  <span class="kd">::</span> <span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">intpol</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">jy</span><span class="p">(</span><span class="n">my</span><span class="p">),</span><span class="n">ix</span><span class="p">(</span><span class="n">mx</span><span class="p">)</span>
-    <span class="kt">integer</span>  <span class="kd">::</span> <span class="n">jsave</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">jj</span><span class="p">,</span><span class="n">ii</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">)</span> <span class="kd">::</span> <span class="n">p</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">),</span><span class="n">q</span><span class="p">(</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">)</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">)</span> <span class="kd">::</span> <span class="n">pjm</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="n">pj</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="n">pjp</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="n">pjpp</span><span class="p">(</span><span class="n">mx</span><span class="p">)</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">)</span> <span class="kd">::</span> <span class="n">dym</span><span class="p">(</span><span class="n">my</span><span class="p">),</span><span class="n">dy</span><span class="p">(</span><span class="n">my</span><span class="p">),</span><span class="n">dyp</span><span class="p">(</span><span class="n">my</span><span class="p">),</span><span class="n">dypp</span><span class="p">(</span><span class="n">my</span><span class="p">)</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">)</span> <span class="kd">::</span> <span class="n">dxm</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="n">dx</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="n">dxp</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="n">dxpp</span><span class="p">(</span><span class="n">mx</span><span class="p">)</span>
+<span class="k">    </span><span class="kt">integer</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">intpol</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">jy</span><span class="p">(</span><span class="n">my</span><span class="p">),</span><span class="n">ix</span><span class="p">(</span><span class="n">mx</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="kt">integer</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">jsave</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">jj</span><span class="p">,</span><span class="n">ii</span><span class="w"></span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">p</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">),</span><span class="n">q</span><span class="p">(</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">pjm</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="n">pj</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="n">pjp</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="n">pjpp</span><span class="p">(</span><span class="n">mx</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">dym</span><span class="p">(</span><span class="n">my</span><span class="p">),</span><span class="n">dy</span><span class="p">(</span><span class="n">my</span><span class="p">),</span><span class="n">dyp</span><span class="p">(</span><span class="n">my</span><span class="p">),</span><span class="n">dypp</span><span class="p">(</span><span class="n">my</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">dxm</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="n">dx</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="n">dxp</span><span class="p">(</span><span class="n">mx</span><span class="p">),</span><span class="n">dxpp</span><span class="p">(</span><span class="n">mx</span><span class="p">)</span><span class="w"></span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span> <span class="k">then</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
 
-        <span class="c">! linear in x</span>
+<span class="w">        </span><span class="c">! linear in x</span>
 
-        <span class="n">jsave</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span>
-        <span class="k">do </span><span class="n">jj</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">my</span>
+<span class="w">        </span><span class="n">jsave</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">3</span><span class="w"></span>
+<span class="w">        </span><span class="k">do </span><span class="n">jj</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">my</span><span class="w"></span>
 
-            <span class="c">! load closest four j lines containing interpolate on xx mesh</span>
-            <span class="c">! for j-1,j,j+1,j+2 in pjm,pj,pjp,pjpp</span>
+<span class="w">            </span><span class="c">! load closest four j lines containing interpolate on xx mesh</span>
+<span class="w">            </span><span class="c">! for j-1,j,j+1,j+2 in pjm,pj,pjp,pjpp</span>
 
-            <span class="n">j</span> <span class="o">=</span> <span class="n">jy</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="p">)</span> <span class="k">then</span>
-                <span class="c">! j pointer has not moved since last pass (no updates or interpolation)</span>
-            <span class="k">else if</span> <span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="k">then</span>
-                <span class="c">! update j-1,j,j+1 and interpolate j+2</span>
-                <span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span>
-                    <span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span> <span class="o">=</span> <span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-                    <span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span> <span class="o">=</span> <span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-                    <span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span> <span class="o">=</span> <span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-                <span class="k">end do</span>
-<span class="k">                call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
-            <span class="k">else if</span> <span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span> <span class="k">then</span>
-                <span class="c">! update j-1,j and interpolate j+1,j+2</span>
-                <span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span>
-                    <span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span> <span class="o">=</span> <span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-                    <span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span> <span class="o">=</span> <span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-                <span class="k">end do</span>
-<span class="k">                call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
-                <span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
-            <span class="k">else if</span> <span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span> <span class="k">then</span>
-                <span class="c">! update j-1 and interpolate j,j+1,j+2</span>
-                <span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span>
-                    <span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span> <span class="o">=</span> <span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-                <span class="k">end do</span>
-<span class="k">                call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pj</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
-                <span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
-                <span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
-            <span class="k">else</span>
-                <span class="c">! interpolate all four j-1,j,j+1,j+2</span>
-                <span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjm</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
-                <span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pj</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
-                <span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
-                <span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
-            <span class="k">end if</span>
+<span class="w">            </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">jy</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
+<span class="w">                </span><span class="c">! j pointer has not moved since last pass (no updates or interpolation)</span>
+<span class="w">            </span><span class="k">else if</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
+<span class="w">                </span><span class="c">! update j-1,j,j+1 and interpolate j+2</span>
+<span class="w">                </span><span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span><span class="w"></span>
+<span class="w">                    </span><span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">                    </span><span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">                    </span><span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">end do</span>
+<span class="k">                call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">else if</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
+<span class="w">                </span><span class="c">! update j-1,j and interpolate j+1,j+2</span>
+<span class="w">                </span><span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span><span class="w"></span>
+<span class="w">                    </span><span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">                    </span><span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">end do</span>
+<span class="k">                call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">else if</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
+<span class="w">                </span><span class="c">! update j-1 and interpolate j,j+1,j+2</span>
+<span class="w">                </span><span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span><span class="w"></span>
+<span class="w">                    </span><span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">end do</span>
+<span class="k">                call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pj</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">else</span><span class="w"></span>
+<span class="w">                </span><span class="c">! interpolate all four j-1,j,j+1,j+2</span>
+<span class="w">                </span><span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjm</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pj</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">call </span><span class="n">lint1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">end if</span><span class="w"></span>
 
-            <span class="c">! save j pointer for next pass</span>
+<span class="w">            </span><span class="c">! save j pointer for next pass</span>
 
-            <span class="n">jsave</span> <span class="o">=</span> <span class="n">j</span>
+<span class="w">            </span><span class="n">jsave</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j</span><span class="w"></span>
 
-            <span class="c">! cubically interpolate q(ii,jj) from pjm,pj,pjp,pjpp in y direction</span>
+<span class="w">            </span><span class="c">! cubically interpolate q(ii,jj) from pjm,pj,pjp,pjpp in y direction</span>
 
-            <span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span>
-                <span class="n">q</span><span class="p">(</span><span class="n">ii</span><span class="p">,</span><span class="n">jj</span><span class="p">)</span> <span class="o">=</span> <span class="n">dym</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="o">+</span><span class="n">dy</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="o">+</span><span class="n">dyp</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="o">+</span><span class="n">dypp</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-            <span class="k">end do</span>
+<span class="w">            </span><span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span><span class="w"></span>
+<span class="w">                </span><span class="n">q</span><span class="p">(</span><span class="n">ii</span><span class="p">,</span><span class="n">jj</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dym</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="o">+</span><span class="n">dy</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="o">+</span><span class="n">dyp</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="o">+</span><span class="n">dypp</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">end do</span>
 <span class="k">        end do</span>
 <span class="k">        return</span>
 
-<span class="k">    else</span>
+<span class="k">    else</span><span class="w"></span>
 
-        <span class="c">! cubic in x</span>
+<span class="w">        </span><span class="c">! cubic in x</span>
 
-        <span class="n">jsave</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span>
-        <span class="k">do </span><span class="n">jj</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">my</span>
+<span class="w">        </span><span class="n">jsave</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">3</span><span class="w"></span>
+<span class="w">        </span><span class="k">do </span><span class="n">jj</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">my</span><span class="w"></span>
 
-            <span class="c">! load closest four j lines containing interpolate on xx mesh</span>
-            <span class="c">! for j-1,j,j+1,j+2 in pjm,pj,pjp,pjpp</span>
+<span class="w">            </span><span class="c">! load closest four j lines containing interpolate on xx mesh</span>
+<span class="w">            </span><span class="c">! for j-1,j,j+1,j+2 in pjm,pj,pjp,pjpp</span>
 
-            <span class="n">j</span> <span class="o">=</span> <span class="n">jy</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="p">)</span> <span class="k">then</span>
-                <span class="c">! j pointer has not moved since last pass (no updates or interpolation)</span>
-            <span class="k">else if</span> <span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="k">then</span>
-                <span class="c">! update j-1,j,j+1 and interpolate j+2</span>
-                <span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span>
-                    <span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span> <span class="o">=</span> <span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-                    <span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span> <span class="o">=</span> <span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-                    <span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span> <span class="o">=</span> <span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-                <span class="k">end do</span>
-<span class="k">                call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span>
-            <span class="k">else if</span> <span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span> <span class="k">then</span>
-                <span class="c">! update j-1,j and interpolate j+1,j+2</span>
-                <span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span>
-                    <span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span> <span class="o">=</span> <span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-                    <span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span> <span class="o">=</span> <span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-                <span class="k">end do</span>
-<span class="k">                call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span>
-                <span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span>
-            <span class="k">else if</span> <span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span> <span class="k">then</span>
-                <span class="c">! update j-1 and interpolate j,j+1,j+2</span>
-                <span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span>
-                    <span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span> <span class="o">=</span> <span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-                <span class="k">end do</span>
-<span class="k">                call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pj</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span>
-                <span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span>
-                <span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span>
-            <span class="k">else</span>
-                <span class="c">! interpolate all four j-1,j,j+1,j+2</span>
-                <span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjm</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span>
-                <span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pj</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span>
-                <span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span>
-                <span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span>
-            <span class="k">end if</span>
+<span class="w">            </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">jy</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
+<span class="w">                </span><span class="c">! j pointer has not moved since last pass (no updates or interpolation)</span>
+<span class="w">            </span><span class="k">else if</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
+<span class="w">                </span><span class="c">! update j-1,j,j+1 and interpolate j+2</span>
+<span class="w">                </span><span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span><span class="w"></span>
+<span class="w">                    </span><span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">                    </span><span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">                    </span><span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">end do</span>
+<span class="k">                call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">else if</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
+<span class="w">                </span><span class="c">! update j-1,j and interpolate j+1,j+2</span>
+<span class="w">                </span><span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span><span class="w"></span>
+<span class="w">                    </span><span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">                    </span><span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">end do</span>
+<span class="k">                call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">else if</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">jsave</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
+<span class="w">                </span><span class="c">! update j-1 and interpolate j,j+1,j+2</span>
+<span class="w">                </span><span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span><span class="w"></span>
+<span class="w">                    </span><span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">end do</span>
+<span class="k">                call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pj</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">else</span><span class="w"></span>
+<span class="w">                </span><span class="c">! interpolate all four j-1,j,j+1,j+2</span>
+<span class="w">                </span><span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjm</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pj</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="k">call </span><span class="n">cubt1</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">mx</span><span class="p">,</span><span class="n">pjpp</span><span class="p">,</span><span class="n">ix</span><span class="p">,</span><span class="n">dxm</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">dxp</span><span class="p">,</span><span class="n">dxpp</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">end if</span><span class="w"></span>
 
-            <span class="c">! save j pointer for next pass</span>
+<span class="w">            </span><span class="c">! save j pointer for next pass</span>
 
-            <span class="n">jsave</span> <span class="o">=</span> <span class="n">j</span>
+<span class="w">            </span><span class="n">jsave</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j</span><span class="w"></span>
 
-            <span class="c">! cubically interpolate q(ii,jj) from pjm,pj,pjp,pjpp in y direction</span>
+<span class="w">            </span><span class="c">! cubically interpolate q(ii,jj) from pjm,pj,pjp,pjpp in y direction</span>
 
-            <span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span>
-                <span class="n">q</span><span class="p">(</span><span class="n">ii</span><span class="p">,</span><span class="n">jj</span><span class="p">)</span> <span class="o">=</span> <span class="n">dym</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="o">+</span><span class="n">dy</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="o">+</span><span class="n">dyp</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="o">+</span><span class="n">dypp</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
-            <span class="k">end do</span>
+<span class="w">            </span><span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">mx</span><span class="w"></span>
+<span class="w">                </span><span class="n">q</span><span class="p">(</span><span class="n">ii</span><span class="p">,</span><span class="n">jj</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dym</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pjm</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="o">+</span><span class="n">dy</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pj</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="o">+</span><span class="n">dyp</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pjp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="o">+</span><span class="n">dypp</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span><span class="o">*</span><span class="n">pjpp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">end do</span>
 <span class="k">        end do</span>
 
 <span class="k">    end if</span>
 
-<span class="k">    end subroutine </span><span class="n">cubt2</span>
+<span class="k">    end subroutine </span><span class="n">cubt2</span><span class="w"></span>
 </pre></div>
 
     </section>
     <br>
     
-    
     </div>
   </div>
-
 
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>regridpack was developed by Jacob Williams<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>regridpack was developed by Jacob Williams<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-            
-            
           </p>
         </div>
       </div>
@@ -1207,14 +878,11 @@ private subroutine cubt2(nx, ny, p, mx, my, q, intpol, jy, dym, dy, dyp, dypp, p
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="../tipuesearch/tipuesearch_content.js"></script>
     <script src="../tipuesearch/tipuesearch_set.js"></script>
     <script src="../tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>

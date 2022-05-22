@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="Modern Fortran Edition of REGRIDPACK">
-    
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
 
@@ -16,10 +14,7 @@
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
-    
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,50 +43,23 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="../sourcefile/regridpack_module.f90.html">Source File</a></li>
-        
-        
-        
             <li><a href="../lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="../lists/procedures.html">Procedures</a></li>
-        
-               
-               
-        
-        
+              
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../sourcefile/regridpack_module.f90.html">Source File</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-
-                             
-
-
-
-          </ul>
-        
+                                       </ul>
         <form action="../search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -100,51 +68,29 @@
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
-  
   <div class="row">
     <h1>rgrd3_wrapper
       <small>Subroutine</small>
-    
     </h1>
-    
-<div class="row">
+    <div class="row">
   <div class="col-lg-12">
 <div class="well well-sm">
   <ul class="list-inline" style="margin-bottom:0px;display:inline">
-     
-     
-     
-     
-     
-    
-    
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
     title=" 2.8% of total for procedures.">68 statements</a>
      </li> 
-     
-     
-     
     <li><i class="fa fa-code"></i><a href="../src/regridpack_module.f90"> Source File</a></li>
-     
-     
   </ul>
   <ol class="breadcrumb in-well text-right">
-  
-    
      <li><a href='../sourcefile/regridpack_module.f90.html'>regridpack_module.f90</a></li>
-    
      <li><a href='../module/regridpack_module.html'>regridpack_module</a></li>
-    
-  
      <li class="active">rgrd3_wrapper</li>
   </ol>
 </div>
@@ -160,32 +106,9 @@
   
   <div class="row">
     <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
-    
-<div id="sidebar">
-  
-<h3>Contents</h3>
+    <div id="sidebar">
+  <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
@@ -193,203 +116,89 @@
   </div>
 </div>
 
-
-
 </div>
 
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2>
-private subroutine rgrd3_wrapper(x, y, z, p, xx, yy, zz, q, intpol, ier)
+    <h2>private subroutine rgrd3_wrapper(x, y, z, p, xx, yy, zz, q, intpol, ier)</h2>
     
-    
-   
-</h2>
-    
-  
 
-
-    
     <p>Wrapper to rgrd3.  Allocates the work arrays internally.</p>
-    
 
     <h3>Arguments</h3>
-    
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
+      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
 <tbody>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-x~3"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>x</strong></td><td><p>original x</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-y~2"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>y</strong></td><td><p>original y</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-z"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>z</strong></td><td><p>original z</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-p~3"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:,:,:)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:,:,:)</td><td>::</td>
   <td><strong>p</strong></td><td><p>original p(x,y,z)</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-xx~3"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>xx</strong></td><td><p>regridded xx</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-yy~2"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>yy</strong></td><td><p>regridded yy</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-zz"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>zz</strong></td><td><p>regridded zz</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-q~3"></span>real(kind=wp),</td>
-  <td>intent(out),</td>
-  <td></td>
-  
-  <td>dimension(:,:,:)</td><td>::</td>
+<td>intent(out),</td>
+  <td></td>  <td>dimension(:,:,:)</td><td>::</td>
   <td><strong>q</strong></td><td><p>regridded q(xx,yy,zz)</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-intpol~3"></span>integer,</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(3)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(3)</td><td>::</td>
   <td><strong>intpol</strong></td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-ier~3"></span>integer,</td>
-  <td>intent(out)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(out)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>ier</strong></td><td><ul>
 <li>0   : no errors</li>
 <li>1-6 : error [see original code]</li>
 <li>10  : input vectors are the wrong size</li>
 <li>100 : out of memory</li>
 </ul></td>
-  
 </tr>
-
 </tbody>
 </table>
 
-    
-    
-    
     <br>
-    
-    
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Calls</h3>
@@ -437,7 +246,7 @@ private subroutine rgrd3_wrapper(x, y, z, p, xx, yy, zz, q, intpol, ier)
 </g>
 </g>
 <!-- proc~rgrd3&#45;&gt;proc~cubnmx -->
-<g id="proc~~rgrd3_wrapper~~CallsGraph_edge3" class="edge">
+<g id="proc~~rgrd3_wrapper~~CallsGraph_edge2" class="edge">
 <title>proc~rgrd3&#45;&gt;proc~cubnmx</title>
 <path fill="none" stroke="#000000" d="M172.06,-87.15C185.16,-96.47 203.45,-109.49 218.25,-120.02"/>
 <polygon fill="#000000" stroke="#000000" points="216.31,-122.94 226.49,-125.89 220.37,-117.24 216.31,-122.94"/>
@@ -452,7 +261,7 @@ private subroutine rgrd3_wrapper(x, y, z, p, xx, yy, zz, q, intpol, ier)
 </g>
 </g>
 <!-- proc~rgrd3&#45;&gt;proc~lint3 -->
-<g id="proc~~rgrd3_wrapper~~CallsGraph_edge4" class="edge">
+<g id="proc~~rgrd3_wrapper~~CallsGraph_edge3" class="edge">
 <title>proc~rgrd3&#45;&gt;proc~lint3</title>
 <path fill="none" stroke="#000000" d="M181.07,-81.19C189.37,-83.16 198.7,-85.37 207.57,-87.47"/>
 <polygon fill="#000000" stroke="#000000" points="206.77,-90.88 217.31,-89.78 208.38,-84.07 206.77,-90.88"/>
@@ -467,7 +276,7 @@ private subroutine rgrd3_wrapper(x, y, z, p, xx, yy, zz, q, intpol, ier)
 </g>
 </g>
 <!-- proc~rgrd3&#45;&gt;proc~cubt3 -->
-<g id="proc~~rgrd3_wrapper~~CallsGraph_edge2" class="edge">
+<g id="proc~~rgrd3_wrapper~~CallsGraph_edge4" class="edge">
 <title>proc~rgrd3&#45;&gt;proc~cubt3</title>
 <path fill="none" stroke="#000000" d="M181.07,-68.81C189.37,-66.84 198.7,-64.63 207.57,-62.53"/>
 <polygon fill="#000000" stroke="#000000" points="208.38,-65.93 217.31,-60.22 206.77,-59.12 208.38,-65.93"/>
@@ -487,45 +296,45 @@ private subroutine rgrd3_wrapper(x, y, z, p, xx, yy, zz, q, intpol, ier)
 <path fill="none" stroke="#000000" d="M172.06,-62.85C185.16,-53.53 203.45,-40.51 218.25,-29.98"/>
 <polygon fill="#000000" stroke="#000000" points="220.37,-32.76 226.49,-24.11 216.31,-27.06 220.37,-32.76"/>
 </g>
-<!-- proc~cubt2 -->
-<g id="proc~~rgrd3_wrapper~~CallsGraph_node7" class="node">
-<title>proc~cubt2</title>
-<g id="a_proc~~rgrd3_wrapper~~CallsGraph_node7"><a xlink:href=".././proc/cubt2.html" xlink:title="cubt2">
-<polygon fill="#d9534f" stroke="#d9534f" points="362,-108 308,-108 308,-84 362,-84 362,-108"/>
-<text text-anchor="middle" x="335" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cubt2</text>
-</a>
-</g>
-</g>
-<!-- proc~lint3&#45;&gt;proc~cubt2 -->
-<g id="proc~~rgrd3_wrapper~~CallsGraph_edge6" class="edge">
-<title>proc~lint3&#45;&gt;proc~cubt2</title>
-<path fill="none" stroke="#000000" d="M271.57,-96C279.78,-96 289,-96 297.78,-96"/>
-<polygon fill="#000000" stroke="#000000" points="297.81,-99.5 307.81,-96 297.81,-92.5 297.81,-99.5"/>
-</g>
 <!-- proc~lint2 -->
-<g id="proc~~rgrd3_wrapper~~CallsGraph_node8" class="node">
+<g id="proc~~rgrd3_wrapper~~CallsGraph_node7" class="node">
 <title>proc~lint2</title>
-<g id="a_proc~~rgrd3_wrapper~~CallsGraph_node8"><a xlink:href=".././proc/lint2.html" xlink:title="lint2">
-<polygon fill="#d9534f" stroke="#d9534f" points="362,-66 308,-66 308,-42 362,-42 362,-66"/>
-<text text-anchor="middle" x="335" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">lint2</text>
+<g id="a_proc~~rgrd3_wrapper~~CallsGraph_node7"><a xlink:href=".././proc/lint2.html" xlink:title="lint2">
+<polygon fill="#d9534f" stroke="#d9534f" points="362,-108 308,-108 308,-84 362,-84 362,-108"/>
+<text text-anchor="middle" x="335" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">lint2</text>
 </a>
 </g>
 </g>
 <!-- proc~lint3&#45;&gt;proc~lint2 -->
-<g id="proc~~rgrd3_wrapper~~CallsGraph_edge7" class="edge">
+<g id="proc~~rgrd3_wrapper~~CallsGraph_edge6" class="edge">
 <title>proc~lint3&#45;&gt;proc~lint2</title>
+<path fill="none" stroke="#000000" d="M271.57,-96C279.78,-96 289,-96 297.78,-96"/>
+<polygon fill="#000000" stroke="#000000" points="297.81,-99.5 307.81,-96 297.81,-92.5 297.81,-99.5"/>
+</g>
+<!-- proc~cubt2 -->
+<g id="proc~~rgrd3_wrapper~~CallsGraph_node8" class="node">
+<title>proc~cubt2</title>
+<g id="a_proc~~rgrd3_wrapper~~CallsGraph_node8"><a xlink:href=".././proc/cubt2.html" xlink:title="cubt2">
+<polygon fill="#d9534f" stroke="#d9534f" points="362,-66 308,-66 308,-42 362,-42 362,-66"/>
+<text text-anchor="middle" x="335" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cubt2</text>
+</a>
+</g>
+</g>
+<!-- proc~lint3&#45;&gt;proc~cubt2 -->
+<g id="proc~~rgrd3_wrapper~~CallsGraph_edge7" class="edge">
+<title>proc~lint3&#45;&gt;proc~cubt2</title>
 <path fill="none" stroke="#000000" d="M271.1,-83.85C279.9,-79.67 289.92,-74.92 299.32,-70.46"/>
 <polygon fill="#000000" stroke="#000000" points="300.93,-73.57 308.46,-66.12 297.92,-67.25 300.93,-73.57"/>
 </g>
-<!-- proc~cubt3&#45;&gt;proc~cubt2 -->
+<!-- proc~cubt3&#45;&gt;proc~lint2 -->
 <g id="proc~~rgrd3_wrapper~~CallsGraph_edge8" class="edge">
-<title>proc~cubt3&#45;&gt;proc~cubt2</title>
+<title>proc~cubt3&#45;&gt;proc~lint2</title>
 <path fill="none" stroke="#000000" d="M271.1,-66.15C279.9,-70.33 289.92,-75.08 299.32,-79.54"/>
 <polygon fill="#000000" stroke="#000000" points="297.92,-82.75 308.46,-83.88 300.93,-76.43 297.92,-82.75"/>
 </g>
-<!-- proc~cubt3&#45;&gt;proc~lint2 -->
+<!-- proc~cubt3&#45;&gt;proc~cubt2 -->
 <g id="proc~~rgrd3_wrapper~~CallsGraph_edge9" class="edge">
-<title>proc~cubt3&#45;&gt;proc~lint2</title>
+<title>proc~cubt3&#45;&gt;proc~cubt2</title>
 <path fill="none" stroke="#000000" d="M271.57,-54C279.78,-54 289,-54 297.78,-54"/>
 <polygon fill="#000000" stroke="#000000" points="297.81,-57.5 307.81,-54 297.81,-50.5 297.81,-57.5"/>
 </g>
@@ -538,9 +347,9 @@ private subroutine rgrd3_wrapper(x, y, z, p, xx, yy, zz, q, intpol, ier)
 </a>
 </g>
 </g>
-<!-- proc~cubt2&#45;&gt;proc~cubt1 -->
+<!-- proc~lint2&#45;&gt;proc~cubt1 -->
 <g id="proc~~rgrd3_wrapper~~CallsGraph_edge10" class="edge">
-<title>proc~cubt2&#45;&gt;proc~cubt1</title>
+<title>proc~lint2&#45;&gt;proc~cubt1</title>
 <path fill="none" stroke="#000000" d="M362.4,-96C370.39,-96 379.31,-96 387.82,-96"/>
 <polygon fill="#000000" stroke="#000000" points="387.92,-99.5 397.92,-96 387.92,-92.5 387.92,-99.5"/>
 </g>
@@ -553,21 +362,21 @@ private subroutine rgrd3_wrapper(x, y, z, p, xx, yy, zz, q, intpol, ier)
 </a>
 </g>
 </g>
-<!-- proc~cubt2&#45;&gt;proc~lint1 -->
+<!-- proc~lint2&#45;&gt;proc~lint1 -->
 <g id="proc~~rgrd3_wrapper~~CallsGraph_edge11" class="edge">
-<title>proc~cubt2&#45;&gt;proc~lint1</title>
+<title>proc~lint2&#45;&gt;proc~lint1</title>
 <path fill="none" stroke="#000000" d="M361.45,-83.85C370.21,-79.67 380.17,-74.92 389.52,-70.46"/>
 <polygon fill="#000000" stroke="#000000" points="391.09,-73.59 398.6,-66.12 388.07,-67.27 391.09,-73.59"/>
 </g>
-<!-- proc~lint2&#45;&gt;proc~cubt1 -->
+<!-- proc~cubt2&#45;&gt;proc~cubt1 -->
 <g id="proc~~rgrd3_wrapper~~CallsGraph_edge12" class="edge">
-<title>proc~lint2&#45;&gt;proc~cubt1</title>
+<title>proc~cubt2&#45;&gt;proc~cubt1</title>
 <path fill="none" stroke="#000000" d="M361.45,-66.15C370.21,-70.33 380.17,-75.08 389.52,-79.54"/>
 <polygon fill="#000000" stroke="#000000" points="388.07,-82.73 398.6,-83.88 391.09,-76.41 388.07,-82.73"/>
 </g>
-<!-- proc~lint2&#45;&gt;proc~lint1 -->
+<!-- proc~cubt2&#45;&gt;proc~lint1 -->
 <g id="proc~~rgrd3_wrapper~~CallsGraph_edge13" class="edge">
-<title>proc~lint2&#45;&gt;proc~lint1</title>
+<title>proc~cubt2&#45;&gt;proc~lint1</title>
 <path fill="none" stroke="#000000" d="M362.4,-54C370.39,-54 379.31,-54 387.82,-54"/>
 <polygon fill="#000000" stroke="#000000" points="387.92,-57.5 397.92,-54 387.92,-50.5 387.92,-57.5"/>
 </g>
@@ -634,8 +443,6 @@ private subroutine rgrd3_wrapper(x, y, z, p, xx, yy, zz, q, intpol, ier)
     </div></div></div></div>
       </div>
     </div>
-     
-     
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Called by</h3>
@@ -736,34 +543,11 @@ private subroutine rgrd3_wrapper(x, y, z, p, xx, yy, zz, q, intpol, ier)
     </div></div></div></div>
       </div>
     </div>
-     
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
-      
-<h3>Contents</h3>
+      <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
@@ -771,154 +555,139 @@ private subroutine rgrd3_wrapper(x, y, z, p, xx, yy, zz, q, intpol, ier)
   </div>
 </div>
 
-
-
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
-    
 
-    
-    
-    
     
     
 
     
     
-    
-    
-    
 
 
-    
-    
     
     <section>
     <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="highlight"><pre><span></span>    <span class="k">subroutine </span><span class="n">rgrd3_wrapper</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">zz</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,</span><span class="n">ier</span><span class="p">)</span>
+    <div class="highlight"><pre><span></span><span class="w">    </span><span class="k">subroutine </span><span class="n">rgrd3_wrapper</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">zz</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,</span><span class="n">ier</span><span class="p">)</span><span class="w"></span>
 
-    <span class="k">implicit none</span>
+<span class="w">    </span><span class="k">implicit none</span>
 
-<span class="k">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">x</span>            <span class="c">!! original x</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">y</span>            <span class="c">!! original y</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">z</span>            <span class="c">!! original z</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:,:,:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>          <span class="kd">::</span> <span class="n">p</span>            <span class="c">!! original p(x,y,z)</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">xx</span>           <span class="c">!! regridded xx</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">yy</span>           <span class="c">!! regridded yy</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">zz</span>           <span class="c">!! regridded zz</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:,:,:),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>         <span class="kd">::</span> <span class="n">q</span>            <span class="c">!! regridded q(xx,yy,zz)</span>
-    <span class="kt">integer</span><span class="p">,</span><span class="k">dimension</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>               <span class="kd">::</span> <span class="n">intpol</span>
-    <span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>                           <span class="kd">::</span> <span class="n">ier</span>          <span class="c">!! * 0   : no errors</span>
-                                                                  <span class="c">!! * 1-6 : error [see original code]</span>
-                                                                  <span class="c">!! * 10  : input vectors are the wrong size</span>
-                                                                  <span class="c">!! * 100 : out of memory</span>
+<span class="k">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">              </span><span class="kd">::</span><span class="w"> </span><span class="n">x</span><span class="w">            </span><span class="c">!! original x</span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">              </span><span class="kd">::</span><span class="w"> </span><span class="n">y</span><span class="w">            </span><span class="c">!! original y</span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">              </span><span class="kd">::</span><span class="w"> </span><span class="n">z</span><span class="w">            </span><span class="c">!! original z</span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:,:,:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">          </span><span class="kd">::</span><span class="w"> </span><span class="n">p</span><span class="w">            </span><span class="c">!! original p(x,y,z)</span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">              </span><span class="kd">::</span><span class="w"> </span><span class="n">xx</span><span class="w">           </span><span class="c">!! regridded xx</span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">              </span><span class="kd">::</span><span class="w"> </span><span class="n">yy</span><span class="w">           </span><span class="c">!! regridded yy</span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">              </span><span class="kd">::</span><span class="w"> </span><span class="n">zz</span><span class="w">           </span><span class="c">!! regridded zz</span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:,:,:),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span><span class="w">         </span><span class="kd">::</span><span class="w"> </span><span class="n">q</span><span class="w">            </span><span class="c">!! regridded q(xx,yy,zz)</span>
+<span class="w">    </span><span class="kt">integer</span><span class="p">,</span><span class="k">dimension</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">               </span><span class="kd">::</span><span class="w"> </span><span class="n">intpol</span><span class="w"></span>
+<span class="w">    </span><span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span><span class="w">                           </span><span class="kd">::</span><span class="w"> </span><span class="n">ier</span><span class="w">          </span><span class="c">!! * 0   : no errors</span>
+<span class="w">                                                                  </span><span class="c">!! * 1-6 : error [see original code]</span>
+<span class="w">                                                                  </span><span class="c">!! * 10  : input vectors are the wrong size</span>
+<span class="w">                                                                  </span><span class="c">!! * 100 : out of memory</span>
 
-    <span class="kt">integer</span> <span class="kd">::</span> <span class="n">nx</span><span class="p">,</span> <span class="n">ny</span><span class="p">,</span> <span class="n">nz</span><span class="p">,</span> <span class="n">mx</span><span class="p">,</span> <span class="n">my</span><span class="p">,</span> <span class="n">mz</span>
-    <span class="kt">integer</span><span class="p">,</span><span class="k">dimension</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="kd">::</span> <span class="n">np</span><span class="p">,</span> <span class="n">nq</span>
-    <span class="kt">integer</span> <span class="kd">::</span> <span class="n">lw</span><span class="p">,</span> <span class="n">liw</span>
-    <span class="kt">integer</span> <span class="kd">::</span> <span class="n">lwx</span><span class="p">,</span> <span class="n">lwy</span><span class="p">,</span> <span class="n">lwz</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">allocatable</span> <span class="kd">::</span> <span class="n">w</span>
-    <span class="kt">integer</span><span class="p">,</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">allocatable</span> <span class="kd">::</span> <span class="n">iw</span>
-    <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ierr1</span><span class="p">,</span> <span class="n">ierr2</span>
+<span class="w">    </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">nx</span><span class="p">,</span><span class="w"> </span><span class="n">ny</span><span class="p">,</span><span class="w"> </span><span class="n">nz</span><span class="p">,</span><span class="w"> </span><span class="n">mx</span><span class="p">,</span><span class="w"> </span><span class="n">my</span><span class="p">,</span><span class="w"> </span><span class="n">mz</span><span class="w"></span>
+<span class="w">    </span><span class="kt">integer</span><span class="p">,</span><span class="k">dimension</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">np</span><span class="p">,</span><span class="w"> </span><span class="n">nq</span><span class="w"></span>
+<span class="w">    </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">lw</span><span class="p">,</span><span class="w"> </span><span class="n">liw</span><span class="w"></span>
+<span class="w">    </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">lwx</span><span class="p">,</span><span class="w"> </span><span class="n">lwy</span><span class="p">,</span><span class="w"> </span><span class="n">lwz</span><span class="w"></span>
+<span class="w">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">allocatable</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">w</span><span class="w"></span>
+<span class="w">    </span><span class="kt">integer</span><span class="p">,</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">allocatable</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">iw</span><span class="w"></span>
+<span class="w">    </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">ierr1</span><span class="p">,</span><span class="w"> </span><span class="n">ierr2</span><span class="w"></span>
 
-    <span class="c">!get array sizes:</span>
+<span class="w">    </span><span class="c">!get array sizes:</span>
 
-    <span class="n">nx</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="n">ny</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-    <span class="n">nz</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-    <span class="n">np</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">np</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">np</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="w">    </span><span class="n">nx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">ny</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">nz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">z</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">np</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">np</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">np</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="w"></span>
 
-    <span class="n">mx</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">xx</span><span class="p">)</span>
-    <span class="n">my</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">yy</span><span class="p">)</span>
-    <span class="n">mz</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">zz</span><span class="p">)</span>
-    <span class="n">nq</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">nq</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">nq</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="w">    </span><span class="n">mx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">xx</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">my</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">yy</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">mz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">zz</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">nq</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">nq</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">nq</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="w"></span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="n">nx</span><span class="o">/=</span><span class="n">np</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">ny</span><span class="o">/=</span><span class="n">np</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">nz</span><span class="o">/=</span><span class="n">np</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">mx</span><span class="o">/=</span><span class="n">nq</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">my</span><span class="o">/=</span><span class="n">nq</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">mz</span><span class="o">/=</span><span class="n">nq</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span> <span class="k">then</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">nx</span><span class="o">/=</span><span class="n">np</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">ny</span><span class="o">/=</span><span class="n">np</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">nz</span><span class="o">/=</span><span class="n">np</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">mx</span><span class="o">/=</span><span class="n">nq</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">my</span><span class="o">/=</span><span class="n">nq</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">mz</span><span class="o">/=</span><span class="n">nq</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
 
-        <span class="c">!Error: vectors are the wrong size</span>
-        <span class="n">ier</span> <span class="o">=</span> <span class="mi">10</span>
-        <span class="k">return</span>
+<span class="w">        </span><span class="c">!Error: vectors are the wrong size</span>
+<span class="w">        </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span>
 
-<span class="k">    end if</span>
+<span class="k">    end if</span><span class="w"></span>
 
-    <span class="c">!allocate work matrices:</span>
+<span class="w">    </span><span class="c">!allocate work matrices:</span>
 
-    <span class="k">select case</span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
-    <span class="k">case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">lwx</span> <span class="o">=</span> <span class="n">mx</span>
-    <span class="k">case</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-        <span class="n">lwx</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">mx</span>
-        <span class="k">case </span><span class="n">default</span>
-        <span class="n">ier</span> <span class="o">=</span> <span class="mi">6</span>     <span class="c">!Error: invalid intpol value</span>
-        <span class="k">return</span>
+<span class="w">    </span><span class="k">select case</span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">lwx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mx</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">lwx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="o">*</span><span class="n">mx</span><span class="w"></span>
+<span class="w">        </span><span class="k">case </span><span class="n">default</span><span class="w"></span>
+<span class="w">        </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="w">     </span><span class="c">!Error: invalid intpol value</span>
+<span class="w">        </span><span class="k">return</span>
 <span class="k">    end select</span>
 
-<span class="k">    select case</span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
-    <span class="k">case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">lwy</span> <span class="o">=</span> <span class="n">my</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">mx</span>
-    <span class="k">case</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-        <span class="n">lwy</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">mx</span><span class="o">+</span><span class="n">my</span><span class="p">)</span>
-    <span class="k">end select</span>
-<span class="k">    select case</span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
-    <span class="k">case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">lwz</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">mx</span><span class="o">*</span><span class="n">my</span><span class="o">+</span><span class="n">mz</span>
-    <span class="k">case</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-        <span class="n">lwz</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">mx</span><span class="o">*</span><span class="n">my</span><span class="o">+</span><span class="n">mz</span><span class="p">)</span>
-    <span class="k">end select</span>
+<span class="k">    select case</span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">lwy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">my</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">mx</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">lwy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">mx</span><span class="o">+</span><span class="n">my</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">end select</span>
+<span class="k">    select case</span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">lwz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="o">*</span><span class="n">mx</span><span class="o">*</span><span class="n">my</span><span class="o">+</span><span class="n">mz</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">lwz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">mx</span><span class="o">*</span><span class="n">my</span><span class="o">+</span><span class="n">mz</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">end select</span>
 
-<span class="k">    </span><span class="n">lw</span>  <span class="o">=</span> <span class="n">lwx</span> <span class="o">+</span> <span class="n">lwy</span> <span class="o">+</span> <span class="n">lwz</span>
-    <span class="n">liw</span> <span class="o">=</span> <span class="n">mx</span> <span class="o">+</span> <span class="n">my</span> <span class="o">+</span> <span class="n">mz</span>
+<span class="k">    </span><span class="n">lw</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">lwx</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">lwy</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">lwz</span><span class="w"></span>
+<span class="w">    </span><span class="n">liw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mx</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">my</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">mz</span><span class="w"></span>
 
-    <span class="k">allocate</span><span class="p">(</span><span class="n">w</span><span class="p">(</span><span class="n">lw</span><span class="p">),</span>   <span class="nb">stat</span><span class="o">=</span><span class="n">ierr1</span><span class="p">)</span>
-    <span class="k">allocate</span><span class="p">(</span><span class="n">iw</span><span class="p">(</span><span class="n">liw</span><span class="p">),</span> <span class="nb">stat</span><span class="o">=</span><span class="n">ierr2</span><span class="p">)</span>
+<span class="w">    </span><span class="k">allocate</span><span class="p">(</span><span class="n">w</span><span class="p">(</span><span class="n">lw</span><span class="p">),</span><span class="w">   </span><span class="nb">stat</span><span class="o">=</span><span class="n">ierr1</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">allocate</span><span class="p">(</span><span class="n">iw</span><span class="p">(</span><span class="n">liw</span><span class="p">),</span><span class="w"> </span><span class="nb">stat</span><span class="o">=</span><span class="n">ierr2</span><span class="p">)</span><span class="w"></span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="n">ierr1</span><span class="o">==</span><span class="mi">0</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="n">ierr2</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="k">then</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ierr1</span><span class="o">==</span><span class="mi">0</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">ierr2</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
 
-        <span class="c">!call the main routine:</span>
-        <span class="k">call </span><span class="n">rgrd3</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">nz</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">mz</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">zz</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">lw</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">liw</span><span class="p">,</span><span class="n">ier</span><span class="p">)</span>
+<span class="w">        </span><span class="c">!call the main routine:</span>
+<span class="w">        </span><span class="k">call </span><span class="n">rgrd3</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">nz</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">mz</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">zz</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">lw</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">liw</span><span class="p">,</span><span class="n">ier</span><span class="p">)</span><span class="w"></span>
 
-    <span class="k">else</span>
+<span class="w">    </span><span class="k">else</span><span class="w"></span>
 
-        <span class="c">!error: out of memory</span>
-        <span class="n">ier</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="w">        </span><span class="c">!error: out of memory</span>
+<span class="w">        </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="w"></span>
 
-    <span class="k">end if</span>
+<span class="w">    </span><span class="k">end if</span><span class="w"></span>
 
-    <span class="c">!clean up:</span>
+<span class="w">    </span><span class="c">!clean up:</span>
 
-    <span class="k">deallocate</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
-    <span class="k">deallocate</span><span class="p">(</span><span class="n">iw</span><span class="p">)</span>
+<span class="w">    </span><span class="k">deallocate</span><span class="p">(</span><span class="n">w</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">deallocate</span><span class="p">(</span><span class="n">iw</span><span class="p">)</span><span class="w"></span>
 
-    <span class="k">end subroutine </span><span class="n">rgrd3_wrapper</span>
+<span class="w">    </span><span class="k">end subroutine </span><span class="n">rgrd3_wrapper</span><span class="w"></span>
 </pre></div>
 
     </section>
     <br>
     
-    
     </div>
   </div>
-
 
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>regridpack was developed by Jacob Williams<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>regridpack was developed by Jacob Williams<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-            
-            
           </p>
         </div>
       </div>
@@ -946,14 +715,11 @@ private subroutine rgrd3_wrapper(x, y, z, p, xx, yy, zz, q, intpol, ier)
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="../tipuesearch/tipuesearch_content.js"></script>
     <script src="../tipuesearch/tipuesearch_set.js"></script>
     <script src="../tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>
