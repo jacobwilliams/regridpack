@@ -3,6 +3,7 @@
 
 ### Status
 
+[![Language](https://img.shields.io/badge/-Fortran-734f96?logo=fortran&logoColor=white)](https://github.com/topics/fortran)
 [![GitHub release](https://img.shields.io/github/release/jacobwilliams/regridpack.svg)](https://github.com/jacobwilliams/regridpack/releases/latest)
 [![Build Status](https://github.com/jacobwilliams/regridpack/actions/workflows/CI.yml/badge.svg)](https://github.com/jacobwilliams/regridpack/actions)
 [![last-commit](https://img.shields.io/github/last-commit/jacobwilliams/regridpack)](https://github.com/jacobwilliams/regridpack/commits/master)

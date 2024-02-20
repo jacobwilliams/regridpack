@@ -1,6 +1,6 @@
 name = "regridpack"
 author = "Jacob Williams"
-copyright  = "Copyright (c) 2019-2021, Jacob Williams"
+copyright  = "Copyright (c) 2019-2024, Jacob Williams"
 license = "BSD-3"
 description = "Modern Fortran Edition of REGRIDPACK"
 homepage = "https://github.com/jacobwilliams/regridpack"
