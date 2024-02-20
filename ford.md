@@ -1,5 +1,4 @@
 project: regridpack
-project_dir: ./src
 output_dir: ./doc
 media_dir: ./media
 project_github: https://github.com/jacobwilliams/regridpack
@@ -16,6 +15,5 @@ display: public
 source: true
 graph: true
 extra_mods: iso_fortran_env:https://gcc.gnu.org/onlinedocs/gfortran/ISO_005fFORTRAN_005fENV.html
-exclude: regridpack_test.f90
 
 {!README.md!}
