@@ -1,127 +1,143 @@
+<!-- -*- mode: jinja2 -*- -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="description" content="Modern Fortran Edition of REGRIDPACK">
+      <meta name="description" content="Modern Fortran Edition of REGRIDPACK">
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
 
     <title>rgrd3 &ndash; regridpack</title>
 
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
-    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="../js/svg-pan-zoom.min.js"></script>
-
   </head>
 
   <body>
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
           <a class="navbar-brand" href="../index.html">regridpack </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
-              <a href="#" class="dropdown-toggle"
-              data-toggle="dropdown" role="button"
-              aria-haspopup="true"
-     aria-expanded="false">Contents <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <li><a href="../sourcefile/regridpack_module.f90.html">Source File</a></li>
-            <li><a href="../lists/modules.html">Modules</a></li>
-            <li><a href="../lists/procedures.html">Procedures</a></li>
-              
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="sourcefile/regridpack_module.f90.html">Source File</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
             </ul>
-        
-            </li>
-<li class="visible-xs hidden-sm visible-lg"><a href="../sourcefile/regridpack_module.f90.html">Source File</a></li>
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-                                       </ul>
-        <form action="../search.html" class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
         </div>
-<!--
-        <button type="submit" class="btn btn-default">Submit</button>
--->
-        </form>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <div class="container">
   <div class="row">
     <h1>rgrd3
       <small>Subroutine</small>
+      
     </h1>
-    <div class="row">
-  <div class="col-lg-12">
-<div class="well well-sm">
-  <ul class="list-inline" style="margin-bottom:0px;display:inline">
-     <li><i class="fa fa-list-ol"></i>
-       <a data-toggle="tooltip"
-    data-placement="bottom" data-html="true"
-    title=" 7.1% of total for procedures.">175 statements</a>
-     </li> 
-    <li><i class="fa fa-code"></i><a href="../src/regridpack_module.f90"> Source File</a></li>
-  </ul>
-  <ol class="breadcrumb in-well text-right">
-     <li><a href='../sourcefile/regridpack_module.f90.html'>regridpack_module.f90</a></li>
-     <li><a href='../module/regridpack_module.html'>regridpack_module</a></li>
-     <li class="active">rgrd3</li>
-  </ol>
-</div>
-</div>
-</div>
-<script>
-  $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-  })
-</script>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip"
+                 data-bs-placement="bottom" data-html="true"
+                 title=" 7.1% of total for procedures.">175 statements</a>
+            </li>
+
+            <li class="list-inline-item" id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/regridpack_module.f90"> Source File</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/regridpack_module.f90.html'>regridpack_module.f90</a></li>
+                <li class="breadcrumb-item"><a href='../module/regridpack_module.html'>regridpack_module</a></li>
+            <li class="breadcrumb-item active" aria-current="page">rgrd3</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip()
+    })
+  </script>
 
   </div>
   
   <div class="row">
     <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
-    <div id="sidebar">
-  <h3>Contents</h3>
- 
-<div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/rgrd3.html#src">rgrd3</a>
-  </div>
-</div>
+      <div id="sidebar">
+      <h3>Contents</h3>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <div class="card card-primary">
+      <div class="card-header text-left"><h3 class="card-title">Source Code</h3></div>
+      <div class="list-group">
+        <a class="list-group-item" href="../proc/rgrd3.html#src">rgrd3</a>
+      </div>
+    </div>
 
-</div>
+
+  </div>
 
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2>private subroutine rgrd3(nx, ny, nz, x, y, z, p, mx, my, mz, xx, yy, zz, q, intpol, w, lw, iw, liw, ier)</h2>
+    <h2>private  subroutine rgrd3(nx, ny, nz, x, y, z, p, mx, my, mz, xx, yy, zz, q, intpol, w, lw, iw, liw, ier)  
+</h2>
     
 
     <p>subroutine rgrd3 interpolates the values p(i,j,k) on the orthogonal
@@ -147,116 +163,258 @@
   in each direction then subroutine rgrd3u
   should be used instead of rgrd3.</p>
 
+
     <h3>Arguments</h3>
-      <table class="table table-striped varlist">
-<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
-<tbody>
-<tr>
-  <td><span class="anchor" id="variable-nx~17"></span>integer,</td>
+        <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-nx~21"></span>
+              integer,
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>nx</strong></td><td><p>the integer dimension of the grid vector x and the first dimension of p.
-nx &gt; 1 if intpol(1) = 1 or nx &gt; 3 if intpol(1) = 3 is required.</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-ny~7"></span>integer,</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nx</strong></td>
+            <td>
+                <p>the integer dimension of the grid vector x and the first dimension of p.
+nx &gt; 1 if intpol(1) = 1 or nx &gt; 3 if intpol(1) = 3 is required.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ny~10"></span>
+              integer,
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>ny</strong></td><td><p>the integer dimension of the grid vector y and the second dimension of p.
-ny &gt; 1 if intpol(2) = 1 or ny &gt; 3 if intpol(2) = 3 is required.</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-nz"></span>integer,</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ny</strong></td>
+            <td>
+                <p>the integer dimension of the grid vector y and the second dimension of p.
+ny &gt; 1 if intpol(2) = 1 or ny &gt; 3 if intpol(2) = 3 is required.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-nz~3"></span>
+              integer,
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>nz</strong></td><td><p>the integer dimension of the grid vector z and the third dimension of p.
-nz &gt; 1 if intpol(3) = 1 or nz &gt; 3 if intpol(3) = 3 is required.</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-x~9"></span>real(kind=wp),</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nz</strong></td>
+            <td>
+                <p>the integer dimension of the grid vector z and the third dimension of p.
+nz &gt; 1 if intpol(3) = 1 or nz &gt; 3 if intpol(3) = 3 is required.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-x~10"></span>
+              real(kind=wp),
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>x</strong>(nx)</td><td><p>a real(wp) nx vector of strictly increasing values which defines the x
-portion of the orthogonal grid on which p is given</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-y~5"></span>real(kind=wp),</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>x</strong>(nx)</td>
+            <td>
+                <p>a real(wp) nx vector of strictly increasing values which defines the x
+portion of the orthogonal grid on which p is given</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-y~5"></span>
+              real(kind=wp),
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>y</strong>(ny)</td><td><p>a real(wp) ny vector of strictly increasing values which defines the y
-portion of the orthogonal grid on which p is given</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-z~3"></span>real(kind=wp),</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>y</strong>(ny)</td>
+            <td>
+                <p>a real(wp) ny vector of strictly increasing values which defines the y
+portion of the orthogonal grid on which p is given</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-z~3"></span>
+              real(kind=wp),
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>z</strong>(nz)</td><td><p>a real(wp) nz vector of strictly increasing values which defines the z
-portion of the orthogonal grid on which p is given</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-p~17"></span>real(kind=wp),</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>z</strong>(nz)</td>
+            <td>
+                <p>a real(wp) nz vector of strictly increasing values which defines the z
+portion of the orthogonal grid on which p is given</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-p~17"></span>
+              real(kind=wp),
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>p</strong>(nx,ny,nz)</td><td><p>a real(wp) nx by ny by nz array of values given on the (x,y,z) grid</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-mx~17"></span>integer,</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>p</strong>(nx,ny,nz)</td>
+            <td>
+                <p>a real(wp) nx by ny by nz array of values given on the (x,y,z) grid</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-mx~21"></span>
+              integer,
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>mx</strong></td><td><p>the integer dimension of the grid vector xx and the first dimension of q.
-mx &gt; 0 is required.</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-my~7"></span>integer,</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>mx</strong></td>
+            <td>
+                <p>the integer dimension of the grid vector xx and the first dimension of q.
+mx &gt; 0 is required.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-my~10"></span>
+              integer,
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>my</strong></td><td><p>the integer dimension of the grid vector yy and the second dimension of q.
-my &gt; 0 is required.</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-mz"></span>integer,</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>my</strong></td>
+            <td>
+                <p>the integer dimension of the grid vector yy and the second dimension of q.
+my &gt; 0 is required.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-mz~3"></span>
+              integer,
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>mz</strong></td><td><p>the integer dimension of the grid vector zz and the third dimension of q.
-mz &gt; 0 is required.</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-xx~9"></span>real(kind=wp),</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>mz</strong></td>
+            <td>
+                <p>the integer dimension of the grid vector zz and the third dimension of q.
+mz &gt; 0 is required.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-xx~11"></span>
+              real(kind=wp),
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>xx</strong>(mx)</td><td><p>a real(wp) mx vector of increasing values which defines the x portion of the
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>xx</strong>(mx)</td>
+            <td>
+                <p>a real(wp) mx vector of increasing values which defines the x portion of the
 orthogonal grid on which q is defined.  xx(1) &lt; x(1) or xx(mx) &gt; x(nx)
-is not allowed (see ier = 3)</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-yy~5"></span>real(kind=wp),</td>
+is not allowed (see ier = 3)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-yy~5"></span>
+              real(kind=wp),
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>yy</strong>(my)</td><td><p>a real(wp) my vector of increasing values which defines the y portion of the
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>yy</strong>(my)</td>
+            <td>
+                <p>a real(wp) my vector of increasing values which defines the y portion of the
 orthogonal grid on which q is defined.  yy(1) &lt; y(1) or yy(my) &gt; y(ny)
-is not allowed (see ier = 3)</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-zz~3"></span>real(kind=wp),</td>
+is not allowed (see ier = 3)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-zz~3"></span>
+              real(kind=wp),
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>zz</strong>(mz)</td><td><p>a real(wp) mz vector of increasing values which defines the z portion of the
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>zz</strong>(mz)</td>
+            <td>
+                <p>a real(wp) mz vector of increasing values which defines the z portion of the
 orthogonal grid on which q is defined.  zz(1) &lt; z(1) or zz(mz) &gt; z(nz)
-is not allowed (see ier = 3)</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-q~17"></span>real(kind=wp),</td>
+is not allowed (see ier = 3)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-q~17"></span>
+              real(kind=wp),
+            </td>
 <td>intent(out)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>q</strong>(mx,my,mz)</td><td><p>a real(wp) mx by my by mz array of values
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>q</strong>(mx,my,mz)</td>
+            <td>
+                <p>a real(wp) mx by my by mz array of values
 on the (xx,yy,zz) grid which are
-interpolated from p on the (x,y,z) grid</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-intpol~13"></span>integer,</td>
+interpolated from p on the (x,y,z) grid</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-intpol~13"></span>
+              integer,
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>intpol</strong>(3)</td><td><p>an integer vector of dimension 3 which sets linear or cubic
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>intpol</strong>(3)</td>
+            <td>
+                <p>an integer vector of dimension 3 which sets linear or cubic
 interpolation in each of the x,y,z directions as follows:</p>
 <ul>
 <li>intpol(1) = 1 sets linear interpolation in the x direction</li>
@@ -266,21 +424,39 @@ interpolation in each of the x,y,z directions as follows:</p>
 <li>intpol(3) = 1 sets linear interpolation in the z direction</li>
 <li>intpol(3) = 3 sets cubic interpolation in the z direction.</li>
 </ul>
-<p>values other than 1 or 3 in intpol are not allowed (ier = 5).</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-w~5"></span>real(kind=wp),</td>
+<p>values other than 1 or 3 in intpol are not allowed (ier = 5).</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~9"></span>
+              real(kind=wp),
+            </td>
 <td>intent(inout)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>w</strong>(lw)</td><td><p>a real(wp) work space of length at least
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(lw)</td>
+            <td>
+                <p>a real(wp) work space of length at least
 lw which must be provided in the
-routine calling rgrd3</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-lw~5"></span>integer,</td>
+routine calling rgrd3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-lw~9"></span>
+              integer,
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>lw</strong></td><td><p>the integer length of the real(wp) work space w.  let</p>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>lw</strong></td>
+            <td>
+                <p>the integer length of the real(wp) work space w.  let</p>
 <ul>
 <li>lwx = mx              if intpol(1) = 1</li>
 <li>lwx = 4*mx            if intpol(1) = 3</li>
@@ -289,27 +465,54 @@ routine calling rgrd3</p></td>
 <li>lwz = 2<em>mx</em>my+mz      if intpol(3) = 1</li>
 <li>lwz = 4<em>(mx</em>my+mz)    if intpol(3) = 3</li>
 </ul>
-<p>then lw must be greater than or equal to lwx+lwy+lwz</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-iw~5"></span>integer,</td>
+<p>then lw must be greater than or equal to lwx+lwy+lwz</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-iw~9"></span>
+              integer,
+            </td>
 <td>intent(inout)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>iw</strong>(liw)</td><td><p>an integer work space of length at least
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iw</strong>(liw)</td>
+            <td>
+                <p>an integer work space of length at least
 liw which must be provided in the
-routine calling rgrd3</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-liw~5"></span>integer,</td>
+routine calling rgrd3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-liw~9"></span>
+              integer,
+            </td>
 <td>intent(in)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>liw</strong></td><td><p>the integer length of the integer work space iw.  liw must be at least mx+my+mz</p></td>
-</tr>
-<tr>
-  <td><span class="anchor" id="variable-ier~9"></span>integer,</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>liw</strong></td>
+            <td>
+                <p>the integer length of the integer work space iw.  liw must be at least mx+my+mz</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ier~9"></span>
+              integer,
+            </td>
 <td>intent(out)</td>
-  <td></td>  <td></td><td>::</td>
-  <td><strong>ier</strong></td><td><p>an integer error flag set as follows:</p>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ier</strong></td>
+            <td>
+                <p>an integer error flag set as follows:</p>
 <ul>
 <li>ier = 0 if no errors in input arguments are detected</li>
 <li>ier = 1 if  min(mx,my,mz) &lt; 1</li>
@@ -339,193 +542,208 @@ routine calling rgrd3</p></td>
 <li>zz(kk+1) &lt; zz(k)  for some kk such that 1 &lt;= kk &lt; mz</li>
 <li>ier = 5 if lw or liw is too small (insufficient work space)</li>
 <li>ier = 6 if any of intpol(1),intpol(2),intpol(3) is not equal to 1 or 3</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+            </td>
+        </tr>
+    </tbody>
+  </table>
 
     <br>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-  <h3 class="panel-title">Calls</h3>
+    <div class="card">
+      <div class="card-header">
+  <h3 class="card-title">Calls</h3>
       </div>
-      <div class="panel-body">
+      <div class="card-body">
   <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Generated by graphviz version 2.43.0 (0)
  -->
 <!-- Title: proc~~rgrd3~~CallsGraph Pages: 1 -->
-<svg id="procrgrd3CallsGraph" width="333pt" height="158pt"
- viewBox="0.00 0.00 333.00 158.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="proc~~rgrd3~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 154)">
+<svg id="procrgrd3CallsGraph" width="641pt" height="137pt"
+ viewBox="0.00 0.00 641.00 136.86" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~rgrd3~~CallsGraph" class="graph" transform="scale(1.15 1.15) rotate(0) translate(4 154)">
 <title>proc~~rgrd3~~CallsGraph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-154 329,-154 329,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-154 736,-154 736,4 -4,4"/>
 <!-- proc~rgrd3 -->
 <g id="proc~~rgrd3~~CallsGraph_node1" class="node">
 <title>proc~rgrd3</title>
-<polygon fill="none" stroke="black" points="54,-87 0,-87 0,-63 54,-63 54,-87"/>
-<text text-anchor="middle" x="27" y="-72.6" font-family="Helvetica,sans-Serif" font-size="10.50">rgrd3</text>
-</g>
-<!-- proc~linmx -->
-<g id="proc~~rgrd3~~CallsGraph_node2" class="node">
-<title>proc~linmx</title>
-<g id="a_proc~~rgrd3~~CallsGraph_node2"><a xlink:href=".././proc/linmx.html" xlink:title="linmx">
-<polygon fill="#d9534f" stroke="#d9534f" points="144.5,-150 90.5,-150 90.5,-126 144.5,-126 144.5,-150"/>
-<text text-anchor="middle" x="117.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">linmx</text>
-</a>
-</g>
-</g>
-<!-- proc~rgrd3&#45;&gt;proc~linmx -->
-<g id="proc~~rgrd3~~CallsGraph_edge1" class="edge">
-<title>proc~rgrd3&#45;&gt;proc~linmx</title>
-<path fill="none" stroke="#000000" d="M45.06,-87.15C58.16,-96.47 76.45,-109.49 91.25,-120.02"/>
-<polygon fill="#000000" stroke="#000000" points="89.31,-122.94 99.49,-125.89 93.37,-117.24 89.31,-122.94"/>
-</g>
-<!-- proc~lint3 -->
-<g id="proc~~rgrd3~~CallsGraph_node3" class="node">
-<title>proc~lint3</title>
-<g id="a_proc~~rgrd3~~CallsGraph_node3"><a xlink:href=".././proc/lint3.html" xlink:title="lint3">
-<polygon fill="#d9534f" stroke="#d9534f" points="144.5,-108 90.5,-108 90.5,-84 144.5,-84 144.5,-108"/>
-<text text-anchor="middle" x="117.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">lint3</text>
-</a>
-</g>
-</g>
-<!-- proc~rgrd3&#45;&gt;proc~lint3 -->
-<g id="proc~~rgrd3~~CallsGraph_edge2" class="edge">
-<title>proc~rgrd3&#45;&gt;proc~lint3</title>
-<path fill="none" stroke="#000000" d="M54.07,-81.19C62.37,-83.16 71.7,-85.37 80.57,-87.47"/>
-<polygon fill="#000000" stroke="#000000" points="79.77,-90.88 90.31,-89.78 81.38,-84.07 79.77,-90.88"/>
+<polygon fill="none" stroke="black" points="152,-87 0,-87 0,-63 152,-63 152,-87"/>
+<text text-anchor="middle" x="76" y="-72.6" font-family="Helvetica,sans-Serif" font-size="10.50">regridpack_module::rgrd3</text>
 </g>
 <!-- proc~cubnmx -->
-<g id="proc~~rgrd3~~CallsGraph_node4" class="node">
+<g id="proc~~rgrd3~~CallsGraph_node2" class="node">
 <title>proc~cubnmx</title>
-<g id="a_proc~~rgrd3~~CallsGraph_node4"><a xlink:href=".././proc/cubnmx.html" xlink:title="cubnmx">
-<polygon fill="#d9534f" stroke="#d9534f" points="145,-24 90,-24 90,0 145,0 145,-24"/>
-<text text-anchor="middle" x="117.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cubnmx</text>
+<g id="a_proc~~rgrd3~~CallsGraph_node2"><a xlink:href="../proc/cubnmx.html" xlink:title="regridpack_module::cubnmx">
+<polygon fill="#d9534f" stroke="#d9534f" points="354,-150 188,-150 188,-126 354,-126 354,-150"/>
+<text text-anchor="middle" x="271" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">regridpack_module::cubnmx</text>
 </a>
 </g>
 </g>
 <!-- proc~rgrd3&#45;&gt;proc~cubnmx -->
-<g id="proc~~rgrd3~~CallsGraph_edge3" class="edge">
+<g id="proc~~rgrd3~~CallsGraph_edge1" class="edge">
 <title>proc~rgrd3&#45;&gt;proc~cubnmx</title>
-<path fill="none" stroke="#000000" d="M45.06,-62.85C58.16,-53.53 76.45,-40.51 91.25,-29.98"/>
-<polygon fill="#000000" stroke="#000000" points="93.37,-32.76 99.49,-24.11 89.31,-27.06 93.37,-32.76"/>
+<path fill="none" stroke="#000000" d="M106.37,-87.13C128.56,-96.05 159.91,-108.12 188,-117 194.94,-119.19 202.26,-121.32 209.55,-123.33"/>
+<polygon fill="#000000" stroke="#000000" points="208.88,-126.78 219.45,-125.99 210.7,-120.02 208.88,-126.78"/>
 </g>
 <!-- proc~cubt3 -->
-<g id="proc~~rgrd3~~CallsGraph_node5" class="node">
+<g id="proc~~rgrd3~~CallsGraph_node3" class="node">
 <title>proc~cubt3</title>
-<g id="a_proc~~rgrd3~~CallsGraph_node5"><a xlink:href=".././proc/cubt3.html" xlink:title="cubt3">
-<polygon fill="#d9534f" stroke="#d9534f" points="144.5,-66 90.5,-66 90.5,-42 144.5,-42 144.5,-66"/>
-<text text-anchor="middle" x="117.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cubt3</text>
+<g id="a_proc~~rgrd3~~CallsGraph_node3"><a xlink:href="../proc/cubt3.html" xlink:title="regridpack_module::cubt3">
+<polygon fill="#d9534f" stroke="#d9534f" points="347.5,-108 194.5,-108 194.5,-84 347.5,-84 347.5,-108"/>
+<text text-anchor="middle" x="271" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">regridpack_module::cubt3</text>
 </a>
 </g>
 </g>
 <!-- proc~rgrd3&#45;&gt;proc~cubt3 -->
-<g id="proc~~rgrd3~~CallsGraph_edge4" class="edge">
+<g id="proc~~rgrd3~~CallsGraph_edge2" class="edge">
 <title>proc~rgrd3&#45;&gt;proc~cubt3</title>
-<path fill="none" stroke="#000000" d="M54.07,-68.81C62.37,-66.84 71.7,-64.63 80.57,-62.53"/>
-<polygon fill="#000000" stroke="#000000" points="81.38,-65.93 90.31,-60.22 79.77,-59.12 81.38,-65.93"/>
+<path fill="none" stroke="#000000" d="M152.17,-83.18C162.68,-84.32 173.54,-85.5 184.23,-86.67"/>
+<polygon fill="#000000" stroke="#000000" points="184.08,-90.17 194.4,-87.77 184.84,-83.21 184.08,-90.17"/>
 </g>
-<!-- proc~lint2 -->
-<g id="proc~~rgrd3~~CallsGraph_node6" class="node">
-<title>proc~lint2</title>
-<g id="a_proc~~rgrd3~~CallsGraph_node6"><a xlink:href=".././proc/lint2.html" xlink:title="lint2">
-<polygon fill="#d9534f" stroke="#d9534f" points="235,-108 181,-108 181,-84 235,-84 235,-108"/>
-<text text-anchor="middle" x="208" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">lint2</text>
+<!-- proc~linmx -->
+<g id="proc~~rgrd3~~CallsGraph_node4" class="node">
+<title>proc~linmx</title>
+<g id="a_proc~~rgrd3~~CallsGraph_node4"><a xlink:href="../proc/linmx.html" xlink:title="regridpack_module::linmx">
+<polygon fill="#d9534f" stroke="#d9534f" points="347,-24 195,-24 195,0 347,0 347,-24"/>
+<text text-anchor="middle" x="271" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">regridpack_module::linmx</text>
 </a>
 </g>
 </g>
-<!-- proc~lint3&#45;&gt;proc~lint2 -->
-<g id="proc~~rgrd3~~CallsGraph_edge6" class="edge">
-<title>proc~lint3&#45;&gt;proc~lint2</title>
-<path fill="none" stroke="#000000" d="M144.57,-96C152.78,-96 162,-96 170.78,-96"/>
-<polygon fill="#000000" stroke="#000000" points="170.81,-99.5 180.81,-96 170.81,-92.5 170.81,-99.5"/>
+<!-- proc~rgrd3&#45;&gt;proc~linmx -->
+<g id="proc~~rgrd3~~CallsGraph_edge3" class="edge">
+<title>proc~rgrd3&#45;&gt;proc~linmx</title>
+<path fill="none" stroke="#000000" d="M106.37,-62.87C128.56,-53.95 159.91,-41.88 188,-33 194.94,-30.81 202.26,-28.68 209.55,-26.67"/>
+<polygon fill="#000000" stroke="#000000" points="210.7,-29.98 219.45,-24.01 208.88,-23.22 210.7,-29.98"/>
+</g>
+<!-- proc~lint3 -->
+<g id="proc~~rgrd3~~CallsGraph_node5" class="node">
+<title>proc~lint3</title>
+<g id="a_proc~~rgrd3~~CallsGraph_node5"><a xlink:href="../proc/lint3.html" xlink:title="regridpack_module::lint3">
+<polygon fill="#d9534f" stroke="#d9534f" points="344,-66 198,-66 198,-42 344,-42 344,-66"/>
+<text text-anchor="middle" x="271" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">regridpack_module::lint3</text>
+</a>
+</g>
+</g>
+<!-- proc~rgrd3&#45;&gt;proc~lint3 -->
+<g id="proc~~rgrd3~~CallsGraph_edge4" class="edge">
+<title>proc~rgrd3&#45;&gt;proc~lint3</title>
+<path fill="none" stroke="#000000" d="M152.17,-66.82C163.8,-65.56 175.86,-64.24 187.63,-62.96"/>
+<polygon fill="#000000" stroke="#000000" points="188.32,-66.41 197.88,-61.85 187.56,-59.45 188.32,-66.41"/>
 </g>
 <!-- proc~cubt2 -->
-<g id="proc~~rgrd3~~CallsGraph_node7" class="node">
+<g id="proc~~rgrd3~~CallsGraph_node6" class="node">
 <title>proc~cubt2</title>
-<g id="a_proc~~rgrd3~~CallsGraph_node7"><a xlink:href=".././proc/cubt2.html" xlink:title="cubt2">
-<polygon fill="#d9534f" stroke="#d9534f" points="235,-66 181,-66 181,-42 235,-42 235,-66"/>
-<text text-anchor="middle" x="208" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cubt2</text>
+<g id="a_proc~~rgrd3~~CallsGraph_node6"><a xlink:href="../proc/cubt2.html" xlink:title="regridpack_module::cubt2">
+<polygon fill="#d9534f" stroke="#d9534f" points="543,-108 390,-108 390,-84 543,-84 543,-108"/>
+<text text-anchor="middle" x="466.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">regridpack_module::cubt2</text>
 </a>
 </g>
-</g>
-<!-- proc~lint3&#45;&gt;proc~cubt2 -->
-<g id="proc~~rgrd3~~CallsGraph_edge5" class="edge">
-<title>proc~lint3&#45;&gt;proc~cubt2</title>
-<path fill="none" stroke="#000000" d="M144.1,-83.85C152.9,-79.67 162.92,-74.92 172.32,-70.46"/>
-<polygon fill="#000000" stroke="#000000" points="173.93,-73.57 181.46,-66.12 170.92,-67.25 173.93,-73.57"/>
-</g>
-<!-- proc~cubt3&#45;&gt;proc~lint2 -->
-<g id="proc~~rgrd3~~CallsGraph_edge8" class="edge">
-<title>proc~cubt3&#45;&gt;proc~lint2</title>
-<path fill="none" stroke="#000000" d="M144.1,-66.15C152.9,-70.33 162.92,-75.08 172.32,-79.54"/>
-<polygon fill="#000000" stroke="#000000" points="170.92,-82.75 181.46,-83.88 173.93,-76.43 170.92,-82.75"/>
 </g>
 <!-- proc~cubt3&#45;&gt;proc~cubt2 -->
-<g id="proc~~rgrd3~~CallsGraph_edge7" class="edge">
+<g id="proc~~rgrd3~~CallsGraph_edge5" class="edge">
 <title>proc~cubt3&#45;&gt;proc~cubt2</title>
-<path fill="none" stroke="#000000" d="M144.57,-54C152.78,-54 162,-54 170.78,-54"/>
-<polygon fill="#000000" stroke="#000000" points="170.81,-57.5 180.81,-54 170.81,-50.5 170.81,-57.5"/>
+<path fill="none" stroke="#000000" d="M347.64,-96C358.17,-96 369.04,-96 379.73,-96"/>
+<polygon fill="#000000" stroke="#000000" points="379.91,-99.5 389.91,-96 379.91,-92.5 379.91,-99.5"/>
 </g>
-<!-- proc~lint1 -->
-<g id="proc~~rgrd3~~CallsGraph_node8" class="node">
-<title>proc~lint1</title>
-<g id="a_proc~~rgrd3~~CallsGraph_node8"><a xlink:href=".././proc/lint1.html" xlink:title="lint1">
-<polygon fill="#d9534f" stroke="#d9534f" points="325,-108 271,-108 271,-84 325,-84 325,-108"/>
-<text text-anchor="middle" x="298" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">lint1</text>
+<!-- proc~lint2 -->
+<g id="proc~~rgrd3~~CallsGraph_node7" class="node">
+<title>proc~lint2</title>
+<g id="a_proc~~rgrd3~~CallsGraph_node7"><a xlink:href="../proc/lint2.html" xlink:title="regridpack_module::lint2">
+<polygon fill="#d9534f" stroke="#d9534f" points="539.5,-66 393.5,-66 393.5,-42 539.5,-42 539.5,-66"/>
+<text text-anchor="middle" x="466.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">regridpack_module::lint2</text>
 </a>
 </g>
 </g>
-<!-- proc~lint2&#45;&gt;proc~lint1 -->
-<g id="proc~~rgrd3~~CallsGraph_edge9" class="edge">
-<title>proc~lint2&#45;&gt;proc~lint1</title>
-<path fill="none" stroke="#000000" d="M235.4,-96C243.39,-96 252.31,-96 260.82,-96"/>
-<polygon fill="#000000" stroke="#000000" points="260.92,-99.5 270.92,-96 260.92,-92.5 260.92,-99.5"/>
+<!-- proc~cubt3&#45;&gt;proc~lint2 -->
+<g id="proc~~rgrd3~~CallsGraph_edge6" class="edge">
+<title>proc~cubt3&#45;&gt;proc~lint2</title>
+<path fill="none" stroke="#000000" d="M327.45,-83.96C350.12,-79.04 376.51,-73.31 400.12,-68.19"/>
+<polygon fill="#000000" stroke="#000000" points="401.01,-71.58 410.04,-66.04 399.53,-64.74 401.01,-71.58"/>
+</g>
+<!-- proc~lint3&#45;&gt;proc~cubt2 -->
+<g id="proc~~rgrd3~~CallsGraph_edge7" class="edge">
+<title>proc~lint3&#45;&gt;proc~cubt2</title>
+<path fill="none" stroke="#000000" d="M327.45,-66.04C350.12,-70.96 376.51,-76.69 400.12,-81.81"/>
+<polygon fill="#000000" stroke="#000000" points="399.53,-85.26 410.04,-83.96 401.01,-78.42 399.53,-85.26"/>
+</g>
+<!-- proc~lint3&#45;&gt;proc~lint2 -->
+<g id="proc~~rgrd3~~CallsGraph_edge8" class="edge">
+<title>proc~lint3&#45;&gt;proc~lint2</title>
+<path fill="none" stroke="#000000" d="M344.05,-54C356.77,-54 370.1,-54 383.07,-54"/>
+<polygon fill="#000000" stroke="#000000" points="383.39,-57.5 393.39,-54 383.39,-50.5 383.39,-57.5"/>
 </g>
 <!-- proc~cubt1 -->
-<g id="proc~~rgrd3~~CallsGraph_node9" class="node">
+<g id="proc~~rgrd3~~CallsGraph_node8" class="node">
 <title>proc~cubt1</title>
-<g id="a_proc~~rgrd3~~CallsGraph_node9"><a xlink:href=".././proc/cubt1.html" xlink:title="cubt1">
-<polygon fill="#d9534f" stroke="#d9534f" points="325,-66 271,-66 271,-42 325,-42 325,-66"/>
-<text text-anchor="middle" x="298" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cubt1</text>
+<g id="a_proc~~rgrd3~~CallsGraph_node8"><a xlink:href="../proc/cubt1.html" xlink:title="regridpack_module::cubt1">
+<polygon fill="#d9534f" stroke="#d9534f" points="732,-108 579,-108 579,-84 732,-84 732,-108"/>
+<text text-anchor="middle" x="655.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">regridpack_module::cubt1</text>
 </a>
 </g>
 </g>
-<!-- proc~lint2&#45;&gt;proc~cubt1 -->
-<g id="proc~~rgrd3~~CallsGraph_edge10" class="edge">
-<title>proc~lint2&#45;&gt;proc~cubt1</title>
-<path fill="none" stroke="#000000" d="M234.45,-83.85C243.21,-79.67 253.17,-74.92 262.52,-70.46"/>
-<polygon fill="#000000" stroke="#000000" points="264.09,-73.59 271.6,-66.12 261.07,-67.27 264.09,-73.59"/>
+<!-- proc~cubt2&#45;&gt;proc~cubt1 -->
+<g id="proc~~rgrd3~~CallsGraph_edge9" class="edge">
+<title>proc~cubt2&#45;&gt;proc~cubt1</title>
+<path fill="none" stroke="#000000" d="M543.02,-96C551.47,-96 560.13,-96 568.7,-96"/>
+<polygon fill="#000000" stroke="#000000" points="568.7,-99.5 578.7,-96 568.7,-92.5 568.7,-99.5"/>
+</g>
+<!-- proc~lint1 -->
+<g id="proc~~rgrd3~~CallsGraph_node9" class="node">
+<title>proc~lint1</title>
+<g id="a_proc~~rgrd3~~CallsGraph_node9"><a xlink:href="../proc/lint1.html" xlink:title="regridpack_module::lint1">
+<polygon fill="#d9534f" stroke="#d9534f" points="728.5,-66 582.5,-66 582.5,-42 728.5,-42 728.5,-66"/>
+<text text-anchor="middle" x="655.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">regridpack_module::lint1</text>
+</a>
+</g>
 </g>
 <!-- proc~cubt2&#45;&gt;proc~lint1 -->
-<g id="proc~~rgrd3~~CallsGraph_edge11" class="edge">
+<g id="proc~~rgrd3~~CallsGraph_edge10" class="edge">
 <title>proc~cubt2&#45;&gt;proc~lint1</title>
-<path fill="none" stroke="#000000" d="M234.45,-66.15C243.21,-70.33 253.17,-75.08 262.52,-79.54"/>
-<polygon fill="#000000" stroke="#000000" points="261.07,-82.73 271.6,-83.88 264.09,-76.41 261.07,-82.73"/>
+<path fill="none" stroke="#000000" d="M521.09,-83.96C542.9,-79.07 568.28,-73.37 591.01,-68.26"/>
+<polygon fill="#000000" stroke="#000000" points="591.92,-71.64 600.91,-66.04 590.38,-64.81 591.92,-71.64"/>
 </g>
-<!-- proc~cubt2&#45;&gt;proc~cubt1 -->
+<!-- proc~lint2&#45;&gt;proc~cubt1 -->
+<g id="proc~~rgrd3~~CallsGraph_edge11" class="edge">
+<title>proc~lint2&#45;&gt;proc~cubt1</title>
+<path fill="none" stroke="#000000" d="M521.09,-66.04C542.9,-70.93 568.28,-76.63 591.01,-81.74"/>
+<polygon fill="#000000" stroke="#000000" points="590.38,-85.19 600.91,-83.96 591.92,-78.36 590.38,-85.19"/>
+</g>
+<!-- proc~lint2&#45;&gt;proc~lint1 -->
 <g id="proc~~rgrd3~~CallsGraph_edge12" class="edge">
-<title>proc~cubt2&#45;&gt;proc~cubt1</title>
-<path fill="none" stroke="#000000" d="M235.4,-54C243.39,-54 252.31,-54 260.82,-54"/>
-<polygon fill="#000000" stroke="#000000" points="260.92,-57.5 270.92,-54 260.92,-50.5 260.92,-57.5"/>
+<title>proc~lint2&#45;&gt;proc~lint1</title>
+<path fill="none" stroke="#000000" d="M539.53,-54C550.14,-54 561.13,-54 571.93,-54"/>
+<polygon fill="#000000" stroke="#000000" points="572.2,-57.5 582.2,-54 572.2,-50.5 572.2,-57.5"/>
 </g>
 </g>
 </svg>
-</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
-    <p>Nodes of different colours represent the following: </p>
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+</div>                <script>
+                  var panprocrgrd3CallsGraph = svgPanZoom('#procrgrd3CallsGraph',
+                    {zoomEnabled: true, controlIconsEnabled: true, fit: true, center: true,}
+                  );
+                </script>          <div>
+            <a type="button" class="graph-help" data-bs-toggle="modal" href="#CallsGraph-help-text">Help</a>
+          </div>
+          <div class="modal fade" id="CallsGraph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Generated by graphviz version 2.43.0 (0)
  -->
 <!-- Title: Graph Key Pages: 1 -->
-<svg width="597pt" height="32pt"
- viewBox="0.00 0.00 596.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<svg width="641pt" height="28pt"
+ viewBox="0.00 0.00 641.00 27.51" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.16 1.16) rotate(0) translate(4 28)">
 <title>Graph Key</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 592.5,-28 592.5,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 741.5,-28 741.5,4 -4,4"/>
 <!-- Subroutine -->
 <g id="node1" class="node">
 <title>Subroutine</title>
@@ -544,109 +762,127 @@ routine calling rgrd3</p></td>
 <polygon fill="#a7506f" stroke="#a7506f" points="225.5,-24 164.5,-24 164.5,0 225.5,0 225.5,-24"/>
 <text text-anchor="middle" x="195" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
 </g>
-<!-- Unknown Procedure Type -->
+<!-- Type Bound Procedure -->
 <g id="node4" class="node">
+<title>Type Bound Procedure</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="374,-24 244,-24 244,0 374,0 374,-24"/>
+<text text-anchor="middle" x="309" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Type Bound Procedure</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node5" class="node">
 <title>Unknown Procedure Type</title>
-<polygon fill="#777777" stroke="#777777" points="388.5,-24 243.5,-24 243.5,0 388.5,0 388.5,-24"/>
-<text text-anchor="middle" x="316" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+<polygon fill="#777777" stroke="#777777" points="537.5,-24 392.5,-24 392.5,0 537.5,0 537.5,-24"/>
+<text text-anchor="middle" x="465" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
 </g>
 <!-- Program -->
-<g id="node5" class="node">
+<g id="node6" class="node">
 <title>Program</title>
-<polygon fill="#f0ad4e" stroke="#f0ad4e" points="465,-24 407,-24 407,0 465,0 465,-24"/>
-<text text-anchor="middle" x="436" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="614,-24 556,-24 556,0 614,0 614,-24"/>
+<text text-anchor="middle" x="585" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
 </g>
 <!-- This Page&#39;s Entity -->
-<g id="node6" class="node">
+<g id="node7" class="node">
 <title>This Page&#39;s Entity</title>
-<polygon fill="none" stroke="black" points="588.5,-24 483.5,-24 483.5,0 588.5,0 588.5,-24"/>
-<text text-anchor="middle" x="536" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+<polygon fill="none" stroke="black" points="737.5,-24 632.5,-24 632.5,0 737.5,0 737.5,-24"/>
+<text text-anchor="middle" x="685" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
 </g>
 </g>
 </svg>
 
-    
-    <p>Solid arrows point from a procedure to one which it calls. Dashed 
-    arrows point from an interface to procedures which implement that interface.
-    This could include the module procedures in a generic interface or the
-    implementation in a submodule of an interface in a parent module.
-    </p>
-    </div></div></div></div>
+<p>Solid arrows point from a procedure to one which it calls. Dashed 
+arrows point from an interface to procedures which implement that interface.
+This could include the module procedures in a generic interface or the
+implementation in a submodule of an interface in a parent module.
+</p>
+ </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-  <h3 class="panel-title">Called by</h3>
+    <div class="card">
+      <div class="card-header">
+  <h3 class="card-title">Called by</h3>
       </div>
-      <div class="panel-body">
+      <div class="card-body">
   <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Generated by graphviz version 2.43.0 (0)
  -->
 <!-- Title: proc~~rgrd3~~CalledByGraph Pages: 1 -->
-<svg id="procrgrd3CalledByGraph" width="279pt" height="52pt"
- viewBox="0.00 0.00 279.00 52.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg id="procrgrd3CalledByGraph" width="588pt" height="52pt"
+ viewBox="0.00 0.00 588.00 52.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="proc~~rgrd3~~CalledByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 48)">
 <title>proc~~rgrd3~~CalledByGraph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-48 275,-48 275,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-48 584,-48 584,4 -4,4"/>
 <!-- proc~rgrd3 -->
 <g id="proc~~rgrd3~~CalledByGraph_node1" class="node">
 <title>proc~rgrd3</title>
-<polygon fill="none" stroke="black" points="271,-44 217,-44 217,-20 271,-20 271,-44"/>
-<text text-anchor="middle" x="244" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50">rgrd3</text>
-</g>
-<!-- proc~rgrd3_wrapper -->
-<g id="proc~~rgrd3~~CalledByGraph_node2" class="node">
-<title>proc~rgrd3_wrapper</title>
-<g id="a_proc~~rgrd3~~CalledByGraph_node2"><a xlink:href=".././proc/rgrd3_wrapper.html" xlink:title="rgrd3_wrapper">
-<polygon fill="#d9534f" stroke="#d9534f" points="181,-24 90,-24 90,0 181,0 181,-24"/>
-<text text-anchor="middle" x="135.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rgrd3_wrapper</text>
-</a>
-</g>
-</g>
-<!-- proc~rgrd3_wrapper&#45;&gt;proc~rgrd3 -->
-<g id="proc~~rgrd3~~CalledByGraph_edge1" class="edge">
-<title>proc~rgrd3_wrapper&#45;&gt;proc~rgrd3</title>
-<path fill="none" stroke="#000000" d="M181.05,-20.37C189.63,-21.98 198.51,-23.65 206.78,-25.2"/>
-<polygon fill="#000000" stroke="#000000" points="206.39,-28.69 216.87,-27.09 207.68,-21.81 206.39,-28.69"/>
+<polygon fill="none" stroke="black" points="580,-44 428,-44 428,-20 580,-20 580,-44"/>
+<text text-anchor="middle" x="504" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50">regridpack_module::rgrd3</text>
 </g>
 <!-- interface~regrid -->
-<g id="proc~~rgrd3~~CalledByGraph_node3" class="node">
+<g id="proc~~rgrd3~~CalledByGraph_node2" class="node">
 <title>interface~regrid</title>
-<g id="a_proc~~rgrd3~~CalledByGraph_node3"><a xlink:href=".././interface/regrid.html" xlink:title="regrid">
-<polygon fill="#a7506f" stroke="#a7506f" points="54,-44 0,-44 0,-20 54,-20 54,-44"/>
-<text text-anchor="middle" x="27" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">regrid</text>
+<g id="a_proc~~rgrd3~~CalledByGraph_node2"><a xlink:href="../interface/regrid.html" xlink:title="regridpack_module::regrid">
+<polygon fill="#a7506f" stroke="#a7506f" points="154,-44 0,-44 0,-20 154,-20 154,-44"/>
+<text text-anchor="middle" x="77" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">regridpack_module::regrid</text>
 </a>
 </g>
 </g>
 <!-- interface~regrid&#45;&gt;proc~rgrd3 -->
 <g id="proc~~rgrd3~~CalledByGraph_edge2" class="edge">
 <title>interface~regrid&#45;&gt;proc~rgrd3</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M54.24,-32.52C65.28,-32.71 78.27,-32.91 90,-33 130.44,-33.33 140.56,-33.33 181,-33 189.25,-32.93 198.12,-32.82 206.49,-32.69"/>
-<polygon fill="#000000" stroke="#000000" points="206.81,-36.18 216.76,-32.52 206.7,-29.18 206.81,-36.18"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M154.21,-32.77C166.19,-32.87 178.43,-32.95 190,-33 279.78,-33.4 302.22,-33.4 392,-33 400.31,-32.96 408.97,-32.91 417.63,-32.85"/>
+<polygon fill="#000000" stroke="#000000" points="417.79,-36.35 427.77,-32.77 417.74,-29.35 417.79,-36.35"/>
+</g>
+<!-- proc~rgrd3_wrapper -->
+<g id="proc~~rgrd3~~CalledByGraph_node3" class="node">
+<title>proc~rgrd3_wrapper</title>
+<g id="a_proc~~rgrd3~~CalledByGraph_node3"><a xlink:href="../proc/rgrd3_wrapper.html" xlink:title="regridpack_module::rgrd3_wrapper">
+<polygon fill="#d9534f" stroke="#d9534f" points="392,-24 190,-24 190,0 392,0 392,-24"/>
+<text text-anchor="middle" x="291" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">regridpack_module::rgrd3_wrapper</text>
+</a>
+</g>
 </g>
 <!-- interface~regrid&#45;&gt;proc~rgrd3_wrapper -->
 <g id="proc~~rgrd3~~CalledByGraph_edge3" class="edge">
 <title>interface~regrid&#45;&gt;proc~rgrd3_wrapper</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M54.05,-27.11C61.84,-25.65 70.68,-23.98 79.59,-22.31"/>
-<polygon fill="#000000" stroke="#000000" points="80.44,-25.71 89.62,-20.43 79.15,-18.83 80.44,-25.71"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M154.24,-24.81C162.51,-24.03 171.05,-23.22 179.63,-22.41"/>
+<polygon fill="#000000" stroke="#000000" points="180.08,-25.89 189.7,-21.46 179.42,-18.92 180.08,-25.89"/>
+</g>
+<!-- proc~rgrd3_wrapper&#45;&gt;proc~rgrd3 -->
+<g id="proc~~rgrd3~~CalledByGraph_edge1" class="edge">
+<title>proc~rgrd3_wrapper&#45;&gt;proc~rgrd3</title>
+<path fill="none" stroke="#000000" d="M392.25,-21.5C400.79,-22.31 409.38,-23.13 417.79,-23.92"/>
+<polygon fill="#000000" stroke="#000000" points="417.66,-27.43 427.94,-24.89 418.32,-20.46 417.66,-27.43"/>
 </g>
 </g>
 </svg>
-</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
-    <p>Nodes of different colours represent the following: </p>
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+</div>          <div>
+            <a type="button" class="graph-help" data-bs-toggle="modal" href="#CalledByGraph-help-text">Help</a>
+          </div>
+          <div class="modal fade" id="CalledByGraph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Generated by graphviz version 2.43.0 (0)
  -->
 <!-- Title: Graph Key Pages: 1 -->
-<svg width="597pt" height="32pt"
- viewBox="0.00 0.00 596.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<svg width="641pt" height="28pt"
+ viewBox="0.00 0.00 641.00 27.51" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.16 1.16) rotate(0) translate(4 28)">
 <title>Graph Key</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 592.5,-28 592.5,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 741.5,-28 741.5,4 -4,4"/>
 <!-- Subroutine -->
 <g id="node1" class="node">
 <title>Subroutine</title>
@@ -665,63 +901,59 @@ routine calling rgrd3</p></td>
 <polygon fill="#a7506f" stroke="#a7506f" points="225.5,-24 164.5,-24 164.5,0 225.5,0 225.5,-24"/>
 <text text-anchor="middle" x="195" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
 </g>
-<!-- Unknown Procedure Type -->
+<!-- Type Bound Procedure -->
 <g id="node4" class="node">
+<title>Type Bound Procedure</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="374,-24 244,-24 244,0 374,0 374,-24"/>
+<text text-anchor="middle" x="309" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Type Bound Procedure</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node5" class="node">
 <title>Unknown Procedure Type</title>
-<polygon fill="#777777" stroke="#777777" points="388.5,-24 243.5,-24 243.5,0 388.5,0 388.5,-24"/>
-<text text-anchor="middle" x="316" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+<polygon fill="#777777" stroke="#777777" points="537.5,-24 392.5,-24 392.5,0 537.5,0 537.5,-24"/>
+<text text-anchor="middle" x="465" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
 </g>
 <!-- Program -->
-<g id="node5" class="node">
+<g id="node6" class="node">
 <title>Program</title>
-<polygon fill="#f0ad4e" stroke="#f0ad4e" points="465,-24 407,-24 407,0 465,0 465,-24"/>
-<text text-anchor="middle" x="436" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="614,-24 556,-24 556,0 614,0 614,-24"/>
+<text text-anchor="middle" x="585" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
 </g>
 <!-- This Page&#39;s Entity -->
-<g id="node6" class="node">
+<g id="node7" class="node">
 <title>This Page&#39;s Entity</title>
-<polygon fill="none" stroke="black" points="588.5,-24 483.5,-24 483.5,0 588.5,0 588.5,-24"/>
-<text text-anchor="middle" x="536" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+<polygon fill="none" stroke="black" points="737.5,-24 632.5,-24 632.5,0 737.5,0 737.5,-24"/>
+<text text-anchor="middle" x="685" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
 </g>
 </g>
 </svg>
 
-    
-    <p>Solid arrows point from a procedure to one which it calls. Dashed 
-    arrows point from an interface to procedures which implement that interface.
-    This could include the module procedures in a generic interface or the
-    implementation in a submodule of an interface in a parent module.
-    </p>
-    </div></div></div></div>
+<p>Solid arrows point from a procedure to one which it calls. Dashed 
+arrows point from an interface to procedures which implement that interface.
+This could include the module procedures in a generic interface or the
+implementation in a submodule of an interface in a parent module.
+</p>
+ </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <br>
 
-    <section class="visible-xs visible-sm hidden-md">
-      <h3>Contents</h3>
- 
-<div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/rgrd3.html#src">rgrd3</a>
-  </div>
-</div>
-
-    </section>
-    <br class="visible-xs visible-sm hidden-md">
-
 
     
     
 
     
     
+
 
 
     
     <section>
     <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="highlight"><pre><span></span><span class="w">    </span><span class="k">subroutine </span><span class="n">rgrd3</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">nz</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">mz</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">zz</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">lw</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">liw</span><span class="p">,</span><span class="n">ier</span><span class="p">)</span><span class="w"></span>
+    <div class="hl codehilite"><pre><span></span><span class="w">    </span><span class="k">subroutine </span><span class="n">rgrd3</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">nz</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">mz</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">zz</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">lw</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">liw</span><span class="p">,</span><span class="n">ier</span><span class="p">)</span>
 
 <span class="w">    </span><span class="k">implicit none</span>
 
@@ -812,206 +1044,206 @@ routine calling rgrd3</p></td>
 <span class="w">                                        </span><span class="c">!! liw which must be provided in the</span>
 <span class="w">                                        </span><span class="c">!! routine calling rgrd3</span>
 
-<span class="w">    </span><span class="kt">integer</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="n">ii</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">jj</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">kk</span><span class="w"></span>
-<span class="w">    </span><span class="kt">integer</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">i2</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="n">i4</span><span class="p">,</span><span class="n">i5</span><span class="w"></span>
-<span class="w">    </span><span class="kt">integer</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">j2</span><span class="p">,</span><span class="n">j3</span><span class="p">,</span><span class="n">j4</span><span class="p">,</span><span class="n">j5</span><span class="p">,</span><span class="n">j6</span><span class="p">,</span><span class="n">j7</span><span class="p">,</span><span class="n">j8</span><span class="p">,</span><span class="n">j9</span><span class="w"></span>
-<span class="w">    </span><span class="kt">integer</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">k2</span><span class="p">,</span><span class="n">k3</span><span class="p">,</span><span class="n">k4</span><span class="p">,</span><span class="n">k5</span><span class="p">,</span><span class="n">k6</span><span class="p">,</span><span class="n">k7</span><span class="p">,</span><span class="n">k8</span><span class="p">,</span><span class="n">k9</span><span class="w"></span>
-<span class="w">    </span><span class="kt">integer</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">lwx</span><span class="p">,</span><span class="n">lwy</span><span class="p">,</span><span class="n">lwz</span><span class="p">,</span><span class="n">jy</span><span class="p">,</span><span class="n">kz</span><span class="p">,</span><span class="n">mxmy</span><span class="w"></span>
+<span class="w">    </span><span class="kt">integer</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="n">ii</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">jj</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">kk</span>
+<span class="w">    </span><span class="kt">integer</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">i2</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="n">i4</span><span class="p">,</span><span class="n">i5</span>
+<span class="w">    </span><span class="kt">integer</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">j2</span><span class="p">,</span><span class="n">j3</span><span class="p">,</span><span class="n">j4</span><span class="p">,</span><span class="n">j5</span><span class="p">,</span><span class="n">j6</span><span class="p">,</span><span class="n">j7</span><span class="p">,</span><span class="n">j8</span><span class="p">,</span><span class="n">j9</span>
+<span class="w">    </span><span class="kt">integer</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">k2</span><span class="p">,</span><span class="n">k3</span><span class="p">,</span><span class="n">k4</span><span class="p">,</span><span class="n">k5</span><span class="p">,</span><span class="n">k6</span><span class="p">,</span><span class="n">k7</span><span class="p">,</span><span class="n">k8</span><span class="p">,</span><span class="n">k9</span>
+<span class="w">    </span><span class="kt">integer</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">lwx</span><span class="p">,</span><span class="n">lwy</span><span class="p">,</span><span class="n">lwz</span><span class="p">,</span><span class="n">jy</span><span class="p">,</span><span class="n">kz</span><span class="p">,</span><span class="n">mxmy</span>
 
 <span class="w">    </span><span class="c">! check input arguments</span>
 
 <span class="w">    </span><span class="c">! check (xx,yy,zz) grid resolution</span>
-<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">mz</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"></span>
+<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">mz</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
 
 <span class="w">    </span><span class="c">! check intpol</span>
-<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="w"></span>
+<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">/=</span><span class="mi">1</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">intpol</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">/=</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
 <span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">/=</span><span class="mi">1</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">intpol</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">/=</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
-<span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/=</span><span class="mi">1</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">intpol</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/=</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"></span>
+<span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/=</span><span class="mi">1</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">intpol</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/=</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
 
 <span class="w">    </span><span class="c">! check (x,y,z) grid resolution</span>
-<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"></span>
+<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">nx</span><span class="o">&lt;</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
 <span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">==</span><span class="mi">3</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">nx</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
 <span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">ny</span><span class="o">&lt;</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
 <span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">==</span><span class="mi">3</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">ny</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
 <span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">nz</span><span class="o">&lt;</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
-<span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">==</span><span class="mi">3</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">nz</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"></span>
+<span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">==</span><span class="mi">3</span><span class="w"> </span><span class="p">.</span><span class="nb">and</span><span class="p">.</span><span class="w"> </span><span class="n">nz</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
 
 <span class="w">    </span><span class="c">! check work space length input and set minimum</span>
-<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="w"></span>
-<span class="w">    </span><span class="n">mxmy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mx</span><span class="o">*</span><span class="n">my</span><span class="w"></span>
+<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">    </span><span class="n">mxmy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mx</span><span class="o">*</span><span class="n">my</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
-<span class="k">        </span><span class="n">lwx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mx</span><span class="w"></span>
+<span class="k">        </span><span class="n">lwx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mx</span>
 <span class="w">    </span><span class="k">else</span>
-<span class="k">        </span><span class="n">lwx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="o">*</span><span class="n">mx</span><span class="w"></span>
+<span class="k">        </span><span class="n">lwx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="o">*</span><span class="n">mx</span>
 <span class="w">    </span><span class="k">end if</span>
 <span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
-<span class="k">        </span><span class="n">lwy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">my</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">mx</span><span class="p">)</span><span class="w"></span>
+<span class="k">        </span><span class="n">lwy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">my</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">mx</span><span class="p">)</span>
 <span class="w">    </span><span class="k">else</span>
-<span class="k">        </span><span class="n">lwy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">my</span><span class="o">+</span><span class="n">mx</span><span class="p">)</span><span class="w"></span>
+<span class="k">        </span><span class="n">lwy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">my</span><span class="o">+</span><span class="n">mx</span><span class="p">)</span>
 <span class="w">    </span><span class="k">end if</span>
 <span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
-<span class="k">        </span><span class="n">lwz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mxmy</span><span class="o">+</span><span class="n">mz</span><span class="p">)</span><span class="w"></span>
+<span class="k">        </span><span class="n">lwz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mxmy</span><span class="o">+</span><span class="n">mz</span><span class="p">)</span>
 <span class="w">    </span><span class="k">else</span>
-<span class="k">        </span><span class="n">lwz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">mxmy</span><span class="o">+</span><span class="n">mz</span><span class="p">)</span><span class="w"></span>
+<span class="k">        </span><span class="n">lwz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">mxmy</span><span class="o">+</span><span class="n">mz</span><span class="p">)</span>
 <span class="w">    </span><span class="k">end if</span>
 <span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">lw</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">lwx</span><span class="o">+</span><span class="n">lwy</span><span class="o">+</span><span class="n">lwz</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
-<span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">liw</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">mx</span><span class="o">+</span><span class="n">my</span><span class="o">+</span><span class="n">mz</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"></span>
+<span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">liw</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">mx</span><span class="o">+</span><span class="n">my</span><span class="o">+</span><span class="n">mz</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
 
 <span class="w">    </span><span class="c">! check (xx,yy,zz) grid contained in (x,y,z) grid</span>
-<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="w"></span>
+<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">xx</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&lt;</span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">xx</span><span class="p">(</span><span class="n">mx</span><span class="p">)</span><span class="o">&gt;</span><span class="n">x</span><span class="p">(</span><span class="n">nx</span><span class="p">))</span><span class="w"> </span><span class="k">return</span>
 <span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">yy</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&lt;</span><span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">yy</span><span class="p">(</span><span class="n">my</span><span class="p">)</span><span class="o">&gt;</span><span class="n">y</span><span class="p">(</span><span class="n">ny</span><span class="p">))</span><span class="w"> </span><span class="k">return</span>
-<span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">zz</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&lt;</span><span class="n">z</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">zz</span><span class="p">(</span><span class="n">mz</span><span class="p">)</span><span class="o">&gt;</span><span class="n">z</span><span class="p">(</span><span class="n">nz</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"></span>
+<span class="k">    if</span><span class="w"> </span><span class="p">(</span><span class="n">zz</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&lt;</span><span class="n">z</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">zz</span><span class="p">(</span><span class="n">mz</span><span class="p">)</span><span class="o">&gt;</span><span class="n">z</span><span class="p">(</span><span class="n">nz</span><span class="p">))</span><span class="w"> </span><span class="k">return</span>
 
 <span class="w">    </span><span class="c">! check montonicity of grids</span>
-<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="w"></span>
-<span class="w">    </span><span class="k">do </span><span class="n">i</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">nx</span><span class="w"></span>
+<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">    </span><span class="k">do </span><span class="n">i</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">nx</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;=</span><span class="n">x</span><span class="p">(</span><span class="n">i</span><span class="p">))</span><span class="w"> </span><span class="k">return</span>
 <span class="k">    end do</span>
-<span class="k">    do </span><span class="n">j</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">ny</span><span class="w"></span>
+<span class="k">    do </span><span class="n">j</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">ny</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="p">(</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;=</span><span class="n">y</span><span class="p">(</span><span class="n">j</span><span class="p">))</span><span class="w"> </span><span class="k">return</span>
 <span class="k">    end do</span>
-<span class="k">    do </span><span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">nz</span><span class="w"></span>
+<span class="k">    do </span><span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">nz</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">z</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;=</span><span class="n">z</span><span class="p">(</span><span class="n">k</span><span class="p">))</span><span class="w"> </span><span class="k">return</span>
 <span class="k">    end do</span>
-<span class="k">    do </span><span class="n">ii</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">mx</span><span class="w"></span>
+<span class="k">    do </span><span class="n">ii</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">mx</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">xx</span><span class="p">(</span><span class="n">ii</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span><span class="n">xx</span><span class="p">(</span><span class="n">ii</span><span class="p">))</span><span class="w"> </span><span class="k">return</span>
 <span class="k">    end do</span>
-<span class="k">    do </span><span class="n">jj</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">my</span><span class="w"></span>
+<span class="k">    do </span><span class="n">jj</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">my</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">yy</span><span class="p">(</span><span class="n">jj</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span><span class="n">yy</span><span class="p">(</span><span class="n">jj</span><span class="p">))</span><span class="w"> </span><span class="k">return</span>
 <span class="k">    end do</span>
-<span class="k">    do </span><span class="n">kk</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">mz</span><span class="w"></span>
+<span class="k">    do </span><span class="n">kk</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">mz</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">zz</span><span class="p">(</span><span class="n">kk</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span><span class="n">zz</span><span class="p">(</span><span class="n">kk</span><span class="p">))</span><span class="w"> </span><span class="k">return</span>
-<span class="k">    end do</span><span class="w"></span>
+<span class="k">    end do</span>
 
 <span class="w">    </span><span class="c">! arguments o.k.</span>
 
-<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
-<span class="w">    </span><span class="n">jy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mx</span><span class="o">+</span><span class="mi">1</span><span class="w"></span>
-<span class="w">    </span><span class="n">kz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mx</span><span class="o">+</span><span class="n">my</span><span class="o">+</span><span class="mi">1</span><span class="w"></span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
+<span class="w">    </span><span class="n">ier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">    </span><span class="n">jy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mx</span><span class="o">+</span><span class="mi">1</span>
+<span class="w">    </span><span class="n">kz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mx</span><span class="o">+</span><span class="n">my</span><span class="o">+</span><span class="mi">1</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
 
 <span class="w">        </span><span class="c">! linearly interpolate in nz, set work space pointers and scales</span>
 
-<span class="w">        </span><span class="n">k2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
-<span class="w">        </span><span class="n">k3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k2</span><span class="w"></span>
-<span class="w">        </span><span class="n">k4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k3</span><span class="o">+</span><span class="n">mz</span><span class="w"></span>
-<span class="w">        </span><span class="n">k5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k4</span><span class="w"></span>
-<span class="w">        </span><span class="n">k6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k5</span><span class="w"></span>
-<span class="w">        </span><span class="n">k7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k6</span><span class="w"></span>
-<span class="w">        </span><span class="n">k8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k7</span><span class="o">+</span><span class="n">mxmy</span><span class="w"></span>
-<span class="w">        </span><span class="n">k9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k8</span><span class="o">+</span><span class="n">mxmy</span><span class="w"></span>
-<span class="w">        </span><span class="k">call </span><span class="n">linmx</span><span class="p">(</span><span class="n">nz</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">mz</span><span class="p">,</span><span class="n">zz</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">kz</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k3</span><span class="p">))</span><span class="w"></span>
-<span class="w">        </span><span class="n">j2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k9</span><span class="w"></span>
+<span class="w">        </span><span class="n">k2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">        </span><span class="n">k3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k2</span>
+<span class="w">        </span><span class="n">k4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k3</span><span class="o">+</span><span class="n">mz</span>
+<span class="w">        </span><span class="n">k5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k4</span>
+<span class="w">        </span><span class="n">k6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k5</span>
+<span class="w">        </span><span class="n">k7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k6</span>
+<span class="w">        </span><span class="n">k8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k7</span><span class="o">+</span><span class="n">mxmy</span>
+<span class="w">        </span><span class="n">k9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k8</span><span class="o">+</span><span class="n">mxmy</span>
+<span class="w">        </span><span class="k">call </span><span class="n">linmx</span><span class="p">(</span><span class="n">nz</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">mz</span><span class="p">,</span><span class="n">zz</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">kz</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k3</span><span class="p">))</span>
+<span class="w">        </span><span class="n">j2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k9</span>
 
 <span class="w">        </span><span class="c">! set indices and scales which depend on y interpolation</span>
 
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
 <span class="w">            </span><span class="c">! linear in y</span>
-<span class="w">            </span><span class="n">j3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j2</span><span class="w"></span>
-<span class="w">            </span><span class="n">j4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j3</span><span class="o">+</span><span class="n">my</span><span class="w"></span>
-<span class="w">            </span><span class="n">j5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j4</span><span class="w"></span>
-<span class="w">            </span><span class="n">j6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j5</span><span class="w"></span>
-<span class="w">            </span><span class="n">j7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j6</span><span class="w"></span>
-<span class="w">            </span><span class="n">j8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j7</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="n">j9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j8</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="k">call </span><span class="n">linmx</span><span class="p">(</span><span class="n">ny</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">jy</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j3</span><span class="p">))</span><span class="w"></span>
-<span class="w">            </span><span class="n">i2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j9</span><span class="w"></span>
-<span class="w">        </span><span class="k">else</span><span class="w"></span>
+<span class="w">            </span><span class="n">j3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j2</span>
+<span class="w">            </span><span class="n">j4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j3</span><span class="o">+</span><span class="n">my</span>
+<span class="w">            </span><span class="n">j5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j4</span>
+<span class="w">            </span><span class="n">j6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j5</span>
+<span class="w">            </span><span class="n">j7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j6</span>
+<span class="w">            </span><span class="n">j8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j7</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="n">j9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j8</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="k">call </span><span class="n">linmx</span><span class="p">(</span><span class="n">ny</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">jy</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j3</span><span class="p">))</span>
+<span class="w">            </span><span class="n">i2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j9</span>
+<span class="w">        </span><span class="k">else</span>
 <span class="w">            </span><span class="c">! cubic in y</span>
-<span class="w">            </span><span class="n">j3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j2</span><span class="o">+</span><span class="n">my</span><span class="w"></span>
-<span class="w">            </span><span class="n">j4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j3</span><span class="o">+</span><span class="n">my</span><span class="w"></span>
-<span class="w">            </span><span class="n">j5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j4</span><span class="o">+</span><span class="n">my</span><span class="w"></span>
-<span class="w">            </span><span class="n">j6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j5</span><span class="o">+</span><span class="n">my</span><span class="w"></span>
-<span class="w">            </span><span class="n">j7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j6</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="n">j8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j7</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="n">j9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j8</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="k">call </span><span class="n">cubnmx</span><span class="p">(</span><span class="n">ny</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">jy</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j5</span><span class="p">))</span><span class="w"></span>
-<span class="w">            </span><span class="n">i2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j9</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">        </span><span class="k">end if</span><span class="w"></span>
+<span class="w">            </span><span class="n">j3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j2</span><span class="o">+</span><span class="n">my</span>
+<span class="w">            </span><span class="n">j4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j3</span><span class="o">+</span><span class="n">my</span>
+<span class="w">            </span><span class="n">j5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j4</span><span class="o">+</span><span class="n">my</span>
+<span class="w">            </span><span class="n">j6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j5</span><span class="o">+</span><span class="n">my</span>
+<span class="w">            </span><span class="n">j7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j6</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="n">j8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j7</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="n">j9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j8</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="k">call </span><span class="n">cubnmx</span><span class="p">(</span><span class="n">ny</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">jy</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j5</span><span class="p">))</span>
+<span class="w">            </span><span class="n">i2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j9</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">        </span><span class="k">end if</span>
 
 <span class="w">        </span><span class="c">! set indices and scales which depend on x interpolation</span>
 
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
 <span class="w">            </span><span class="c">! linear in x</span>
-<span class="w">            </span><span class="n">i3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i2</span><span class="w"></span>
-<span class="w">            </span><span class="n">i4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i3</span><span class="w"></span>
-<span class="w">            </span><span class="n">i5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i4</span><span class="w"></span>
-<span class="w">            </span><span class="k">call </span><span class="n">linmx</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">))</span><span class="w"></span>
-<span class="w">        </span><span class="k">else</span><span class="w"></span>
+<span class="w">            </span><span class="n">i3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i2</span>
+<span class="w">            </span><span class="n">i4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i3</span>
+<span class="w">            </span><span class="n">i5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i4</span>
+<span class="w">            </span><span class="k">call </span><span class="n">linmx</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">))</span>
+<span class="w">        </span><span class="k">else</span>
 <span class="w">            </span><span class="c">! cubic in x</span>
-<span class="w">            </span><span class="n">i3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i2</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="n">i4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i3</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="n">i5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i4</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="k">call </span><span class="n">cubnmx</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i5</span><span class="p">))</span><span class="w"></span>
+<span class="w">            </span><span class="n">i3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i2</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="n">i4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i3</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="n">i5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i4</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="k">call </span><span class="n">cubnmx</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i5</span><span class="p">))</span>
 <span class="w">        </span><span class="k">end if</span>
-<span class="k">        call </span><span class="n">lint3</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">nz</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">mxmy</span><span class="p">,</span><span class="n">mz</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">kz</span><span class="p">),&amp;</span><span class="w"></span>
-<span class="w">                    </span><span class="n">w</span><span class="p">(</span><span class="n">k3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k7</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k8</span><span class="p">),</span><span class="n">iw</span><span class="p">(</span><span class="n">jy</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j5</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j6</span><span class="p">),&amp;</span><span class="w"></span>
-<span class="w">                    </span><span class="n">w</span><span class="p">(</span><span class="n">j7</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j8</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j9</span><span class="p">),</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i5</span><span class="p">))</span><span class="w"></span>
+<span class="k">        call </span><span class="n">lint3</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">nz</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">mxmy</span><span class="p">,</span><span class="n">mz</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">kz</span><span class="p">),&amp;</span>
+<span class="w">                    </span><span class="n">w</span><span class="p">(</span><span class="n">k3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k7</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k8</span><span class="p">),</span><span class="n">iw</span><span class="p">(</span><span class="n">jy</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j5</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j6</span><span class="p">),&amp;</span>
+<span class="w">                    </span><span class="n">w</span><span class="p">(</span><span class="n">j7</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j8</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j9</span><span class="p">),</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i5</span><span class="p">))</span>
 
-<span class="w">    </span><span class="k">else</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span>
 
 <span class="w">        </span><span class="c">! cubically interpolate in z</span>
 
-<span class="w">        </span><span class="n">k2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
-<span class="w">        </span><span class="n">k3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k2</span><span class="o">+</span><span class="n">mz</span><span class="w"></span>
-<span class="w">        </span><span class="n">k4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k3</span><span class="o">+</span><span class="n">mz</span><span class="w"></span>
-<span class="w">        </span><span class="n">k5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k4</span><span class="o">+</span><span class="n">mz</span><span class="w"></span>
-<span class="w">        </span><span class="n">k6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k5</span><span class="o">+</span><span class="n">mz</span><span class="w"></span>
-<span class="w">        </span><span class="n">k7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k6</span><span class="o">+</span><span class="n">mxmy</span><span class="w"></span>
-<span class="w">        </span><span class="n">k8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k7</span><span class="o">+</span><span class="n">mxmy</span><span class="w"></span>
-<span class="w">        </span><span class="n">k9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k8</span><span class="o">+</span><span class="n">mxmy</span><span class="w"></span>
-<span class="w">        </span><span class="k">call </span><span class="n">cubnmx</span><span class="p">(</span><span class="n">nz</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">mz</span><span class="p">,</span><span class="n">zz</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">kz</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k5</span><span class="p">))</span><span class="w"></span>
-<span class="w">        </span><span class="n">j2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k9</span><span class="o">+</span><span class="n">mxmy</span><span class="w"></span>
+<span class="w">        </span><span class="n">k2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">        </span><span class="n">k3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k2</span><span class="o">+</span><span class="n">mz</span>
+<span class="w">        </span><span class="n">k4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k3</span><span class="o">+</span><span class="n">mz</span>
+<span class="w">        </span><span class="n">k5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k4</span><span class="o">+</span><span class="n">mz</span>
+<span class="w">        </span><span class="n">k6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k5</span><span class="o">+</span><span class="n">mz</span>
+<span class="w">        </span><span class="n">k7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k6</span><span class="o">+</span><span class="n">mxmy</span>
+<span class="w">        </span><span class="n">k8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k7</span><span class="o">+</span><span class="n">mxmy</span>
+<span class="w">        </span><span class="n">k9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k8</span><span class="o">+</span><span class="n">mxmy</span>
+<span class="w">        </span><span class="k">call </span><span class="n">cubnmx</span><span class="p">(</span><span class="n">nz</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">mz</span><span class="p">,</span><span class="n">zz</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">kz</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k5</span><span class="p">))</span>
+<span class="w">        </span><span class="n">j2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k9</span><span class="o">+</span><span class="n">mxmy</span>
 
 <span class="w">        </span><span class="c">! set indices which depend on y interpolation</span>
 
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
-<span class="k">            </span><span class="n">j3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j2</span><span class="w"></span>
-<span class="w">            </span><span class="n">j4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j3</span><span class="o">+</span><span class="n">my</span><span class="w"></span>
-<span class="w">            </span><span class="n">j5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j4</span><span class="w"></span>
-<span class="w">            </span><span class="n">j6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j5</span><span class="w"></span>
-<span class="w">            </span><span class="n">j7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j6</span><span class="w"></span>
-<span class="w">            </span><span class="n">j8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j7</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="n">j9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j8</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="k">call </span><span class="n">linmx</span><span class="p">(</span><span class="n">ny</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">jy</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j3</span><span class="p">))</span><span class="w"></span>
-<span class="w">            </span><span class="n">i2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j9</span><span class="w"></span>
+<span class="k">            </span><span class="n">j3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j2</span>
+<span class="w">            </span><span class="n">j4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j3</span><span class="o">+</span><span class="n">my</span>
+<span class="w">            </span><span class="n">j5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j4</span>
+<span class="w">            </span><span class="n">j6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j5</span>
+<span class="w">            </span><span class="n">j7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j6</span>
+<span class="w">            </span><span class="n">j8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j7</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="n">j9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j8</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="k">call </span><span class="n">linmx</span><span class="p">(</span><span class="n">ny</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">jy</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j3</span><span class="p">))</span>
+<span class="w">            </span><span class="n">i2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j9</span>
 <span class="w">        </span><span class="k">else</span>
-<span class="k">            </span><span class="n">j3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j2</span><span class="o">+</span><span class="n">my</span><span class="w"></span>
-<span class="w">            </span><span class="n">j4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j3</span><span class="o">+</span><span class="n">my</span><span class="w"></span>
-<span class="w">            </span><span class="n">j5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j4</span><span class="o">+</span><span class="n">my</span><span class="w"></span>
-<span class="w">            </span><span class="n">j6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j5</span><span class="o">+</span><span class="n">my</span><span class="w"></span>
-<span class="w">            </span><span class="n">j7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j6</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="n">j8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j7</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="n">j9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j8</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="k">call </span><span class="n">cubnmx</span><span class="p">(</span><span class="n">ny</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">jy</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j5</span><span class="p">))</span><span class="w"></span>
-<span class="w">            </span><span class="n">i2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j9</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">        </span><span class="k">end if</span><span class="w"></span>
+<span class="k">            </span><span class="n">j3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j2</span><span class="o">+</span><span class="n">my</span>
+<span class="w">            </span><span class="n">j4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j3</span><span class="o">+</span><span class="n">my</span>
+<span class="w">            </span><span class="n">j5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j4</span><span class="o">+</span><span class="n">my</span>
+<span class="w">            </span><span class="n">j6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j5</span><span class="o">+</span><span class="n">my</span>
+<span class="w">            </span><span class="n">j7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j6</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="n">j8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j7</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="n">j9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j8</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="k">call </span><span class="n">cubnmx</span><span class="p">(</span><span class="n">ny</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">iw</span><span class="p">(</span><span class="n">jy</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j5</span><span class="p">))</span>
+<span class="w">            </span><span class="n">i2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j9</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">        </span><span class="k">end if</span>
 
 <span class="w">        </span><span class="c">! set work space portion and indices which depend on x interpolation</span>
 
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intpol</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
-<span class="k">            </span><span class="n">i3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i2</span><span class="w"></span>
-<span class="w">            </span><span class="n">i4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i3</span><span class="w"></span>
-<span class="w">            </span><span class="n">i5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i4</span><span class="w"></span>
-<span class="w">            </span><span class="k">call </span><span class="n">linmx</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">))</span><span class="w"></span>
+<span class="k">            </span><span class="n">i3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i2</span>
+<span class="w">            </span><span class="n">i4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i3</span>
+<span class="w">            </span><span class="n">i5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i4</span>
+<span class="w">            </span><span class="k">call </span><span class="n">linmx</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">))</span>
 <span class="w">        </span><span class="k">else</span>
-<span class="k">            </span><span class="n">i3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i2</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="n">i4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i3</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="n">i5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i4</span><span class="o">+</span><span class="n">mx</span><span class="w"></span>
-<span class="w">            </span><span class="k">call </span><span class="n">cubnmx</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i5</span><span class="p">))</span><span class="w"></span>
+<span class="k">            </span><span class="n">i3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i2</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="n">i4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i3</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="n">i5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i4</span><span class="o">+</span><span class="n">mx</span>
+<span class="w">            </span><span class="k">call </span><span class="n">cubnmx</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">xx</span><span class="p">,</span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i5</span><span class="p">))</span>
 <span class="w">        </span><span class="k">end if</span>
-<span class="k">        call </span><span class="n">cubt3</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">nz</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">mxmy</span><span class="p">,</span><span class="n">mz</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,&amp;</span><span class="w"></span>
-<span class="w">                    </span><span class="n">iw</span><span class="p">(</span><span class="n">kz</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k5</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k6</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k7</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k8</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k9</span><span class="p">),&amp;</span><span class="w"></span>
-<span class="w">                    </span><span class="n">iw</span><span class="p">(</span><span class="n">jy</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j5</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j6</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j7</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j8</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j9</span><span class="p">),&amp;</span><span class="w"></span>
-<span class="w">                    </span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i5</span><span class="p">))</span><span class="w"></span>
+<span class="k">        call </span><span class="n">cubt3</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">nz</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">mx</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">mxmy</span><span class="p">,</span><span class="n">mz</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">intpol</span><span class="p">,&amp;</span>
+<span class="w">                    </span><span class="n">iw</span><span class="p">(</span><span class="n">kz</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k5</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k6</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k7</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k8</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">k9</span><span class="p">),&amp;</span>
+<span class="w">                    </span><span class="n">iw</span><span class="p">(</span><span class="n">jy</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j5</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j6</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j7</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j8</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">j9</span><span class="p">),&amp;</span>
+<span class="w">                    </span><span class="n">iw</span><span class="p">,</span><span class="n">w</span><span class="p">(</span><span class="n">i2</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i3</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i4</span><span class="p">),</span><span class="n">w</span><span class="p">(</span><span class="n">i5</span><span class="p">))</span>
 
 <span class="w">    </span><span class="k">end if</span>
 
-<span class="k">    end subroutine </span><span class="n">rgrd3</span><span class="w"></span>
+<span class="k">    end subroutine </span><span class="n">rgrd3</span>
 </pre></div>
 
     </section>
@@ -1020,50 +1252,45 @@ routine calling rgrd3</p></td>
     </div>
   </div>
 
-    <hr>    
+      <hr>
     </div> <!-- /container -->
     <footer>
       <div class="container">
-      <div class="row">
-        <div class="col-xs-6 col-md-6"><p>regridpack was developed by Jacob Williams<br>&copy; 2022 
+        <div class="row justify-content-between">
+          <div class="col"><p>regridpack was developed by Jacob Williams<br>&copy; 2024 
 </p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
         </div>
-        <div class="col-xs-6 col-md-6">
-          <p class="text-right">
-            Documentation generated by 
-            <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-          </p>
-        </div>
-      </div>
-      <br>
-      </div> <!-- /container -->    
+        <br>
+      </div> <!-- /container -->
     </footer>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+    <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
-<!--
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
--->
-    <script src="../js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
 
     <!-- MathJax JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-      });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script src="../tipuesearch/tipuesearch_content.js"></script>
-    <script src="../tipuesearch/tipuesearch_set.js"></script>
-    <script src="../tipuesearch/tipuesearch.js"></script>
-    
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
   </body>
 </html>
